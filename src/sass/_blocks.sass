@@ -1,0 +1,61 @@
+$square-width: 180px
+
+.square
+  width: $square-width
+  height: $square-width
+  background: #FFF
+  box-sizing: border-box
+
+.square_center
+  +vertical
+  white-space: nowrap
+
+.square__inner
+  display: inline-block
+  vertical-align: middle
+  white-space: normal
+  font-size: 16px
+
+.square_w2
+  width: ($square-width * 2)
+
+.square_red
+  background: $red
+
+.square_dark
+  background: #243340
+
+.square_contact
+  padding: 10px
+  background: #243340
+  font-family: "Trebuchet MS"
+  color: #FFF
+  color: rgba(#FFF, 0.1)
+  line-height: 1.5
+  strong
+    display: block
+    margin: 10px 0 5px
+    font-size: 12px
+    text-transform: uppercase
+    color: #FFF
+    color: rgba(#FFF, 0.4)
+
+  .square__inner
+    font-size: 12px
+
+
+
+
+.icon
+  display: inline-block
+  vertical-align: baseline
+
+
+.big-title
+  display: block
+  +bold
+  font-size: 56px
+  line-height: 1
+  text-transform: uppercase
+  color: #FFF
+  text-shadow: 0 2px 30px rgba(16, 34, 49, 0.75)

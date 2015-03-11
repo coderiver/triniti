@@ -1,0 +1,123 @@
+$icons: (
+  arr: (X: -63px, Y:-105px, W: 21px, H: 21px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  baloon: (X: -108px, Y:0px, W: 24px, H: 39px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  bus: (X: -142px, Y:-28px, W: 17px, H: 21px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  clock: (X: -108px, Y:-49px, W: 22px, H: 22px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  corona: (X: -142px, Y:0px, W: 22px, H: 18px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  fb: (X: -174px, Y:0px, W: 12px, H: 23px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  instagram: (X: 0px, Y:-105px, W: 26px, H: 27px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  lock: (X: -142px, Y:-59px, W: 16px, H: 21px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  logo: (X: 0px, Y:0px, W: 98px, H: 95px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  man: (X: -94px, Y:-105px, W: 19px, H: 21px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  map-pin: (X: -36px, Y:-105px, W: 17px, H: 27px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  phone: (X: -142px, Y:-90px, W: 18px, H: 18px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  vk: (X: 0px, Y:-142px, W: 23px, H: 15px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+);
+
+
+// Gets an attribute from the sass map
+@function icon-attr($icon, $attr) {
+  $icon: map-get($icons, $icon);
+  @return map-get($icon, $attr);
+}
+
+@mixin sprite($iconName) {
+  background-image: url(icon-attr($iconName, IMG));
+  width: icon-attr($iconName, W);
+  height: icon-attr($iconName, H);
+  background-position: icon-attr($iconName, X) icon-attr($iconName, Y);
+}
+
+
+
+.icon-arr {
+  width: 21px;
+  height: 21px;
+  background-image: url('../img/icons.png');
+  background-position: -63px -105px;
+}
+
+.icon-baloon {
+  width: 24px;
+  height: 39px;
+  background-image: url('../img/icons.png');
+  background-position: -108px 0px;
+}
+
+.icon-bus {
+  width: 17px;
+  height: 21px;
+  background-image: url('../img/icons.png');
+  background-position: -142px -28px;
+}
+
+.icon-clock {
+  width: 22px;
+  height: 22px;
+  background-image: url('../img/icons.png');
+  background-position: -108px -49px;
+}
+
+.icon-corona {
+  width: 22px;
+  height: 18px;
+  background-image: url('../img/icons.png');
+  background-position: -142px 0px;
+}
+
+.icon-fb {
+  width: 12px;
+  height: 23px;
+  background-image: url('../img/icons.png');
+  background-position: -174px 0px;
+}
+
+.icon-instagram {
+  width: 26px;
+  height: 27px;
+  background-image: url('../img/icons.png');
+  background-position: 0px -105px;
+}
+
+.icon-lock {
+  width: 16px;
+  height: 21px;
+  background-image: url('../img/icons.png');
+  background-position: -142px -59px;
+}
+
+.icon-logo {
+  width: 98px;
+  height: 95px;
+  background-image: url('../img/icons.png');
+  background-position: 0px 0px;
+}
+
+.icon-man {
+  width: 19px;
+  height: 21px;
+  background-image: url('../img/icons.png');
+  background-position: -94px -105px;
+}
+
+.icon-map-pin {
+  width: 17px;
+  height: 27px;
+  background-image: url('../img/icons.png');
+  background-position: -36px -105px;
+}
+
+.icon-phone {
+  width: 18px;
+  height: 18px;
+  background-image: url('../img/icons.png');
+  background-position: -142px -90px;
+}
+
+.icon-vk {
+  width: 23px;
+  height: 15px;
+  background-image: url('../img/icons.png');
+  background-position: 0px -142px;
+}
+

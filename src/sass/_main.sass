@@ -1,0 +1,97 @@
+.toparea
+  position: relative
+  min-height: 540px
+
+  .header
+    position: absolute
+    z-index: 1
+    top: 0
+    left: 0
+    right: 0
+
+  .big-title
+    position: absolute
+    z-index: 1
+    bottom: 100px
+    right: 0
+    max-width: 550px
+    text-align: right
+
+.toparea__inner
+  position: relative
+  min-height: 540px
+
+
+.header
+  +clr
+
+.header__logo
+  float: left
+
+.header__right
+  float: right
+  font-size: 0
+
+  .square
+    display: inline-block
+    vertical-align: top
+
+
+.logo
+  display: inline-block
+  vertical-align: middle
+  +hide-text
+
+
+.menu
+  background: #FFF
+  padding: 0 40px
+  box-sizing: border-box
+  text-align: left
+
+.menu__list
+  font-size: 0
+  margin-bottom: -8px
+  li
+    display: inline-block
+    vertical-align: top
+    width: 50%
+    margin-bottom: 8px
+
+.menu__link
+  display: inline-block
+  vertical-align: top
+  font-size: 11px
+  text-transform: uppercase
+  line-height: 1
+  +bold
+  letter-spacing: 0.05em
+  padding: 10px 0
+  color: $dark
+  text-decoration: none
+  +trans-link
+  &:hover
+    color: $red
+
+
+.slider
+  position: absolute
+  z-index: 0
+  top: 0
+  right: 180px
+  width: 1250px
+  height: 540px
+  overflow: hidden
+  &.slick-slider
+    overflow: visible
+
+
+.slider__item
+  width: 1250px
+  height: 540px
+  background-position: center center
+  background-size: cover
+  overflow: hidden
+  img
+    display: block
+    max-width: 100%

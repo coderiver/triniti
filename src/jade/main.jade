@@ -1,0 +1,35 @@
+extends _layout
+
+block title
+  title Main Page
+
+block content
+
+  <!-- begin toparea -->
+  .toparea
+
+    include includes/_header
+
+    .l
+      .toparea__inner
+        <!-- begin slider -->
+        .slider.js-slick
+          //- .slider__item(style="background-image:url('img/slider/slide1.jpg')")
+          .slider__item
+            img(src="img/slider/slide1.jpg", alt="")
+          .slider__item
+            img(src="img/slider/slide1.jpg", alt="")
+          .slider__item
+            img(src="img/slider/slide1.jpg", alt="")
+          .slider__item
+            img(src="img/slider/slide1.jpg", alt="")
+          .slider__item
+            img(src="img/slider/slide1.jpg", alt="")
+        <!-- end slider -->
+
+        h1.big-title
+          | Тогово-развлекательный комплекс Triniti
+
+
+  <!-- end toparea -->
+

@@ -1,0 +1,28 @@
+$red: #CB222B
+$dark: #3C4D5C
+// $red-text: #D12023
+// $dark-text: #3B4D5D
+
+
+=bold
+  font-family: "Futura New"
+  font-weight: bold
+
+body
+  background: $dark
+
+.out
+  position: relative
+  max-width: 1600px
+  min-width: 1024px
+  margin: auto
+  background: #FFF
+  &:before
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    bottom: 0
+    z-index: 0
+    width: percentage(530/1600)
+    background: $dark
