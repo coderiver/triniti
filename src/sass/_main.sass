@@ -1,5 +1,6 @@
 .toparea
   position: relative
+  z-index: 2
   min-height: 540px
 
   .header
@@ -32,7 +33,7 @@
   float: right
   font-size: 0
 
-  .square
+  .square, .menu
     display: inline-block
     vertical-align: top
 
@@ -44,14 +45,22 @@
 
 
 .menu
-  background: #FFF
+  width: 360px
+  height: 180px
   padding: 0 40px
+  background: #FFF
   box-sizing: border-box
-  text-align: left
+  +vertical
+  white-space: nowrap
 
 .menu__list
+  display: inline-block
+  vertical-align: middle
+  width: 100%
+  white-space: normal
   font-size: 0
   margin-bottom: -8px
+  text-align: left
   li
     display: inline-block
     vertical-align: top
@@ -82,6 +91,7 @@
   width: 1250px
   height: 540px
   overflow: hidden
+  box-shadow: 100px 95px 50px -85px rgba(#162634, 0.6)
   &.slick-slider
     overflow: visible
 
@@ -95,3 +105,61 @@
   img
     display: block
     max-width: 100%
+
+
+.categories
+  font-size: 0
+  height: 360px
+
+.categories__item
+  display: inline-block
+  vertical-align: top
+  box-sizing: border-box
+  width: 33.333%
+  height: 100%
+  font-size: 12px
+  padding: 100px 90px 0
+  background: $dark
+  &:first-child
+    background: #324250
+  &:nth-child(2)
+    background: #364655
+
+
+
+.category
+  position: relative
+
+.category__number
+  position: absolute
+  top: -25px
+  right: 100%
+  +bold
+  font-size: 50px
+  line-height: 1
+  margin-right: -2px
+  color: #FFF
+  color: rgba(#FFF, 0.03)
+
+.category__title
+  display: inline-block
+  position: relative
+  padding-right: 32px
+  +medium
+  font-size: 24px
+  text-transform: uppercase
+  color: #FFF
+  .icon
+    position: absolute
+    top: 50%
+    right: 0
+    margin-top: -11px
+
+.category__text
+  display: block
+  margin-top: 35px
+  font-size: 12px
+  line-height: 1.66
+  letter-spacing: 0.02em
+  color: #FFF
+  color: rgba(#FFF, 0.7)

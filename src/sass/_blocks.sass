@@ -16,6 +16,10 @@ $square-width: 180px
   white-space: normal
   font-size: 16px
 
+.square_2x
+  width: ($square-width * 2)
+  height: ($square-width * 2)
+
 .square_w2
   width: ($square-width * 2)
 
@@ -28,7 +32,6 @@ $square-width: 180px
 .square_contact
   padding: 10px
   background: #243340
-  font-family: "Trebuchet MS"
   color: #FFF
   color: rgba(#FFF, 0.1)
   line-height: 1.5
@@ -59,3 +62,27 @@ $square-width: 180px
   text-transform: uppercase
   color: #FFF
   text-shadow: 0 2px 30px rgba(16, 34, 49, 0.75)
+
+
+
+.b
+  width: 1080px
+  min-height: 360px
+  background: #FFF
+
+.b_3
+  margin-left: -360px
+.b_2
+  margin-left: -180px
+.b_1
+  margin-left: -90px
+
+.b_r
+  float: right
+  +clr
+  &.b_3
+    margin-right: -360px
+  &.b_2
+    margin-right: -180px
+  &.b_1
+    margin-right: -90px

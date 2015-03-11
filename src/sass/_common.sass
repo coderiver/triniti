@@ -3,20 +3,40 @@ $dark: #3C4D5C
 // $red-text: #D12023
 // $dark-text: #3B4D5D
 
++font("FuturaPT-Bold", FuturaPT-Bold)
++font("FuturaPT-Light", FuturaPT-Light)
++font("FuturaPT-Medium", FuturaPT-Medium)
+
 
 =bold
-  font-family: "Futura New"
-  font-weight: bold
+  font-family: "FuturaPT-Bold", Helvetica, Arial, sans-serif
+  font-weight: normal
+
+=medium
+  font-family: "FuturaPT-Medium", Helvetica, Arial, sans-serif
+  font-weight: normal
+
+=light
+  font-family: "FuturaPT-Light", Helvetica, Arial, sans-serif
+  font-weight: normal
+
+=regular
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif
+
+
+
 
 body
   background: $dark
+  font-family: "Trebuchet MS", Helvetica, Arial, sans-serif
 
 .out
   position: relative
   max-width: 1600px
   min-width: 1024px
   margin: auto
-  background: #FFF
+  background: #F2F5F6
+  overflow: hidden
   &:before
     content: ""
     position: absolute
@@ -26,3 +46,8 @@ body
     z-index: 0
     width: percentage(530/1600)
     background: $dark
+
+.main-wrap
+  position: relative
+  z-index: 1
+  +clr
