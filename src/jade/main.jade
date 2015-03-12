@@ -114,15 +114,12 @@ block content
           p
             | В 700 м от ТРЦ «Тринити» находится комфортабельная гостиница «Турист»,
             | а в 2,5 км располагается один из лучших ночных клубов Беларуси — «База».
-            //- | Добраться до центра города можно за 15 минут
-            //- | на любом из 30 маршрутов общественного транспорта.
 
         button.button.button_red.w450(type="button")
           span.button__text Подробнее о комплексе
           i.icon.icon-arr
 
         .location__map
-
     <!-- end location -->
 
     <!-- begin promo 1 -->
@@ -183,3 +180,33 @@ block content
         p
           | Расположение вблизи основных транспортных развязок.
     <!-- end promo 2 -->
+
+    .clearfix
+
+    <!-- begin about -->
+    .about
+      h3.about__title
+        | Девелопер и Партнёры проекта
+      p.about__text
+        | ООО «Тринити Инвест» входит в группу компаний «Конте».
+        | Основным направлением деятельности динамично развивающейся компании
+        | является организация строительства торгово-развлекательного и бизнес-центра «Тринити».
+      ul.about__partners
+        li
+          a(href="#")
+            img(src="img/partners/triniti.png", alt="")
+        li
+          a(href="#")
+            img(src="img/partners/conte.png", alt="")
+        li
+          a(href="#")
+            img(src="img/partners/omm.png", alt="")
+        li
+          a(href="#")
+            img(src="img/partners/evroopt.png", alt="")
+
+      button.button.button_vert.button_red(type="button")
+        span.button__text О застройщике
+    <!-- end about -->
+
+  include includes/_footer

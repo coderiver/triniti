@@ -55,11 +55,16 @@ body
   &:before
     content: ""
     position: absolute
+    box-sizing: border-box
+    // border-right: 530px solid $dark
     top: 0
-    right: 0
+    left: 50%
     bottom: 0
+    width: 600px
+    margin-left: 270px
     z-index: 0
-    width: percentage(530/1600)
+    // width: percentage(530/1600)
+    // max-width: 530px
     background: $dark
 
 .main-wrap

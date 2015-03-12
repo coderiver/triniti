@@ -342,5 +342,168 @@
 
 
 
+.about
+  position: relative
+  min-height: 375px
+  margin: 105px 0 0 90px
+  padding: 80px 180px 70px 80px
+  max-width: 900px
+  box-sizing: border-box
+  border: 10px solid #FFF
+  color: $dark-text
+  +medium
+  font-size: 18px
+  line-height: 1.33
+
+  .button
+    position: absolute
+    top: -10px
+    right: -10px
+    height: 100%
+    box-sizing: content-box
+    width: 90px
+    padding: 10px 0
+
+.about__title
+  margin-bottom: 30px
+  +medium
+  font-size: 24px
+  line-height: 1
+  text-transform: uppercase
+  letter-spacing: -0.03em
+  color: #414E5A
+
+.about__partners
+  margin: 60px 0 -20px
+  li
+    display: inline-block
+    vertical-align: middle
+    margin: 0 50px 20px 0
+
+
+
+
+.footer
+  position: relative
+  z-index: 1
+  margin-top: 105px
+  padding: 30px 0 60px
+  +medium
+  font-size: 18px
+  line-height: 1.333
+  color: $dark
+
+.footer__inner
+  +clr
+
+.footer__copy
+  float: left
+  margin-right: 90px
+  color: rgba($dark, 0.7)
+
+.footer__contacts
+  float: left
+  a
+    text-decoration: none
+    color: inherit
+  .tel
+    display: block
+  .email
+    display: block
+    margin-top: 5px
+    color: $red
+
+.footer__creator
+  width: 360px
+  text-align: center
+  float: right
+  color: #FFF
+
+.footer__socials
+  float: right
+  margin-top: -30px
+  font-size: 0
+
+
+
+.flex
+  display: inline-block
+  vertical-align: top
+  text-decoration: none
+  color: #FFF
+  +trans-link(color)
+  &:hover
+    color: $red
+    .flex__icon
+      &:before
+        opacity: 0
+      &:after
+        opacity: 1
+
+.flex__icon
+  display: inline-block
+  vertical-align: middle
+  position: relative
+  margin-right: 10px
+  &:before
+    content: ""
+    display: block
+    +sprite(flex-logo)
+    +trans-link(opacity)
+    opacity: 1
+  &:after
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
+    +sprite(flex-logo-red)
+    +trans-link(opacity)
+
+.flex__text
+  display: inline-block
+  vertical-align: middle
+  em
+    font-style: normal
+    color: #5B6D7C
+
+
+.social-button
+  display: inline-block
+  vertical-align: top
+  width: 90px
+  height: 90px
+  line-height: 90px
+  text-align: center
+  +trans-link(background)
+  &:before
+    content: ""
+    display: inline-block
+    vertical-align: middle
+
+.social-button_inst
+  background: #895A4D
+  &:before
+    +sprite(instagram)
+  &:hover
+    background: #75493F
+
+
+.social-button_vk
+  background: #54769B
+  &:before
+    +sprite(vk)
+  &:hover
+    background: #3D6287
+
+.social-button_fb
+  background: #4A63B5
+  &:before
+    +sprite(fb)
+  &:hover
+    background: #3F5BA7
+
+
+
 .has-shadow
   box-shadow: 25px 25px 80px -20px rgba(#162634, 0.2)
