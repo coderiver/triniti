@@ -27,10 +27,9 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 @font-face { font-family: "FuturaNewHeavy"; src: url("../fonts/FuturaNewHeavy-Reg.eot"); src: url("../fonts/FuturaNewHeavy-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewHeavy-Reg.woff") format("woff"), url("../fonts/FuturaNewHeavy-Reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; line-height: 1.5; }
 
-.out { position: relative; max-width: 1600px; min-width: 1024px; margin: auto; background: #F2F5F6; overflow: hidden; }
+.out { position: relative; max-width: 1600px; min-width: 1044px; margin: auto; background: #F2F5F6; overflow: hidden; }
 .out:before { content: ""; position: absolute; box-sizing: border-box; top: 0; left: 50%; bottom: 0; width: 600px; margin-left: 270px; z-index: 0; background: #3B4D5D; }
 @media only screen and (max-width: 1296px) { .out:before { margin-left: 165px; } }
-@media only screen and (max-width: 1041px) { .out:before { margin-left: 175px; } }
 
 .main-wrap { position: relative; margin-bottom: 105px; *zoom: 1; }
 .main-wrap:after { content: " "; display: table; clear: both; }
