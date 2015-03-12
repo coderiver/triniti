@@ -107,28 +107,36 @@
     max-width: 100%
 
 
-.categories
-  font-size: 0
-  height: 360px
-
-.categories__item
-  display: inline-block
-  vertical-align: top
-  box-sizing: border-box
-  width: 33.333%
-  height: 100%
-  font-size: 12px
-  padding: 100px 90px 0
-  background: $dark
-  &:first-child
-    background: #324250
-  &:nth-child(2)
-    background: #364655
-
-
 
 .category
   position: relative
+  z-index: 0
+  display: block
+  float: left
+  box-sizing: border-box
+  width: 33.333%
+  height: 360px
+  font-size: 12px
+  padding: 100px 90px 0
+  background: $dark
+  text-decoration: none
+  +trans
+  &:first-child
+    background: $dark3
+  &:nth-child(2)
+    background: $dark2
+  &:hover
+    z-index: 3
+    background: $red
+    padding-top: 80px
+    box-shadow: 0 0 0 10px $red, 0 0 73px 0 rgba(38, 55, 70, 0.75)
+    .category__title
+      .icon
+        transform: translateX(70px)
+    .category__more
+      opacity: 1
+      height: auto
+      margin-top: 60px
 
 .category__number
   position: absolute
@@ -154,12 +162,25 @@
     top: 50%
     right: 0
     margin-top: -11px
+    +trans(transform)
 
 .category__text
   display: block
-  margin-top: 35px
+  margin-top: 28px
   font-size: 12px
   line-height: 1.66
   letter-spacing: 0.02em
   color: #FFF
   color: rgba(#FFF, 0.7)
+
+.category__more
+  height: 0
+  opacity: 0
+  display: block
+  +bold
+  letter-spacing: 0.15em
+  font-size: 11px
+  text-transform: uppercase
+  color: #FFF
+  line-height: 1.8
+  +trans

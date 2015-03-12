@@ -21,15 +21,16 @@ ul, ol { list-style-type: none; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { * { -webkit-text-size-adjust: none; } }
 table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 
-@font-face { font-family: "FuturaPT-Bold"; src: url("../fonts/FuturaPT-Bold.eot"); src: url("../fonts/FuturaPT-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Bold.woff") format("woff"), url("../fonts/FuturaPT-Bold.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "FuturaPT-Light"; src: url("../fonts/FuturaPT-Light.eot"); src: url("../fonts/FuturaPT-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Light.woff") format("woff"), url("../fonts/FuturaPT-Light.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-@font-face { font-family: "FuturaPT-Medium"; src: url("../fonts/FuturaPT-Medium.eot"); src: url("../fonts/FuturaPT-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaPT-Medium.woff") format("woff"), url("../fonts/FuturaPT-Medium.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-body { background: #3C4D5C; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; }
+@font-face { font-family: "FuturaNewBold"; src: url("../fonts/FuturaNewBold-Reg.eot"); src: url("../fonts/FuturaNewBold-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewBold-Reg.woff") format("woff"), url("../fonts/FuturaNewBold-Reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "FuturaNewLight"; src: url("../fonts/FuturaNewLight-Reg.eot"); src: url("../fonts/FuturaNewLight-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewLight-Reg.woff") format("woff"), url("../fonts/FuturaNewLight-Reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "FuturaNewMedium"; src: url("../fonts/FuturaNewMedium-Reg.eot"); src: url("../fonts/FuturaNewMedium-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewMedium-Reg.woff") format("woff"), url("../fonts/FuturaNewMedium-Reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: "FuturaNewHeavy"; src: url("../fonts/FuturaNewHeavy-Reg.eot"); src: url("../fonts/FuturaNewHeavy-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewHeavy-Reg.woff") format("woff"), url("../fonts/FuturaNewHeavy-Reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; }
 
 .out { position: relative; max-width: 1600px; min-width: 1024px; margin: auto; background: #F2F5F6; overflow: hidden; }
-.out:before { content: ""; position: absolute; top: 0; right: 0; bottom: 0; z-index: 0; width: 33.125%; background: #3C4D5C; }
+.out:before { content: ""; position: absolute; top: 0; right: 0; bottom: 0; z-index: 0; width: 33.125%; background: #3B4D5D; }
 
-.main-wrap { position: relative; z-index: 1; *zoom: 1; }
+.main-wrap { position: relative; *zoom: 1; }
 .main-wrap:after { content: " "; display: table; clear: both; }
 
 .l { max-width: 1260px; padding: 0 10px; margin: auto; }
@@ -85,8 +86,8 @@ body { background: #3C4D5C; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 .slick-dots li { position: relative; display: inline-block; cursor: pointer; }
 .slick-dots li button { display: block; width: 31px; height: 30px; text-align: center; background: none; outline: none; line-height: 0px; font-size: 0px; color: red; cursor: pointer; }
 .slick-dots li button:before { content: ""; display: inline-block; height: 6px; width: 6px; box-sizing: border-box; border-radius: 50%; background: #FFF; -webkit-transition: all 0.15s linear; transition: all 0.15s linear; }
-.slick-dots li button:hover:before { background: #CB222B; }
-.slick-dots li.slick-active button:before { background: #CB222B; }
+.slick-dots li button:hover:before { background: #D12023; }
+.slick-dots li.slick-active button:before { background: #D12023; }
 
 .icon-arr { width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -63px -105px; }
 
@@ -125,17 +126,17 @@ body { background: #3C4D5C; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 
 .square_w2 { width: 360px; }
 
-.square_red { background: #CB222B; }
+.square_red { background: #D12023; }
 
 .square_dark { background: #243340; }
 
-.square_contact { padding: 10px; background: #243340; color: #FFF; color: rgba(255, 255, 255, 0.1); line-height: 1.5; }
-.square_contact strong { display: block; margin: 10px 0 5px; font-size: 12px; text-transform: uppercase; color: #FFF; color: rgba(255, 255, 255, 0.4); }
-.square_contact .square__inner { font-size: 12px; }
+.square_contact { padding: 10px; background: #233341; color: #FFF; color: rgba(255, 255, 255, 0.1); line-height: 1.5; }
+.square_contact strong { display: block; margin: 15px 0 9px; font-size: 12px; text-transform: uppercase; color: #FFF; color: rgba(255, 255, 255, 0.4); letter-spacing: 0.1em; font-family: "FuturaNewHeavy", Helvetica, Arial, sans-serif; font-weight: normal; }
+.square_contact .square__inner { font-size: 12px; line-height: 1.5; letter-spacing: 0.05em; }
 
 .icon { display: inline-block; vertical-align: baseline; }
 
-.big-title { display: block; font-family: "FuturaPT-Bold", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 56px; line-height: 1; text-transform: uppercase; color: #FFF; text-shadow: 0 2px 30px rgba(16, 34, 49, 0.75); }
+.big-title { display: block; font-family: "FuturaNewBold", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 56px; line-height: 1; text-transform: uppercase; color: #FFF; text-shadow: 0 2px 30px rgba(16, 34, 49, 0.75); }
 
 .b { width: 1080px; min-height: 360px; background: #FFF; }
 
@@ -173,8 +174,8 @@ body { background: #3C4D5C; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 .menu__list { display: inline-block; vertical-align: middle; width: 100%; white-space: normal; font-size: 0; margin-bottom: -8px; text-align: left; }
 .menu__list li { display: inline-block; vertical-align: top; width: 50%; margin-bottom: 8px; }
 
-.menu__link { display: inline-block; vertical-align: top; font-size: 11px; text-transform: uppercase; line-height: 1; font-family: "FuturaPT-Bold", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: 0.05em; padding: 10px 0; color: #3C4D5C; text-decoration: none; -webkit-transition: color 0.15s linear; transition: color 0.15s linear; }
-.menu__link:hover { color: #CB222B; }
+.menu__link { display: inline-block; vertical-align: top; font-size: 11px; text-transform: uppercase; line-height: 1; font-family: "FuturaNewBold", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: 0.05em; padding: 10px 0; color: #3B4D5D; text-decoration: none; -webkit-transition: color 0.15s linear; transition: color 0.15s linear; }
+.menu__link:hover { color: #D12023; }
 
 .slider { position: absolute; z-index: 0; top: 0; right: 180px; width: 1250px; height: 540px; overflow: hidden; box-shadow: 100px 95px 50px -85px rgba(22, 38, 52, 0.6); }
 .slider.slick-slider { overflow: visible; }
@@ -182,20 +183,21 @@ body { background: #3C4D5C; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 .slider__item { width: 1250px; height: 540px; background-position: center center; background-size: cover; overflow: hidden; }
 .slider__item img { display: block; max-width: 100%; }
 
-.categories { font-size: 0; height: 360px; }
+.category { position: relative; z-index: 0; display: block; float: left; box-sizing: border-box; width: 33.333%; height: 360px; font-size: 12px; padding: 100px 90px 0; background: #3B4D5D; text-decoration: none; -webkit-transition: all 0.15s linear; transition: all 0.15s linear; }
+.category:first-child { background: #314251; }
+.category:nth-child(2) { background: #354656; }
+.category:hover { z-index: 3; background: #D12023; padding-top: 80px; box-shadow: 0 0 0 10px #D12023, 0 0 73px 0 rgba(38, 55, 70, 0.75); }
+.category:hover .category__title .icon { -webkit-transform: translateX(70px); -ms-transform: translateX(70px); transform: translateX(70px); }
+.category:hover .category__more { opacity: 1; height: auto; margin-top: 60px; }
 
-.categories__item { display: inline-block; vertical-align: top; box-sizing: border-box; width: 33.333%; height: 100%; font-size: 12px; padding: 100px 90px 0; background: #3C4D5C; }
-.categories__item:first-child { background: #324250; }
-.categories__item:nth-child(2) { background: #364655; }
+.category__number { position: absolute; top: -25px; right: 100%; font-family: "FuturaNewBold", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 50px; line-height: 1; margin-right: -2px; color: #FFF; color: rgba(255, 255, 255, 0.03); }
 
-.category { position: relative; }
+.category__title { display: inline-block; position: relative; padding-right: 32px; font-family: "FuturaNewMedium", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 24px; text-transform: uppercase; color: #FFF; }
+.category__title .icon { position: absolute; top: 50%; right: 0; margin-top: -11px; -webkit-transition: -webkit-transform 0.15s linear; transition: transform 0.15s linear; }
 
-.category__number { position: absolute; top: -25px; right: 100%; font-family: "FuturaPT-Bold", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 50px; line-height: 1; margin-right: -2px; color: #FFF; color: rgba(255, 255, 255, 0.03); }
+.category__text { display: block; margin-top: 28px; font-size: 12px; line-height: 1.66; letter-spacing: 0.02em; color: #FFF; color: rgba(255, 255, 255, 0.7); }
 
-.category__title { display: inline-block; position: relative; padding-right: 32px; font-family: "FuturaPT-Medium", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 24px; text-transform: uppercase; color: #FFF; }
-.category__title .icon { position: absolute; top: 50%; right: 0; margin-top: -11px; }
-
-.category__text { display: block; margin-top: 35px; font-size: 12px; line-height: 1.66; letter-spacing: 0.02em; color: #FFF; color: rgba(255, 255, 255, 0.7); }
+.category__more { height: 0; opacity: 0; display: block; font-family: "FuturaNewBold", Helvetica, Arial, sans-serif; font-weight: normal; letter-spacing: 0.15em; font-size: 11px; text-transform: uppercase; color: #FFF; line-height: 1.8; -webkit-transition: all 0.15s linear; transition: all 0.15s linear; }
 
 
 
