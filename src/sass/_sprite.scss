@@ -13,8 +13,9 @@ $icons: (
   logo: (X: 0px, Y:0px, W: 98px, H: 95px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
   man: (X: -131px, Y:-105px, W: 19px, H: 21px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
   map-pin: (X: -186px, Y:0px, W: 17px, H: 27px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
+  person: (X: -32px, Y:-154px, W: 21px, H: 18px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
   phone: (X: 0px, Y:-182px, W: 18px, H: 18px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  vk: (X: -32px, Y:-154px, W: 23px, H: 15px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
+  vk: (X: -63px, Y:-154px, W: 23px, H: 15px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
 );
 
 
@@ -131,6 +132,13 @@ $icons: (
   background-position: -186px 0px;
 }
 
+.icon-person {
+  width: 21px;
+  height: 18px;
+  background-image: url('../img/icons.png');
+  background-position: -32px -154px;
+}
+
 .icon-phone {
   width: 18px;
   height: 18px;
@@ -142,6 +150,6 @@ $icons: (
   width: 23px;
   height: 15px;
   background-image: url('../img/icons.png');
-  background-position: -32px -154px;
+  background-position: -63px -154px;
 }
 

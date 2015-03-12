@@ -37,6 +37,10 @@ $border: #D4DBDD
   font-family: "Trebuchet MS", Helvetica, Arial, sans-serif
   letter-spacing: 0.02em
 
+=resize
+  +r(1296)
+    @content
+
 
 
 
@@ -66,7 +70,16 @@ body
     // width: percentage(530/1600)
     // max-width: 530px
     background: $dark
+  +resize
+    &:before
+      margin-left: 165px
+  +r(1041)
+    &:before
+      margin-left: 175px
 
 .main-wrap
   position: relative
+  margin-bottom: 105px
   +clr
+  +resize
+    margin-bottom: 80px

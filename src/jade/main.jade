@@ -31,182 +31,182 @@ block content
           | Тогово-развлекательный комплекс Triniti
   <!-- end toparea -->
 
-  .l.main-wrap
+  .l
+    .main-wrap
 
-    <!-- begin categories -->
-    .b.b_r
-      a.category(href="#")
-        .category__title
-          span.category__number 01
-          h3 Бизнес
-          i.icon.icon-arr
-        p.category__text
-          | Офисные помещения, для любых компаний — как небольшие офисы, так и целые этажи.
-        span.category__more
-          | Подробнее
+      <!-- begin categories -->
+      .b.b_r
+        a.category(href="#")
+          .category__title
+            span.category__number 01
+            h3 Бизнес
+            i.icon.icon-arr
+          p.category__text
+            | Офисные помещения, для любых компаний — как небольшие офисы, так и целые этажи.
+          span.category__more
+            | Подробнее
 
-      a.category(href="#")
-        .category__title
-          span.category__number 02
-          h3 Торговля
-          i.icon.icon-arr
-        p.category__text
-          | Удобно расположенные торговые площади обязательно повысят конверсию посетителя в покупателя.
-        span.category__more
-          | Подробнее
+        a.category(href="#")
+          .category__title
+            span.category__number 02
+            h3 Торговля
+            i.icon.icon-arr
+          p.category__text
+            | Удобно расположенные торговые площади обязательно повысят конверсию посетителя в покупателя.
+          span.category__more
+            | Подробнее
 
-      a.category(href="#")
-        .category__title
-          span.category__number 03
-          h3 Развлечения
-          i.icon.icon-arr
-        p.category__text
-          | Рестораны, кафе и бары. Боулинг и кинотеатр — всё что нужно для проведения замечательного отдыха всей семьёй.
-        span.category__more
-          | Подробнее
-    <!-- end categories -->
+        a.category(href="#")
+          .category__title
+            span.category__number 03
+            h3 Развлечения
+            i.icon.icon-arr
+          p.category__text
+            | Рестораны, кафе и бары. Боулинг и кинотеатр — всё что нужно для проведения замечательного отдыха всей семьёй.
+          span.category__more
+            | Подробнее
+      <!-- end categories -->
 
-    <!-- begin news -->
-    .b.b_news
-      .logo.logo_small
+      <!-- begin news -->
+      .b.b-news
+        .logo.logo_small
 
-      figure.news.has-shadow
-        .news__pic
-          img(src="img/news.jpg", alt="")
-        figcaption.news__footer
-          .news__date
-            big 25
-            small Сентября
-          a.news__title(href="#")
-            | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
+        figure.news.news_resize.has-shadow
+          .news__pic(style="background-image:url('img/news.jpg')")
+            //- img(src="img/news.jpg", alt="")
+          figcaption.news__footer
+            .news__date
+              big 25
+              small Сентября
+            a.news__title(href="#")
+              | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
 
-      ul.news-list
-        li.news-list__item
-          a.news-list__title(href="#")
-            | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
-          span.news-list__date
-            | 25 Сентября 2015
-        li.news-list__item
-          a.news-list__title(href="#")
-            | Уникальный торговый центр «Тринити» располагается.
-          span.news-list__date
-            | 25 Сентября 2015
+        ul.news-list.news-list_resize
+          li.news-list__item
+            a.news-list__title(href="#")
+              | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
+            span.news-list__date
+              | 25 Сентября 2015
+          li.news-list__item
+            a.news-list__title(href="#")
+              | Уникальный торговый центр «Тринити» располагается.
+            span.news-list__date
+              | 25 Сентября 2015
 
-      button.button.button_vert.w90.h360(type="button")
-        span.button__text Все новости
-    <!-- end news -->
+        button.button.button_vert(type="button")
+          span.button__text Все новости
+      <!-- end news -->
 
-    <!-- begin location -->
-    .b.b_r
-      .location
-        h3.title
-          | Стратегически удобное расположение
+      <!-- begin location -->
+      .b.b_r
+        .location
+          h3.title
+            | Стратегически удобное расположение
 
-        em.location__name
-          | Республика Беларусь, г.Гродно, пересечение пр.Клятского и пр.Янки Купалы
+          em.location__name
+            | Республика Беларусь, г.Гродно, пересечение пр.Клятского и пр.Янки Купалы
 
-        .location__about
-          p
-            strong
+          .location__about
+            p
               | Уникальный торговый центр «Тринити» располагается в 7 минутах от
               | центра города, где находятся главные исторические достопри- мечательности Гродно, посещаемые туристами.
 
-          p
-            | В 700 м от ТРЦ «Тринити» находится комфортабельная гостиница «Турист»,
-            | а в 2,5 км располагается один из лучших ночных клубов Беларуси — «База».
+            p.location__more
+              | В 700 м от ТРЦ «Тринити» находится комфортабельная гостиница «Турист»,
+              | а в 2,5 км располагается один из лучших ночных клубов Беларуси — «База».
 
-        button.button.button_red.w450(type="button")
-          span.button__text Подробнее о комплексе
-          i.icon.icon-arr
+          button.button.button_red.w450(type="button")
+            span.button__text Подробнее о комплексе
+            i.icon.icon-arr
 
-        .location__map
-    <!-- end location -->
+          .location__map
+      <!-- end location -->
 
-    <!-- begin promo 1 -->
-    .b.b_r.b_promo1
+      <!-- begin promo 1 -->
+      .b.b_r.b-promo1
 
-      .sqr.sqr_2x.sqr_promo.has-shadow(style="background-image:url('img/promo/promo1.jpg')")
+        .sqr.sqr_2x.sqr_promo.has-shadow(style="background-image:url('img/promo/promo1.jpg')")
+          .sqr.sqr_icon
+            i.icon.icon-corona
+            p
+              | Первый региональ-<br>ный торгово-развлекательный бизнес-центр.
+
         .sqr.sqr_icon
-          i.icon.icon-corona
+          i.icon.icon-clock
           p
-            | Первый региональ-<br>ный торгово-развлекательный бизнес-центр.
+            | Более 400 000 человек способны попасть в ТРК в течение 20 минут.
 
-      .sqr.sqr_icon
-        i.icon.icon-clock
-        p
-          | Более 400 000 человек способны попасть в ТРК в течение 20 минут.
+        .sqr.sqr_2x.sqr_center.sqr_bottom
+          .sqr__inner
+            dl.number
+              dt.number__big
+                | 2 207 ед
+              dd.number__small
+                | Вместимость машиномест
 
-      .sqr.sqr_2x.sqr_center.sqr_bottom
-        .sqr__inner
-          dl.number
-            dt.number__big
-              | 2 207 ед
-            dd.number__small
-              | Вместимость машиномест
+        .sqr.sqr_2x.sqr_promo.has-shadow(style="background-image:url('img/promo/promo2.jpg')")
+          .sqr.sqr_icon
+            i.icon.icon-man
+            p
+              | Более 50 000 человек в пешеходной доступности.
 
-      .sqr.sqr_2x.sqr_promo.has-shadow(style="background-image:url('img/promo/promo2.jpg')")
+        .sqr.sqr_2x.sqr_center
+          .sqr__inner
+            dl.number.number_light
+              dt.number__big
+                | 159 010 м<sup>2</sup>
+              dd.number__small
+                | Общая площадь ТРК Тринити
+      <!-- end promo 1 -->
+
+      <!-- begin pomo 2 -->
+      .b.b_r.b-promo2
+        .sqr.sqr_2x.sqr_promo.has-shadow(style="background-image:url('img/promo/promo3.jpg')")
+          .sqr.sqr_icon
+            i.icon.icon-map-pin
+            p
+              | Всего 7 минут от центра города Гродно.
+
+        .sqr.sqr_2x.sqr_center
+          .sqr__inner
+            dl.number
+              dt.number__big
+                | 31 255 м<sup>2</sup>
+              dd.number__small
+                | Бутики и торговые площади
+
         .sqr.sqr_icon
-          i.icon.icon-man
+          i.icon.icon-bus
           p
-            | Более 50 000 человек в пешеходной доступности.
+            | Расположение вблизи основных транспортных развязок.
+      <!-- end promo 2 -->
 
-      .sqr.sqr_2x.sqr_center
-        .sqr__inner
-          dl.number.number_light
-            dt.number__big
-              | 159 010 м<sup>2</sup>
-            dd.number__small
-              | Общая площадь ТРК Тринити
-    <!-- end promo 1 -->
+      .clearfix
 
-    <!-- begin pomo 2 -->
-    .b.b_r.b_promo2
-      .sqr.sqr_2x.sqr_promo.has-shadow(style="background-image:url('img/promo/promo3.jpg')")
-        .sqr.sqr_icon
-          i.icon.icon-map-pin
-          p
-            | Всего 7 минут от центра города Гродно.
+      <!-- begin about -->
+      .about
+        h3.about__title
+          | Девелопер и Партнёры проекта
+        p.about__text
+          | ООО «Тринити Инвест» входит в группу компаний «Конте».
+          | Основным направлением деятельности динамично развивающейся компании
+          | является организация строительства торгово-развлекательного и бизнес-центра «Тринити».
+        ul.about__partners
+          li
+            a(href="#")
+              img(src="img/partners/triniti.png", alt="")
+          li
+            a(href="#")
+              img(src="img/partners/conte.png", alt="")
+          li
+            a(href="#")
+              img(src="img/partners/omm.png", alt="")
+          li
+            a(href="#")
+              img(src="img/partners/evroopt.png", alt="")
 
-      .sqr.sqr_2x.sqr_center
-        .sqr__inner
-          dl.number
-            dt.number__big
-              | 31 255 м<sup>2</sup>
-            dd.number__small
-              | Бутики и торговые площади
-
-      .sqr.sqr_icon
-        i.icon.icon-bus
-        p
-          | Расположение вблизи основных транспортных развязок.
-    <!-- end promo 2 -->
-
-    .clearfix
-
-    <!-- begin about -->
-    .about
-      h3.about__title
-        | Девелопер и Партнёры проекта
-      p.about__text
-        | ООО «Тринити Инвест» входит в группу компаний «Конте».
-        | Основным направлением деятельности динамично развивающейся компании
-        | является организация строительства торгово-развлекательного и бизнес-центра «Тринити».
-      ul.about__partners
-        li
-          a(href="#")
-            img(src="img/partners/triniti.png", alt="")
-        li
-          a(href="#")
-            img(src="img/partners/conte.png", alt="")
-        li
-          a(href="#")
-            img(src="img/partners/omm.png", alt="")
-        li
-          a(href="#")
-            img(src="img/partners/evroopt.png", alt="")
-
-      button.button.button_vert.button_red(type="button")
-        span.button__text О застройщике
-    <!-- end about -->
+        button.button.button_vert.button_red(type="button")
+          span.button__text О застройщике
+      <!-- end about -->
 
   include includes/_footer

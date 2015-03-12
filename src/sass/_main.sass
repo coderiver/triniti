@@ -1,7 +1,6 @@
 .toparea
   position: relative
   z-index: 2
-  min-height: 540px
 
   .header
     position: absolute
@@ -18,6 +17,12 @@
     max-width: 550px
     text-align: right
 
+  +resize
+    .toparea__inner
+      min-height: 474px
+    .big-title
+      bottom: 80px
+
 .toparea__inner
   position: relative
   min-height: 540px
@@ -26,16 +31,57 @@
 .header
   +clr
 
-.header__logo
-  float: left
-
-.header__right
-  float: right
-  font-size: 0
+  .logo
+    float: left
 
   .sqr, .menu
-    display: inline-block
-    vertical-align: top
+    float: right
+
+  &.is-fixed
+    .header__inner
+      background: #FFF
+    .menu
+      display: block
+      height: 90px
+      width: auto
+      text-align: right
+    .menu__list
+      width: auto
+      margin: 0
+      li
+        width: auto
+        margin: 0 0 0 30px
+    .menu__link
+      color: rgba($dark-text, 0.5)
+      &:hover, &.is-active
+        color: $red
+    .sqr_contact
+      height: 90px
+      strong
+        margin: 7px 0 0
+      span
+        display: none
+    .logo
+      width: 90px
+      height: 90px
+      line-height: 90px
+      &:before
+        +sprite(logo-small)
+
+  +resize
+    .logo
+      width: 90px
+      height: 90px
+      line-height: 90px
+      &:before
+        +sprite(logo-small)
+
+
+.header__inner
+  +clr
+
+// .header__right
+  // +clr
 
 
 .menu
@@ -73,7 +119,7 @@
   color: $dark
   text-decoration: none
   +trans-link
-  &:hover
+  &:hover, &.is-active
     color: $red
 
 
@@ -88,6 +134,11 @@
   box-shadow: 100px 95px 50px -85px rgba(#162634, 0.6)
   &.slick-slider
     overflow: visible
+  +resize
+    width: 1085px
+    height: 474px
+  .slick-dots
+    bottom: 20px
 
 
 .slider__item
@@ -108,8 +159,7 @@
   display: block
   float: left
   box-sizing: border-box
-  width: 33.333%
-  max-width: 360px
+  width: 360px
   height: 360px
   font-size: 12px
   padding: 100px 90px 0
@@ -133,6 +183,17 @@
       height: auto
       margin-top: 60px
 
+  +resize
+    width: 294px
+    height: 290px
+    padding: 60px 50px 0 70px
+    &:last-child
+      width: 346px
+    &:hover
+      padding-top: 40px
+      .category__more
+        margin-top: 40px
+
 .category__number
   position: absolute
   top: -25px
@@ -152,6 +213,8 @@
   font-size: 24px
   text-transform: uppercase
   color: #FFF
+  h1,h2,h3,h4
+    +medium
   .icon
     position: absolute
     top: 50%
@@ -193,10 +256,14 @@
 .news__pic
   height: 180px
   overflow: hidden
+  background: no-repeat center center
+  background-size: cover
+  img
+    display: block
 
 .news__footer
   height: 180px
-  padding: 40px 35px 35px 125px
+  padding-left: 90px
   position: relative
   box-sizing: border-box
   overflow: hidden
@@ -228,13 +295,36 @@
     letter-spacing: 0.1em
 
 .news__title
+  display: block
+  padding: 40px 35px 35px
+  box-sizing: border-box
+  height: 100%
   font-size: 18px
   line-height: 1.333
   +medium
   color: $red
   text-decoration: none
+  +trans-link(all)
   &:hover
-    text-decoration: underline
+    color: #FFF
+    background: $red
+
+.news_resize
+  +resize
+    width: 330px
+    .news__pic
+      height: 150px
+    .news__footer
+      height: 150px
+      padding-left: 70px
+    .news__date
+      width: 70px
+      padding-top: 45px
+      big
+        font-size: 40px
+    .news__title
+      padding: 25px
+
 
 
 .news-list
@@ -242,10 +332,17 @@
   box-sizing: border-box
   padding: 0 65px 0 90px
   background: $main-gray
-
+  +resize
+    width: 374px
+    padding: 0 30px 0 50px
+    .news-list__item
+      height: 150px
+      padding-top: 30px
+      &:first-child
+        padding-top: 30px
 
 .news-list__item
-  min-height: 180px
+  height: 180px
   padding-top: 35px
   box-sizing: border-box
   border-top: 1px solid $border
@@ -259,8 +356,9 @@
   +medium
   color: $dark-text
   text-decoration: none
+  +trans-link
   &:hover
-    text-decoration: underline
+    color: $red
 
 .news-list__date
   display: block
@@ -290,6 +388,23 @@
     bottom: 45px
     right: 360px
 
+  +resize
+    padding: 40px 400px 155px 35px
+    min-height: 410px
+    .button
+      bottom: 40px
+      width: 365px
+      right: 346px
+    .title
+      padding-left: 65px
+      font-size: 26px
+      line-height: 1.3
+      margin-bottom: 25px
+    .location__more
+      display: none
+    .location__map
+      width: 346px
+
 .location__map
   position: absolute
   top: 0
@@ -313,19 +428,21 @@
 .location__about
   float: right
   width: percentage(360/595)
+  font-size: 18px
+  line-height: 1.333
+  letter-spacing: 0
+  +medium
+  color: $dark-text
+
+.location__more
+  display: block
+  margin-top: 20px
   font-size: 13px
   line-height: 1.5
   color: $dark-text
   color: rgba($dark-text, 0.9)
   letter-spacing: 0.02em
-  strong
-    font-size: 18px
-    line-height: 1.333
-    letter-spacing: 0
-    +medium
-    color: $dark-text
-  p ~ p
-    margin-top: 20px
+
 
 .location__name
   display: block
@@ -342,18 +459,82 @@
 
 
 
+
+.b-news
+  +clr
+  > .logo, > .news, > .news-list, > .button
+    float: left
+  .button
+    height: 360px
+  +resize
+    margin-left: 45px
+    .logo
+      display: none
+      margin-left: 45px
+    .button
+      height: 300px
+
+
+.b-promo1
+  position: relative
+  font-size: 0
+  width: auto
+
+  > .sqr
+    display: inline-block
+    vertical-align: bottom
+
+  .sqr_promo:first-child
+    position: absolute
+    top: -180px
+    left: 0
+
+  +resize
+    float: none
+    .sqr_promo:first-child
+      top: -135px
+    > .sqr:last-child
+      width: 346px
+
+
+
+.b-promo2
+  position: relative
+  +clr
+  > .sqr
+    float: left
+  +resize
+    float: none
+    margin-left: 135px
+
+
+
 .about
   position: relative
   min-height: 375px
   margin: 105px 0 0 90px
-  padding: 80px 180px 70px 80px
-  max-width: 900px
+  padding: 80px 170px 70px 80px
+  width: 900px
   box-sizing: border-box
   border: 10px solid #FFF
   color: $dark-text
   +medium
   font-size: 18px
   line-height: 1.33
+
+  +resize
+    margin: 80px 0 0 92px
+    width: 675px
+    padding: 30px 120px 30px 30px
+    min-height: 270px
+    .about__title
+      margin-bottom: 20px
+    .about__partners
+      margin-top: 25px
+      margin-right: -35px
+      li
+        margin-right: 35px
+
 
   .button
     position: absolute
@@ -374,7 +555,7 @@
   color: #414E5A
 
 .about__partners
-  margin: 60px 0 -20px
+  margin: 60px -50px -20px 0
   li
     display: inline-block
     vertical-align: middle
@@ -386,12 +567,16 @@
 .footer
   position: relative
   z-index: 1
-  margin-top: 105px
   padding: 30px 0 60px
   +medium
   font-size: 18px
   line-height: 1.333
   color: $dark
+  +resize
+    .footer__copy
+      margin-right: 40px
+    .footer__creator
+      width: 347px
 
 .footer__inner
   +clr

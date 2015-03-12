@@ -42,6 +42,9 @@ $square-width: 180px
 .sqr_2x
   width: ($square-width * 2)
   height: ($square-width * 2)
+  +resize
+    width: 271px
+    height: 270px
 
 .sqr_w2
   width: ($square-width * 2)
@@ -99,6 +102,12 @@ $square-width: 180px
   .icon
     display: block
     margin-bottom: 15px
+  +resize
+    width: 135px
+    height: 135px
+    padding: 15px 10px 10px 15px
+    .icon
+      margin-bottom: 5px
 
 
 
@@ -126,6 +135,9 @@ $square-width: 180px
   width: 1080px
   min-height: 360px
   clear: both
+  +resize
+    width: 934px
+    min-height: 0
 
 .b_3
   margin-left: -360px
@@ -142,31 +154,6 @@ $square-width: 180px
     margin-right: -180px
   &.b_1
     margin-right: -90px
-
-.b_news
-  +clr
-  > .logo, > .news, > .news-list, > .button
-    float: left
-
-.b_promo1
-  position: relative
-  font-size: 0
-  width: auto
-
-  > .sqr
-    display: inline-block
-    vertical-align: bottom
-
-  .sqr_promo:first-child
-    position: absolute
-    top: -180px
-    left: 0
-
-.b_promo2
-  position: relative
-  +clr
-  > .sqr
-    float: left
 
 
 
@@ -228,6 +215,9 @@ a.button
     text-decoration: none
 
 .button_vert
+  width: 90px
+  height: 100%
+  min-height: 100px
   .button__text
     position: absolute
     top: 50%

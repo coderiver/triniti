@@ -1,15 +1,31 @@
 <!-- begin header -->
 header.header
   .l
-    .header__logo
+    .header__inner
+
       a.logo(href="/")
         | Triniti
 
-    .header__right
+      .sqr.sqr_center.sqr_contact
+        .sqr__inner
+          i.icon.icon-phone
+          strong
+            | Контакты
+          span
+            | Контактная информация и обратная связь
+
+      //- .sqr.sqr_center.sqr_contact
+        .sqr__inner
+          i.icon.icon-person
+          strong
+            | Контакты
+          span
+            | Свободная площадь и условия
+
       nav.menu
         ul.menu__list
           li
-            a.menu__link(href="#")
+            a.menu__link.is-active(href="#")
               | Главная
           li
             a.menu__link(href="#")
@@ -23,13 +39,4 @@ header.header
           li
             a.menu__link(href="#")
               | Новости
-
-      .sqr.sqr_center.sqr_contact
-        .sqr__inner
-          i.icon.icon-phone
-          strong
-            | Контакты
-          span
-            | Контактная информация и обратная связь
-
 <!-- end header -->
