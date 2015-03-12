@@ -98,6 +98,7 @@ $square-width: 180px
 .b
   width: 1080px
   min-height: 360px
+  clear: both
 
 .b_3
   margin-left: -360px
@@ -108,7 +109,6 @@ $square-width: 180px
 
 .b_r
   float: right
-  +clr
   &.b_3
     margin-right: -360px
   &.b_2
@@ -117,12 +117,14 @@ $square-width: 180px
     margin-right: -90px
 
 .b_news
-  > .logo, > .news, > .news-list
+  +clr
+  > .logo, > .news, > .news-list, > .button
     float: left
 
 
 .button
   display: inline-block
+  vertical-align: top
   position: relative
   background: #FFF
   height: 90px
@@ -202,7 +204,7 @@ a.button
   line-height: 1
   text-transform: uppercase
   +bold
-  color: $dark-text
+  color: $dark-title
   letter-spacing: -0.02em
 
 

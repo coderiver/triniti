@@ -188,7 +188,7 @@
   width: 450px
   box-sizing: border-box
   background: #FFF
-  box-shadow: 25px 25px 80px -20px rgba(#162634, 0.2)
+  // box-shadow: 25px 25px 80px -20px rgba(#162634, 0.2)
 
 .news__pic
   height: 180px
@@ -270,3 +270,77 @@
   color: $dark-text
   font-style: italic
   letter-spacing: 0.02em
+
+
+
+.location
+  padding: 85px 450px 175px 35px
+  position: relative
+  box-sizing: border-box
+  min-height: 540px
+  background: #FFF
+  +clr
+
+  .title
+    padding-left: 145px
+    margin-bottom: 45px
+
+  .button
+    position: absolute
+    bottom: 45px
+    right: 360px
+
+.location__map
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  width: 360px
+  background: #F0EDE4
+  box-shadow: inset 5px 0 10px -5px rgba(#162634, 0.2)
+  overflow: hidden
+  &:before
+    content: ""
+    position: absolute
+    top: 85px
+    left: -9px
+    width: 18px
+    height: 18px
+    background: #FFF
+    transform: rotate(-45deg)
+    box-shadow: 0 0 7px 0 rgba(#162634, 0.2)
+
+.location__about
+  float: right
+  width: percentage(360/595)
+  font-size: 13px
+  line-height: 1.5
+  color: $dark-text
+  color: rgba($dark-text, 0.9)
+  letter-spacing: 0.02em
+  strong
+    font-size: 18px
+    line-height: 1.333
+    letter-spacing: 0
+    +medium
+    color: $dark-text
+  p ~ p
+    margin-top: 20px
+
+.location__name
+  display: block
+  float: left
+  width: percentage(190/595)
+  margin-top: 3px
+  text-align: right
+  font-style: italic
+  color: $dark-text
+  color: rgba($dark-text, 0.7)
+  font-size: 12px
+  line-height: 1.66
+  letter-spacing: 0.02em
+
+
+
+.has-shadow
+  box-shadow: 25px 25px 80px -20px rgba(#162634, 0.2)

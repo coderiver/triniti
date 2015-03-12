@@ -66,13 +66,11 @@ block content
           | Подробнее
     <!-- end categories -->
 
-    .clearfix
-
     <!-- begin news -->
     .b.b_news
       .logo.logo_small
 
-      figure.news
+      figure.news.has-shadow
         .news__pic
           img(src="img/news.jpg", alt="")
         figcaption.news__footer
@@ -98,7 +96,6 @@ block content
         span.button__text Все новости
     <!-- end news -->
 
-
     <!-- begin location -->
     .b.b_r
       .location
@@ -108,9 +105,17 @@ block content
         em.location__name
           | Республика Беларусь, г.Гродно, пересечение пр.Клятского и пр.Янки Купалы
 
-        p.location__about
-          | Уникальный торговый центр «Тринити» располагается в 7 минутах от
-          | центра города, где находятся главные исторические достопри- мечательности Гродно, посещаемые туристами.
+        .location__about
+          p
+            strong
+              | Уникальный торговый центр «Тринити» располагается в 7 минутах от
+              | центра города, где находятся главные исторические достопри- мечательности Гродно, посещаемые туристами.
+
+          p
+            | В 700 м от ТРЦ «Тринити» находится комфортабельная гостиница «Турист»,
+            | а в 2,5 км располагается один из лучших ночных клубов Беларуси — «База».
+            //- | Добраться до центра города можно за 15 минут
+            //- | на любом из 30 маршрутов общественного транспорта.
 
         button.button.button_red.w450(type="button")
           span.button__text Подробнее о комплексе
@@ -119,3 +124,7 @@ block content
         .location__map
 
     <!-- end location -->
+
+    <!-- begin promo -->
+    .b
+    <!-- end promo -->
