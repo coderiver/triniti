@@ -1,5 +1,27 @@
 $square-width: 180px
 
+.logo
+  display: inline-block
+  vertical-align: top
+  +hide-text
+  width: $square-width
+  height: $square-width
+  line-height: $square-width
+  text-align: center
+  background: $red
+  &:before
+    content: ""
+    display: inline-block
+    vertical-align: middle
+    +sprite(logo)
+
+.logo_small
+  width: ($square-width / 2)
+  height: ($square-width / 2)
+  line-height: ($square-width / 2)
+  &:before
+    +sprite(logo-small)
+
 .square
   width: $square-width
   height: $square-width
@@ -68,11 +90,14 @@ $square-width: 180px
   text-shadow: 0 2px 30px rgba(16, 34, 49, 0.75)
 
 
+.clearfix
+  display: table
+  clear: both
+
 
 .b
   width: 1080px
   min-height: 360px
-  background: #FFF
 
 .b_3
   margin-left: -360px
@@ -90,3 +115,117 @@ $square-width: 180px
     margin-right: -180px
   &.b_1
     margin-right: -90px
+
+.b_news
+  > .logo, > .news, > .news-list
+    float: left
+
+
+.button
+  display: inline-block
+  position: relative
+  background: #FFF
+  height: 90px
+  padding: 0 10px
+  text-align: center
+  -webkit-appearance: none
+  +medium
+  font-size: 18px
+  text-transform: uppercase
+  letter-spacing: -0.03em
+  color: $red
+  overflow: hidden
+  +trans-button(color)
+
+  &:before
+    content: ""
+    position: absolute
+    z-index: 0
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: $red
+    +trans-button
+    transform: translateX(-100%)
+    visibility: hidden
+
+  .icon-arr
+    display: inline-block
+    vertical-align: middle
+    margin: -1px 0 0 10px
+    +trans-button(transform)
+
+  &:hover
+    color: #FFF
+    .icon-arr
+      transform: translateX(40px)
+    &:before
+      visibility: visible
+      transform: translateX(0)
+
+.button__text
+  display: inline-block
+  vertical-align: middle
+  color: inherit
+  position: relative
+  z-index: 1
+
+a.button
+  line-height: 90px
+  text-decoration: none
+  &:hover
+    text-decoration: none
+
+.button_vert
+  .button__text
+    position: absolute
+    top: 50%
+    left: 50%
+    white-space: nowrap
+    transform-origin: center center
+    transform: translateX(-50%) translateY(-50%) rotate(-90deg)
+
+.button_red
+  background: $red
+  color: #FFF
+  &:before
+    background: $red2
+  &:hover
+    color: #FFF
+
+
+
+.title
+  display: block
+  font-size: 32px
+  line-height: 1
+  text-transform: uppercase
+  +bold
+  color: $dark-text
+  letter-spacing: -0.02em
+
+
+.w450
+  width: 450px
+
+.w360
+  width: 360px
+
+.w190
+  width: 180px
+
+.w90
+  width: 90px
+
+.h450
+  height: 450px
+
+.h360
+  height: 360px
+
+.h190
+  height: 180px
+
+.h90
+  height: 90px

@@ -1,17 +1,18 @@
 $icons: (
-  arr: (X: -63px, Y:-105px, W: 21px, H: 21px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  baloon: (X: -108px, Y:0px, W: 24px, H: 39px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  bus: (X: -142px, Y:-28px, W: 17px, H: 21px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  clock: (X: -108px, Y:-49px, W: 22px, H: 22px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  corona: (X: -142px, Y:0px, W: 22px, H: 18px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  fb: (X: -174px, Y:0px, W: 12px, H: 23px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  instagram: (X: 0px, Y:-105px, W: 26px, H: 27px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  lock: (X: -142px, Y:-59px, W: 16px, H: 21px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  logo: (X: 0px, Y:0px, W: 98px, H: 95px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  man: (X: -94px, Y:-105px, W: 19px, H: 21px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  map-pin: (X: -36px, Y:-105px, W: 17px, H: 27px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  phone: (X: -142px, Y:-90px, W: 18px, H: 18px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
-  vk: (X: 0px, Y:-142px, W: 23px, H: 15px, TW: 186px, TH: 157px, IMG: '../img/icons.png'),
+  arr: (X: -61px, Y:-105px, W: 21px, H: 21px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  baloon: (X: 0px, Y:-105px, W: 24px, H: 39px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  bus: (X: 0px, Y:-154px, W: 17px, H: 21px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  clock: (X: -144px, Y:-65px, W: 22px, H: 22px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  corona: (X: -121px, Y:-105px, W: 22px, H: 18px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  fb: (X: -186px, Y:0px, W: 12px, H: 23px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  instagram: (X: -108px, Y:-65px, W: 26px, H: 27px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  lock: (X: -27px, Y:-154px, W: 16px, H: 21px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  logo-small: (X: -108px, Y:0px, W: 68px, H: 55px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  logo: (X: 0px, Y:0px, W: 98px, H: 95px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  man: (X: -92px, Y:-105px, W: 19px, H: 21px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  map-pin: (X: -34px, Y:-105px, W: 17px, H: 27px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  phone: (X: -53px, Y:-154px, W: 18px, H: 18px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
+  vk: (X: -153px, Y:-105px, W: 23px, H: 15px, TW: 198px, TH: 175px, IMG: '../img/icons.png'),
 );
 
 
@@ -34,56 +35,63 @@ $icons: (
   width: 21px;
   height: 21px;
   background-image: url('../img/icons.png');
-  background-position: -63px -105px;
+  background-position: -61px -105px;
 }
 
 .icon-baloon {
   width: 24px;
   height: 39px;
   background-image: url('../img/icons.png');
-  background-position: -108px 0px;
+  background-position: 0px -105px;
 }
 
 .icon-bus {
   width: 17px;
   height: 21px;
   background-image: url('../img/icons.png');
-  background-position: -142px -28px;
+  background-position: 0px -154px;
 }
 
 .icon-clock {
   width: 22px;
   height: 22px;
   background-image: url('../img/icons.png');
-  background-position: -108px -49px;
+  background-position: -144px -65px;
 }
 
 .icon-corona {
   width: 22px;
   height: 18px;
   background-image: url('../img/icons.png');
-  background-position: -142px 0px;
+  background-position: -121px -105px;
 }
 
 .icon-fb {
   width: 12px;
   height: 23px;
   background-image: url('../img/icons.png');
-  background-position: -174px 0px;
+  background-position: -186px 0px;
 }
 
 .icon-instagram {
   width: 26px;
   height: 27px;
   background-image: url('../img/icons.png');
-  background-position: 0px -105px;
+  background-position: -108px -65px;
 }
 
 .icon-lock {
   width: 16px;
   height: 21px;
   background-image: url('../img/icons.png');
-  background-position: -142px -59px;
+  background-position: -27px -154px;
+}
+
+.icon-logo-small {
+  width: 68px;
+  height: 55px;
+  background-image: url('../img/icons.png');
+  background-position: -108px 0px;
 }
 
 .icon-logo {
@@ -97,27 +105,27 @@ $icons: (
   width: 19px;
   height: 21px;
   background-image: url('../img/icons.png');
-  background-position: -94px -105px;
+  background-position: -92px -105px;
 }
 
 .icon-map-pin {
   width: 17px;
   height: 27px;
   background-image: url('../img/icons.png');
-  background-position: -36px -105px;
+  background-position: -34px -105px;
 }
 
 .icon-phone {
   width: 18px;
   height: 18px;
   background-image: url('../img/icons.png');
-  background-position: -142px -90px;
+  background-position: -53px -154px;
 }
 
 .icon-vk {
   width: 23px;
   height: 15px;
   background-image: url('../img/icons.png');
-  background-position: 0px -142px;
+  background-position: -153px -105px;
 }
 

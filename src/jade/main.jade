@@ -32,6 +32,7 @@ block content
   <!-- end toparea -->
 
   .l.main-wrap
+
     <!-- begin categories -->
     .b.b_r
       a.category(href="#")
@@ -65,3 +66,56 @@ block content
           | Подробнее
     <!-- end categories -->
 
+    .clearfix
+
+    <!-- begin news -->
+    .b.b_news
+      .logo.logo_small
+
+      figure.news
+        .news__pic
+          img(src="img/news.jpg", alt="")
+        figcaption.news__footer
+          .news__date
+            big 25
+            small Сентября
+          a.news__title(href="#")
+            | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
+
+      ul.news-list
+        li.news-list__item
+          a.news-list__title(href="#")
+            | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
+          span.news-list__date
+            | 25 Сентября 2015
+        li.news-list__item
+          a.news-list__title(href="#")
+            | Уникальный торговый центр «Тринити» располагается.
+          span.news-list__date
+            | 25 Сентября 2015
+
+      button.button.button_vert.w90.h360(type="button")
+        span.button__text Все новости
+    <!-- end news -->
+
+
+    <!-- begin location -->
+    .b.b_r
+      .location
+        h3.title
+          | Стратегически удобное расположение
+
+        em.location__name
+          | Республика Беларусь, г.Гродно, пересечение пр.Клятского и пр.Янки Купалы
+
+        p.location__about
+          | Уникальный торговый центр «Тринити» располагается в 7 минутах от
+          | центра города, где находятся главные исторические достопри- мечательности Гродно, посещаемые туристами.
+
+        button.button.button_red.w450(type="button")
+          span.button__text Подробнее о комплексе
+          i.icon.icon-arr
+
+        .location__map
+
+    <!-- end location -->
