@@ -22,36 +22,37 @@ $square-width: 180px
   &:before
     +sprite(logo-small)
 
-.square
+
+
+.sqr
   width: $square-width
   height: $square-width
-  background: #FFF
   box-sizing: border-box
 
-.square_center
+.sqr_center
   +vertical
   white-space: nowrap
 
-.square__inner
+.sqr__inner
   display: inline-block
   vertical-align: middle
   white-space: normal
   font-size: 16px
 
-.square_2x
+.sqr_2x
   width: ($square-width * 2)
   height: ($square-width * 2)
 
-.square_w2
+.sqr_w2
   width: ($square-width * 2)
 
-.square_red
+.sqr_red
   background: $red
 
-.square_dark
+.sqr_dark
   background: #243340
 
-.square_contact
+.sqr_contact
   padding: 10px
   background: $dark4
   color: #FFF
@@ -67,11 +68,37 @@ $square-width: 180px
     letter-spacing: 0.1em
     +heavy
 
-  .square__inner
+  .sqr__inner
     font-size: 12px
     line-height: 1.5
     letter-spacing: 0.05em
 
+.sqr_bottom
+  .sqr__inner
+    vertical-align: bottom
+    min-height: 180px
+    line-height: 180px
+
+.sqr_promo
+  background: no-repeat center center
+  background-size: cover
+  position: relative
+  .sqr_icon
+    position: absolute
+    bottom: 0
+    right: 0
+
+.sqr_icon
+  background: #FFF
+  padding: 30px 20px 20px 30px
+  +regular
+  font-size: 12px
+  line-height: 1.66
+  color: #414E5A
+  color: rgba(#414E5A, 0.9)
+  .icon
+    display: block
+    margin-bottom: 15px
 
 
 
@@ -120,6 +147,27 @@ $square-width: 180px
   +clr
   > .logo, > .news, > .news-list, > .button
     float: left
+
+.b_promo1
+  position: relative
+  font-size: 0
+  width: auto
+
+  > .sqr
+    display: inline-block
+    vertical-align: bottom
+
+  .sqr_promo:first-child
+    position: absolute
+    top: -180px
+    left: 0
+
+.b_promo2
+  position: relative
+  +clr
+  > .sqr
+    float: left
+
 
 
 .button
@@ -206,6 +254,42 @@ a.button
   +bold
   color: $dark-title
   letter-spacing: -0.02em
+
+
+
+.number
+  display: inline-block
+  vertical-align: middle
+  text-align: center
+  sup
+    vertical-align: super
+    font-size: 27px
+
+.number__big
+  display: block
+  +light
+  font-size: 54px
+  font-style: normal
+  line-height: 1
+  letter-spacing: -0.02em
+  color: $dark
+
+.number__small
+  display: block
+  margin-top: 7px
+  font-size: 12px
+  line-height: 1.5
+  +regular
+  font-style: italic
+  color: $dark-text
+  color: rgba($dark-text, 0.5)
+
+.number_light
+  .number__big
+    color: #FFF
+  .number__small
+    color: #FFF
+    color: rgba(#FFF, 0.5)
 
 
 .w450
