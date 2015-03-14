@@ -1,0 +1,116 @@
+extends _layout
+
+block title
+  title About
+
+block content
+
+  include includes/_header-content
+
+  .l
+    .l-main
+      <!-- begin page-header -->
+      header.page-header
+        ul.breadcrumbs
+          li
+            a(href="#")
+              | Главная
+          li
+            a(href="#")
+              | О комплексе
+
+        h2.bold-title
+          | ТРК Тринити
+
+        a.sqr-button(href="#")
+          .sqr-button__inner
+            i.icon.icon-pdf
+            strong
+              | Скачать <br> презентацию
+
+        .contacts
+          span.contacts__label
+            | По вопросам аренды звоните:
+          a.contacts__phone(href="tel:+375152660299")
+            | +375 (15) 266-02-99
+          a.contacts__email(href="mailto:info@3niti.by")
+            | info@3niti.by
+      <!-- end page-header -->
+
+      <!-- begin categories -->
+      .line
+        a.category.category_narrow(href="#")
+          .category__title
+            span.category__number 01
+            h3 Бизнес
+            i.icon.icon-arr
+
+        a.category.category_narrow(href="#")
+          .category__title
+            span.category__number 02
+            h3 Торговля
+            i.icon.icon-arr
+
+        a.category.category_narrow(href="#")
+          .category__title
+            span.category__number 03
+            h3 Развлечения
+            i.icon.icon-arr
+      <!-- end categories -->
+
+      <!-- begin content -->
+      .l-main__inner
+        h3.title
+          | Многофункциональный торговый комплекс
+        strong.subtitle
+          | Уникальный торговый центр «Тринити» располагается
+          | в 7 минутах от центра города,
+          | где находятся главные исторические достопримечательности
+          | Гродно, посещаемые туристами.
+
+        <!-- begin figure -->
+        figure.figure
+          figcaption.figure__left
+            p
+              | В 700 м от ТРЦ «Тринити» находится
+              | комфортабельная гостиница «Турист»,
+              | а в 2,5 км располагается один из лучших
+              | ночных клубов Беларуси — «База».
+
+            dl.number.number_red
+              dt.number__big
+                | 159 010 м<sup>2</sup>
+              dd.number__small
+                | Общая площадь торгового-центра
+            p
+              | Добраться до центра города можно за
+              | 15 минут на любом из 30 маршрутов
+              | общественного транспорта.
+
+          .figure__right
+
+            .gallery.has-shadow
+              .gallery__pictures
+                div
+                  img(src="img/gallery/gallery1.jpg", alt="")
+              .gallery__box
+                .gallery__nav
+                  button.gallery__prev
+                    i.icon.icon-prev
+                  button.gallery__next
+                    i.icon.icon-next
+                  .gallery__counter
+                    span.gellery__counter-current
+                      | 01
+                    span.gellery__counter-all
+                      | 07
+
+                .gallery__captions
+                  div
+                    | Комфортабельные офисные помещения для ведения бизнеса
+        <!-- end figure -->
+
+      <!-- end content -->
+
+
+  include includes/_footer

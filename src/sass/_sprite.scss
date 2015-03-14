@@ -1,21 +1,24 @@
 $icons: (
-  arr: (X: -100px, Y:-105px, W: 21px, H: 21px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  baloon: (X: 0px, Y:-105px, W: 24px, H: 39px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  bus: (X: -186px, Y:-37px, W: 17px, H: 21px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  clock: (X: -68px, Y:-105px, W: 22px, H: 22px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  corona: (X: 0px, Y:-154px, W: 22px, H: 18px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  fb: (X: -186px, Y:-99px, W: 12px, H: 23px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  flex-logo-red: (X: -144px, Y:-65px, W: 24px, H: 24px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  flex-logo: (X: -34px, Y:-105px, W: 24px, H: 24px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  instagram: (X: -108px, Y:-65px, W: 26px, H: 27px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  lock: (X: -186px, Y:-68px, W: 16px, H: 21px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  logo-small: (X: -108px, Y:0px, W: 68px, H: 55px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  logo: (X: 0px, Y:0px, W: 98px, H: 95px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  man: (X: -131px, Y:-105px, W: 19px, H: 21px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  map-pin: (X: -186px, Y:0px, W: 17px, H: 27px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  person: (X: -32px, Y:-154px, W: 21px, H: 18px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  phone: (X: 0px, Y:-182px, W: 18px, H: 18px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
-  vk: (X: -63px, Y:-154px, W: 23px, H: 15px, TW: 203px, TH: 200px, IMG: '../img/icons.png'),
+  arr: (X: -148px, Y:-105px, W: 21px, H: 21px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  baloon: (X: -48px, Y:-105px, W: 24px, H: 39px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  bus: (X: -186px, Y:-37px, W: 17px, H: 21px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  clock: (X: -116px, Y:-105px, W: 22px, H: 22px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  corona: (X: -29px, Y:-167px, W: 22px, H: 18px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  fb: (X: -213px, Y:-28px, W: 12px, H: 23px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  flex-logo-red: (X: -144px, Y:-65px, W: 24px, H: 24px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  flex-logo: (X: -82px, Y:-105px, W: 24px, H: 24px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  instagram: (X: -108px, Y:-65px, W: 26px, H: 27px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  lock: (X: -186px, Y:-68px, W: 16px, H: 21px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  logo-small: (X: -108px, Y:0px, W: 68px, H: 55px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  logo: (X: 0px, Y:0px, W: 98px, H: 95px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  man: (X: 0px, Y:-167px, W: 19px, H: 21px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  map-pin: (X: -186px, Y:0px, W: 17px, H: 27px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  next: (X: -213px, Y:-61px, W: 8px, H: 13px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  pdf: (X: 0px, Y:-105px, W: 38px, H: 52px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  person: (X: -61px, Y:-167px, W: 21px, H: 18px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  phone: (X: -213px, Y:0px, W: 18px, H: 18px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  prev: (X: -213px, Y:-84px, W: 7px, H: 12px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
+  vk: (X: -92px, Y:-167px, W: 23px, H: 15px, TW: 231px, TH: 188px, IMG: '../img/icons.png'),
 );
 
 
@@ -38,14 +41,14 @@ $icons: (
   width: 21px;
   height: 21px;
   background-image: url('../img/icons.png');
-  background-position: -100px -105px;
+  background-position: -148px -105px;
 }
 
 .icon-baloon {
   width: 24px;
   height: 39px;
   background-image: url('../img/icons.png');
-  background-position: 0px -105px;
+  background-position: -48px -105px;
 }
 
 .icon-bus {
@@ -59,21 +62,21 @@ $icons: (
   width: 22px;
   height: 22px;
   background-image: url('../img/icons.png');
-  background-position: -68px -105px;
+  background-position: -116px -105px;
 }
 
 .icon-corona {
   width: 22px;
   height: 18px;
   background-image: url('../img/icons.png');
-  background-position: 0px -154px;
+  background-position: -29px -167px;
 }
 
 .icon-fb {
   width: 12px;
   height: 23px;
   background-image: url('../img/icons.png');
-  background-position: -186px -99px;
+  background-position: -213px -28px;
 }
 
 .icon-flex-logo-red {
@@ -87,7 +90,7 @@ $icons: (
   width: 24px;
   height: 24px;
   background-image: url('../img/icons.png');
-  background-position: -34px -105px;
+  background-position: -82px -105px;
 }
 
 .icon-instagram {
@@ -122,7 +125,7 @@ $icons: (
   width: 19px;
   height: 21px;
   background-image: url('../img/icons.png');
-  background-position: -131px -105px;
+  background-position: 0px -167px;
 }
 
 .icon-map-pin {
@@ -132,24 +135,45 @@ $icons: (
   background-position: -186px 0px;
 }
 
+.icon-next {
+  width: 8px;
+  height: 13px;
+  background-image: url('../img/icons.png');
+  background-position: -213px -61px;
+}
+
+.icon-pdf {
+  width: 38px;
+  height: 52px;
+  background-image: url('../img/icons.png');
+  background-position: 0px -105px;
+}
+
 .icon-person {
   width: 21px;
   height: 18px;
   background-image: url('../img/icons.png');
-  background-position: -32px -154px;
+  background-position: -61px -167px;
 }
 
 .icon-phone {
   width: 18px;
   height: 18px;
   background-image: url('../img/icons.png');
-  background-position: 0px -182px;
+  background-position: -213px 0px;
+}
+
+.icon-prev {
+  width: 7px;
+  height: 12px;
+  background-image: url('../img/icons.png');
+  background-position: -213px -84px;
 }
 
 .icon-vk {
   width: 23px;
   height: 15px;
   background-image: url('../img/icons.png');
-  background-position: -63px -154px;
+  background-position: -92px -167px;
 }
 

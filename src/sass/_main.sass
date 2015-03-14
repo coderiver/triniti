@@ -29,6 +29,8 @@
 
 
 .header
+  position: relative
+  z-index: 1
   +clr
 
   .logo
@@ -36,6 +38,11 @@
 
   .sqr, .menu
     float: right
+
+  .big-title
+    float: right
+    line-height: 180px
+    margin-right: 50px
 
   &.is-fixed
     .header__inner
@@ -79,6 +86,21 @@
 
 .header__inner
   +clr
+
+.header_content
+  background: url('../img/header-bg.jpg') no-repeat left center
+  // &:before
+  //   content: ""
+  //   position: absolute
+  //   z-index: -1
+  //   bottom: 0
+  //   right: 50%
+  //   margin-right: -90px
+  //   height: 200px
+  //   width: 700px
+  //   box-shadow: 0 50px 120px -30px rgba(#560001, 0.4)
+  +resize
+    background-position: right 180px center
 
 // .header__right
   // +clr
@@ -214,6 +236,8 @@
   text-transform: uppercase
   color: #FFF
   h1,h2,h3,h4
+    display: inline-block
+    vertical-align: middle
     +medium
   .icon
     position: absolute
@@ -242,6 +266,41 @@
   color: #FFF
   line-height: 1.8
   +trans
+
+.category_narrow
+  width: 33.33%
+  height: 90px
+  padding: 10px
+  line-height: 70px
+  text-align: center
+  &:first-child
+    background: $dark4
+
+  .category__title
+    display: inline-block
+    vertical-align: middle
+    font-size: 18px
+    line-height: 1.33
+    +trans(transform)
+
+  .category__number
+    position: relative
+    top: -2px
+    right: 0
+    margin-right: 3px
+    font-size: 36px
+    display: inline-block
+    vertical-align: middle
+    color: rgba(#FFF, 0.1)
+
+  &:hover
+    padding: 10px
+    background: $red
+
+    .category__title
+      transform: translateX(-10px)
+      .icon
+        transform: translateX(20px)
 
 
 .news
@@ -379,10 +438,6 @@
   background: #FFF
   +clr
 
-  .title
-    padding-left: 145px
-    margin-bottom: 45px
-
   .button
     position: absolute
     bottom: 45px
@@ -395,7 +450,7 @@
       bottom: 40px
       width: 365px
       right: 346px
-    .title
+    .location__title
       padding-left: 65px
       font-size: 26px
       line-height: 1.3
@@ -404,6 +459,17 @@
       display: none
     .location__map
       width: 346px
+
+.location__title
+  display: block
+  margin-bottom: 45px
+  padding-left: 145px
+  font-size: 32px
+  line-height: 1
+  text-transform: uppercase
+  +bold
+  color: $dark-title
+  letter-spacing: -0.02em
 
 .location__map
   position: absolute
@@ -688,6 +754,154 @@
   &:hover
     background: #3F5BA7
 
+
+.breadcrumbs
+  margin-bottom: 25px
+  font-size: 0
+  +regular
+  line-height: 1.5
+  color: #BEBEBE
+  li
+    display: inline-block
+    vertical-align: top
+    font-size: 12px
+    &:before
+      content: "—"
+      display: inline-block
+      vertical-align: top
+      margin: 0 12px
+    &:first-child
+      &:before
+        content: none
+  a
+    color: inherit
+    text-decoration: none
+    +trans-link
+    &:hover
+      color: #A1A1A1
+
+
+
+.page-header
+  position: relative
+  box-sizing: border-box
+  padding: 70px 180px 20px $l-main-left-padding
+  min-height: 180px
+
+  .sqr-button
+    position: absolute
+    top: 0
+    right: 0
+
+  .contacts
+    position: absolute
+    top: 50px
+    left: 100%
+    margin-left: 35px
+    width: 200px
+
+
+.line
+  background: $dark
+  +clr
+
+
+.figure
+  width: 900px
+  margin: 20px 0
+  box-sizing: border-box
+  +clr
+  .number
+    margin: 40px 0 40px -40px
+
+.figure__left
+  float: left
+  width: 226px
+  box-sizing: border-box
+  padding-right: 35px
+  +regular
+  font-size: 13px
+  line-height: 1.5
+  color: $dark-text
+
+.figure__right
+  float: right
+  width: 674px
+
+
+.gallery
+  position: relative
+  width: 674px
+  height: 360px
+  box-sizing: border-box
+
+.gallery__box
+  position: absolute
+  z-index: 1
+  bottom: 0
+  right: 0
+  width: 180px
+  height: 180px
+  padding: 30px 20px 20px 30px
+  box-sizing: border-box
+  background: #FFF
+
+.gallery__captions
+  +regular
+  font-size: 12px
+  line-height: 1.66
+  color: #414E5A
+
+.gallery__nav
+  max-width: 120px
+  margin: 0 0 15px 0
+  text-align: center
+  +clr
+
+.gallery__prev,
+.gallery__next
+  text-align: center
+  width: 25px
+  height: 25px
+  background: none
+  .icon
+    vertical-align: middle
+
+.gallery__prev
+  float: left
+
+.gallery__next
+  float: right
+
+.gallery__counter
+  text-align: center
+  margin: 0 25px
+  line-height: 1
+  +medium
+  color: $dark-text
+
+.gellery__counter-current
+  font-size: 26px
+  display: inline-block
+  vertical-align: baseline
+
+.gellery__counter-all
+  display: inline-block
+  vertical-align: baseline
+  padding-left: 4px
+  margin-left: 4px
+  font-size: 14px
+  position: relative
+  &:before
+    content: ""
+    position: absolute
+    top: 50%
+    left: 0
+    height: 20px
+    margin-top: -11px
+    width: 0
+    border-left: 1px solid
+    transform: rotate(20deg)
 
 
 .has-shadow
