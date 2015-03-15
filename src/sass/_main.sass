@@ -904,5 +904,67 @@
     transform: rotate(20deg)
 
 
+.small-figure
+  box-sizing: border-box
+  +regular
+  font-size: 13px
+  line-height: 1.54
+  font-size: $dark-text
+  font-size: rgba($dark-text, 0.9)
+  b, strong
+    font-size: 14px
+  sup
+    vertical-align: super
+  .icon
+    display: block
+    margin-bottom: 10px
+
+.icons-group
+  font-size: 0
+  margin: 0 -10px -60px
+  .small-figure
+    display: inline-block
+    vertical-align: top
+    box-sizing: border-box
+    width: 25%
+    margin-bottom: 60px
+    padding: 0 10px
+
+
+.tabs
+  position: relative
+  margin-right: (-$l-main-right-padding)
+
+.tabs__main
+  box-shadow: 0 6px 60px -10px rgba(#162634, 0.2)
+  overflow: hidden
+
+.tabs__buttons
+  position: absolute
+  top: 0
+  left: 100%
+  box-shadow: 0 6px 50px -10px rgba(#162634, 0.2)
+
+.tabs__button
+  display: block
+  box-sizing: border-box
+  width: 90px
+  height: 90px
+  background: #405263
+  font-size: 36px
+  line-height: 1
+  color: #FFF
+  +light
+  text-align: center
+  -webkit-appearance: none
+  +trans-link(background)
+  &:first-child
+    background: $dark4
+  &:nth-child(2)
+    background: $dark2
+  &:hover
+    background: $red
+
+
 .has-shadow
   box-shadow: 25px 25px 80px -20px rgba(#162634, 0.2)
