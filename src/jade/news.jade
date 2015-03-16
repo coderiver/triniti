@@ -1,0 +1,93 @@
+extends _layout
+
+block title
+  title Zasroischik
+
+block header-big-title
+  | Новости
+
+block content
+
+  include includes/_header-content
+
+  <!-- begin content -->
+  .l
+    .l-news
+
+      .news-box
+
+        .news-box__left
+          .page-header.page-header_news
+            ul.breadcrumbs
+              li
+                a(href="#")
+                  | Главная
+              li
+                a(href="#")
+                  | Новости
+
+            .paginator
+              button.paginator__button.is-active(type="button") 1
+              button.paginator__button(type="button") 2
+              button.paginator__button(type="button") 3
+              button.paginator__button(type="button") 4
+              button.paginator__button(type="button") …
+              button.paginator__button(type="button") 80
+
+        .news-box__right
+          figure.news.has-shadow
+            .news__pic(style="background-image:url('img/news.jpg')")
+              //- img(src="img/news.jpg", alt="")
+            figcaption.news__footer
+              .news__date
+                big 7
+                small Сентября
+              a.news__title(href="#")
+                | Торжественное открытие торгового-центра пройдет 25 марта 2016 года!
+                | Спешите! Вас ждут подарки и море развлечений
+
+        .news-box__left
+          figure.news.has-shadow
+            .news__pic(style="background-image:url('img/news.jpg')")
+              //- img(src="img/news.jpg", alt="")
+            figcaption.news__footer
+              .news__date
+                big 7
+                small Сентября
+              a.news__title(href="#")
+                | Уникальный торговый центр «Тринити» располагается в 7 минутах
+                | от центра города, где находятся.
+
+        .news-box__right
+          ul.news-list.news-list_dark
+            li.news-list__item
+              a.news-list__title(href="#")
+                | Уникальный торговый центр «Тринити» располагается в 7
+                | минутах от центра города.
+              span.news-list__date
+                | 25 Сентября 2015
+            li.news-list__item
+              a.news-list__title(href="#")
+                | Уникальный торговый центр «Тринити»
+                | располагается в 7 минутах от центра города, где находятся.
+              span.news-list__date
+                | 25 Сентября 2015
+
+        .news-box__left
+          ul.news-list
+            li.news-list__item
+              a.news-list__title(href="#")
+                | Уникальный торговый центр «Тринити» располагается в 7
+                | минутах от центра города.
+              span.news-list__date
+                | 25 Сентября 2015
+            li.news-list__item
+              a.news-list__title(href="#")
+                | Уникальный торговый центр «Тринити»
+                | располагается в 7 минутах от центра города, где находятся.
+              span.news-list__date
+                | 25 Сентября 2015
+  <!-- end content -->
+
+
+  include includes/_footer

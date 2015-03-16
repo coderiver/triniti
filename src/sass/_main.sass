@@ -437,6 +437,7 @@
   box-sizing: border-box
   padding: 0 65px 0 90px
   background: $main-gray
+  color: $dark-text
   +resize
     width: 374px
     padding: 0 30px 0 50px
@@ -459,7 +460,7 @@
   font-size: 18px
   line-height: 1.333
   +medium
-  color: $dark-text
+  color: inherit
   text-decoration: none
   +trans-link
   &:hover
@@ -470,9 +471,14 @@
   margin-top: 13px
   font-size: 12px
   line-height: 1.67
-  color: $dark-text
+  color: inherit
   font-style: italic
   letter-spacing: 0.02em
+
+
+.news-list_dark
+  background: $dark
+  color: #FFF
 
 
 
@@ -846,6 +852,9 @@
     margin-left: 35px
     width: 200px
 
+  .paginator
+    margin-top: 40px
+
   +resize
     .contacts
       margin-left: 10px
@@ -853,6 +862,33 @@
       top: 35px
     .contacts__phone
       font-size: 20px
+
+.page-header_news
+  background: #FFF
+  width: 450px
+  padding-right: 35px
+
+
+
+
+.paginator__button
+  display: inline-block
+  vertical-align: baseline
+  background: none
+  margin-right: 25px
+  width: 20px
+  height: 20px
+  line-height: 20px
+  font-size: 14px
+  text-align: center
+  +medium
+  color: #233341
+  +trans-link
+  &:last-child
+    margin-right: 0
+  &:hover, &.is-active
+    color: $red
+
 
 
 .line
@@ -991,7 +1027,7 @@
   min-height: 50px
   line-height: 50px
   margin-bottom: 13px
-  .icon
+  .icon, img
     display: inline-block
     vertical-align: middle
     margin: 0
@@ -1141,6 +1177,20 @@
   font-size: 13px
   line-height: 1.54
   color: rgba($dark-text, 0.9)
+
+
+
+.news-box
+  +clr
+
+.news-box__left
+  float: left
+  width: 450px
+
+.news-box__right
+  float: right
+  width: 450px
+  background: $dark
 
 
 
