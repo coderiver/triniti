@@ -1,0 +1,164 @@
+extends _layout
+
+block title
+  title Zasroischik
+
+block header-big-title
+  | Застройщик
+
+block content
+
+  include includes/_header-content
+
+  .l
+    .l-main
+      <!-- begin page-header -->
+      header.page-header
+        ul.breadcrumbs
+          li
+            a(href="#")
+              | Главная
+          li
+            a(href="#")
+              | Застройщик
+
+        h2.bold-title
+          | ООО “Тринити-инвест”
+
+        a.button.button_sqr.button_red(href="#")
+          .button__inner
+            i.icon.icon-pdf
+            strong
+              | Скачать <br> презентацию
+
+        .contacts
+          span.contacts__label
+            | По вопросам аренды звоните:
+          a.contacts__phone(href="tel:+375152660299")
+            | +375 (15) 266-02-99
+          a.contacts__email(href="mailto:info@3niti.by")
+            | info@3niti.by
+      <!-- end page-header -->
+
+      <!-- begin content -->
+      .l-main__inner
+        .head.head_no-mrg-top
+          h3.title.title_first
+            | Компания-профессионал
+          strong.subtitle
+            | Мы любим свою работу и посвящаем ей всю свою жизнь.
+            | В нашем штате работают настоящие профессионалы своего дела.
+            | Строителство зданий - наше призвание.
+
+
+
+        <!-- begin figure -->
+        .figure
+          .figure__left
+            p
+              | В 700 м от ТРЦ «Тринити» находится
+              | комфортабельная гостиница «Турист»,
+              | а в 2,5 км располагается один из лучших
+              | ночных клубов Беларуси — «База».
+
+            dl.number.number_red
+              dt.number__big
+                | 159 010 м<sup>2</sup>
+              dd.number__small
+                | Общая площадь бизнес-центра
+            p
+              | Добраться до центра города можно за
+              | 15 минут на любом из 30 маршрутов
+              | общественного транспорта.
+
+          .figure__right
+
+            figure.gallery.has-shadow
+              .gallery__pictures
+                div
+                  img(src="img/gallery/gallery3.jpg", alt="")
+
+              figcaption.gallery__box
+                .gallery__captions
+                  | Комфортабельные офисные помещения для ведения бизнеса
+
+        <!-- end figure -->
+
+        .head
+          h3.title
+            | Партнёры проекта
+
+        .l-two-col
+          .l-column
+            figure.small-figure.small-figure_big-icon
+              .small-figure__icon
+                i.icon.icon-oma-big
+              fiqcaption.small-figure__text
+                | Команда “ОМА”- лмдер на рынке по про-<br>
+                | даже строительных материалов и инстру-<br>
+                | ментов, товаров для дома, сада и огоро-<br>
+                | да.
+          .l-column
+            figure.small-figure.small-figure_big-icon
+              .small-figure__icon
+                i.icon.icon-euroopt-big
+              fiqcaption.small-figure__text
+                | Компания “Евроопт” - один из крупней-<br>
+                | ших операторов продовольственного рын-<br>
+                | ка Республики Беларусь с развитой ин-<br>
+                | фраструктурой, логистическими центра-<br>
+                | ми и высококвалифицированным персо-<br>
+                | налом.
+
+        .head
+          h3.title
+            | Команда проекта ТРЦ “Тринити”
+
+        .l-three-col
+          .l-column
+            .person
+              .person__pic.has-shadow
+                img(src="img/persons/person1.jpg", alt="")
+              span.person__name
+                | Аудрюс Улозас
+              span.person__post
+                | руководитель проекта
+              p.person__about
+                | С 1999 г. по 2014г. - руководитель
+                | проектов ТРЦ “Akropolis”в г. Вильнюс,
+                | г. Каунас, г. Клайпеда, магазинов Hyper Maxima,
+                | ТРЦ “Retroville” в г. Киев. Действующий член
+                | совета RICS (Royal Institution of Chartered Surveyors)
+
+          .l-column
+            .person
+              .person__pic.has-shadow
+                img(src="img/persons/person2.jpg", alt="")
+              span.person__name
+                | Гедеминас Юрявичус
+              span.person__post
+                | архитектор проекта
+              p.person__about
+                | Многократный победитель архитектурных конкурсов.
+                | Среди реализованных проектов ТРЦ “Akropolis”в г.
+                | Вильнюс, г. Каунас, г. Клайпеда, магазинов Hyper Maxima,
+                | ТРЦ “Retroville” в г. Киев. Действующий
+                | член совета RICS (Royal Institution of Chartered Surveyors)
+
+          .l-column
+            .person
+              .person__pic.has-shadow
+                img(src="img/persons/person3.jpg", alt="")
+              span.person__name
+                | Аудрюс Улозас
+              span.person__post
+                | руководитель проекта
+              p.person__about
+                | С 1999 г. по 2014г. - руководитель группы
+                | технического надзора проектов ТРЦ “Akropolis”в г. Вильнюс,
+                | г. Каунас, г. Клайпеда, ТРЦ “Retroville” в г. Киев.
+
+
+      <!-- end content -->
+
+  include includes/_footer
