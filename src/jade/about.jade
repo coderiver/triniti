@@ -60,13 +60,14 @@ block content
 
       <!-- begin content -->
       .l-main__inner
-        h3.title
-          | Многофункциональный торговый комплекс
-        strong.subtitle
-          | Уникальный торговый центр «Тринити» располагается
-          | в 7 минутах от центра города,
-          | где находятся главные исторические достопримечательности
-          | Гродно, посещаемые туристами.
+        .head.head_first
+          h3.title.title_first
+            | Многофункциональный торговый комплекс
+          strong.subtitle
+            | Уникальный торговый центр «Тринити» располагается
+            | в 7 минутах от центра города,
+            | где находятся главные исторические достопримечательности
+            | Гродно, посещаемые туристами.
 
         <!-- begin figure -->
         figure.figure
@@ -90,9 +91,22 @@ block content
           .figure__right
 
             .gallery.has-shadow
-              .gallery__pictures
+              .gallery__pictures.js-gallery
                 div
                   img(src="img/gallery/gallery1.jpg", alt="")
+                div
+                  img(src="img/gallery/gallery1.jpg", alt="")
+                div
+                  img(src="img/gallery/gallery1.jpg", alt="")
+                div
+                  img(src="img/gallery/gallery1.jpg", alt="")
+                div
+                  img(src="img/gallery/gallery1.jpg", alt="")
+                div
+                  img(src="img/gallery/gallery1.jpg", alt="")
+                div
+                  img(src="img/gallery/gallery1.jpg", alt="")
+
               .gallery__box
                 .gallery__nav
                   button.gallery__prev
@@ -100,20 +114,33 @@ block content
                   button.gallery__next
                     i.icon.icon-next
                   .gallery__counter
-                    span.gellery__counter-current
+                    span.gallery__counter-current
                       | 01
-                    span.gellery__counter-all
-                      | 07
+                    span.gallery__counter-all
+                      | 7
 
-                .gallery__captions
+                .gallery__captions.js-gallery-captions
+                  div
+                    | Комфортабельные офисные помещения для ведения бизнеса
+                  div
+                    | Комфортабельные офисные помещения для ведения бизнеса
+                  div
+                    | Комфортабельные офисные помещения для ведения бизнеса
+                  div
+                    | Комфортабельные офисные помещения для ведения бизнеса
+                  div
+                    | Комфортабельные офисные помещения для ведения бизнеса
+                  div
+                    | Комфортабельные офисные помещения для ведения бизнеса
                   div
                     | Комфортабельные офисные помещения для ведения бизнеса
         <!-- end figure -->
 
-        h3.title
-          | Распределение площадей торгового центра
-        strong.subtitle
-          | Наш бизнес-центр оснащен самыми новыми технологиями, среди которых:
+        .head
+          h3.title
+            | Распределение площадей торгового центра
+          strong.subtitle
+            | Наш бизнес-центр оснащен самыми новыми технологиями, среди которых:
 
         .numbers-group
           dl.number.number_red-mod
@@ -140,92 +167,112 @@ block content
             dd.number__small
               | Общая площадь <br> развлекательной зоны <br> и зоны для отдыха
 
-        h3.title
-          | Генеральный план торгово-развлекательного <br> центра тринити
-        strong.subtitle
-          | Весь наш бизнес-центр поделен на зоны.
+        .head
+          h3.title
+            | Генеральный план торгово-развлекательного <br> центра тринити
+          strong.subtitle
+            | Весь наш бизнес-центр поделен на зоны.
 
         <!-- begin tabs -->
-        .tabs
+        .tabs.js-tab-container
           .tabs__main
-            img(src="img/floor.jpg", alt="")
+            .tabs__content.js-tab-content.is-active(data-tab="1")
+              img(src="img/floor.jpg", alt="")
+            .tabs__content.js-tab-content(data-tab="2")
+              img(src="http://placehold.it/720x460&text=tab2")
+            .tabs__content.js-tab-content(data-tab="3")
+              img(src="http://placehold.it/720x460&text=tab3")
           .tabs__buttons
-            button.tabs__button(type="button")
+            button.tabs__button.js-tab-button.is-active(data-tab="1")
               | 1
-            button.tabs__button(type="button")
+            button.tabs__button.js-tab-button(data-tab="2")
               | 2
-            button.tabs__button(type="button")
+            button.tabs__button.js-tab-button(data-tab="3")
               | 3
         <!-- end tabs -->
 
 
-        h3.title
-          | Распределение площадей торгового центра
-        strong.subtitle
-          | Весь наш тогово-равзлекательный центр разделен на зоны, среди которых:
+        .head
+          h3.title
+            | Распределение площадей торгового центра
+          strong.subtitle
+            | Весь наш тогово-равзлекательный центр разделен на зоны, среди которых:
 
         .icons-group
           figure.small-figure
-            i.icon.icon-food
-            fiqcaption
+            .small-figure__icon
+              i.icon.icon-food
+            fiqcaption.small-figure__text
               | Общественное питание: <strong>3 130 м<sup>2</sup></strong>
 
           figure.small-figure
-            i.icon.icon-boutique
-            fiqcaption
+            .small-figure__icon
+              i.icon.icon-boutique
+            fiqcaption.small-figure__text
               | Бутики и торговые площади: <strong>31 255 м<sup>2</sup></strong>
 
           figure.small-figure
-            i.icon.icon-bowling
-            fiqcaption
+            .small-figure__icon
+              i.icon.icon-bowling
+            fiqcaption.small-figure__text
               | Боулинг: <strong>1 555 м<sup>2</sup></strong>
 
           figure.small-figure
-            i.icon.icon-film
-            fiqcaption
+            .small-figure__icon
+              i.icon.icon-film
+            fiqcaption.small-figure__text
               | Кинотеатр: <strong>3 625 м<sup>2</sup></strong>
 
           figure.small-figure
-            i.icon.icon-office
-            fiqcaption
+            .small-figure__icon
+              i.icon.icon-office
+            fiqcaption.small-figure__text
               | Офисные помещения: <strong>6 280 м<sup>2</sup></strong>
 
           figure.small-figure
-            i.icon.icon-oma
-            fiqcaption
+            .small-figure__icon
+              i.icon.icon-oma
+            fiqcaption.small-figure__text
               | Строймаркет “ОМА”: <strong>10 440 м<sup>2</sup></strong>
 
           figure.small-figure
-            i.icon.icon-euroopt
-            fiqcaption
+            .small-figure__icon
+              i.icon.icon-euroopt
+            fiqcaption.small-figure__text
               | Гипермаркет “Евроопт”: <strong>8 445 м<sup>2</sup></strong>
 
           figure.small-figure
-            i.icon.icon-ice-arena
-            fiqcaption
+            .small-figure__icon
+              i.icon.icon-ice-arena
+            fiqcaption.small-figure__text
               | Ледовая арена: <strong>2 340 м<sup>2</sup></strong>
 
 
-        h3.title
-          | Девелоперы и инвесторы проекта
+        .head
+          h3.title
+            | Девелоперы и инвесторы проекта
 
-        figure.small-figure
-          i.icon.icon-conte
-          fiqcaption
-            | Команда “ОМА”- лмдер на рынке по про-<br>
-            | даже строительных материалов и инстру-<br>
-            | ментов, товаров для дома, сада и огоро-<br>
-            | да.
-
-        figure.small-figure
-          i.icon.icon-triniti
-          fiqcaption
-            | Компания “Евроопт” - один из крупней-<br>
-            | ших операторов продовольственного рын-<br>
-            | ка Республики Беларусь с развитой ин-<br>
-            | фраструктурой, логистическими центра-<br>
-            | ми и высококвалифицированным персо-<br>
-            | налом.
+        .l-two-col
+          .l-column
+            figure.small-figure.small-figure_big-icon
+              .small-figure__icon
+                i.icon.icon-conte
+              fiqcaption.small-figure__text
+                | Команда “ОМА”- лмдер на рынке по про-<br>
+                | даже строительных материалов и инстру-<br>
+                | ментов, товаров для дома, сада и огоро-<br>
+                | да.
+          .l-column
+            figure.small-figure.small-figure_big-icon
+              .small-figure__icon
+                i.icon.icon-triniti
+              fiqcaption.small-figure__text
+                | Компания “Евроопт” - один из крупней-<br>
+                | ших операторов продовольственного рын-<br>
+                | ка Республики Беларусь с развитой ин-<br>
+                | фраструктурой, логистическими центра-<br>
+                | ми и высококвалифицированным персо-<br>
+                | налом.
 
 
       <!-- end content -->

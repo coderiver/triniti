@@ -52,11 +52,13 @@
               </div></a></div><!-- end categories -->
           <!-- begin content -->
           <div class="l-main__inner">
-            <h3 class="title">Многофункциональный торговый комплекс</h3><strong class="subtitle">
-              Уникальный торговый центр «Тринити» располагается
-              в 7 минутах от центра города,
-              где находятся главные исторические достопримечательности
-              Гродно, посещаемые туристами.</strong><!-- begin figure -->
+            <div class="head head_first">
+              <h3 class="title title_first">Многофункциональный торговый комплекс</h3><strong class="subtitle">
+                Уникальный торговый центр «Тринити» располагается
+                в 7 минутах от центра города,
+                где находятся главные исторические достопримечательности
+                Гродно, посещаемые туристами.</strong>
+            </div><!-- begin figure -->
             <figure class="figure">
               <figcaption class="figure__left">
                 <p>
@@ -77,23 +79,37 @@
               </figcaption>
               <div class="figure__right">
                 <div class="gallery has-shadow">
-                  <div class="gallery__pictures">
+                  <div class="gallery__pictures js-gallery">
+                    <div><img src="img/gallery/gallery1.jpg" alt=""></div>
+                    <div><img src="img/gallery/gallery1.jpg" alt=""></div>
+                    <div><img src="img/gallery/gallery1.jpg" alt=""></div>
+                    <div><img src="img/gallery/gallery1.jpg" alt=""></div>
+                    <div><img src="img/gallery/gallery1.jpg" alt=""></div>
+                    <div><img src="img/gallery/gallery1.jpg" alt=""></div>
                     <div><img src="img/gallery/gallery1.jpg" alt=""></div>
                   </div>
                   <div class="gallery__box">
                     <div class="gallery__nav">
                       <button class="gallery__prev"><i class="icon icon-prev"></i></button>
                       <button class="gallery__next"><i class="icon icon-next"></i></button>
-                      <div class="gallery__counter"><span class="gellery__counter-current">01</span><span class="gellery__counter-all">07</span></div>
+                      <div class="gallery__counter"><span class="gallery__counter-current">01</span><span class="gallery__counter-all">7</span></div>
                     </div>
-                    <div class="gallery__captions">
+                    <div class="gallery__captions js-gallery-captions">
+                      <div>Комфортабельные офисные помещения для ведения бизнеса</div>
+                      <div>Комфортабельные офисные помещения для ведения бизнеса</div>
+                      <div>Комфортабельные офисные помещения для ведения бизнеса</div>
+                      <div>Комфортабельные офисные помещения для ведения бизнеса</div>
+                      <div>Комфортабельные офисные помещения для ведения бизнеса</div>
+                      <div>Комфортабельные офисные помещения для ведения бизнеса</div>
                       <div>Комфортабельные офисные помещения для ведения бизнеса</div>
                     </div>
                   </div>
                 </div>
               </div>
             </figure><!-- end figure -->
-            <h3 class="title">Распределение площадей торгового центра</h3><strong class="subtitle">Наш бизнес-центр оснащен самыми новыми технологиями, среди которых:</strong>
+            <div class="head">
+              <h3 class="title">Распределение площадей торгового центра</h3><strong class="subtitle">Наш бизнес-центр оснащен самыми новыми технологиями, среди которых:</strong>
+            </div>
             <div class="numbers-group">
               <dl class="number number_red-mod">
                 <dt class="number__big">70 945 м<sup>2</sup></dt>
@@ -112,61 +128,87 @@
                 <dd class="number__small">Общая площадь <br> развлекательной зоны <br> и зоны для отдыха</dd>
               </dl>
             </div>
-            <h3 class="title">Генеральный план торгово-развлекательного <br> центра тринити</h3><strong class="subtitle">Весь наш бизнес-центр поделен на зоны.</strong><!-- begin tabs -->
-            <div class="tabs">
-              <div class="tabs__main"><img src="img/floor.jpg" alt=""></div>
+            <div class="head">
+              <h3 class="title">Генеральный план торгово-развлекательного <br> центра тринити</h3><strong class="subtitle">Весь наш бизнес-центр поделен на зоны.</strong>
+            </div><!-- begin tabs -->
+            <div class="tabs js-tab-container">
+              <div class="tabs__main">
+                <div data-tab="1" class="tabs__content js-tab-content is-active"><img src="img/floor.jpg" alt=""></div>
+                <div data-tab="2" class="tabs__content js-tab-content"><img src="http://placehold.it/720x460&amp;text=tab2"></div>
+                <div data-tab="3" class="tabs__content js-tab-content"><img src="http://placehold.it/720x460&amp;text=tab3"></div>
+              </div>
               <div class="tabs__buttons">
-                <button type="button" class="tabs__button">1</button>
-                <button type="button" class="tabs__button">2</button>
-                <button type="button" class="tabs__button">3</button>
+                <button data-tab="1" class="tabs__button js-tab-button is-active">1</button>
+                <button data-tab="2" class="tabs__button js-tab-button">2</button>
+                <button data-tab="3" class="tabs__button js-tab-button">3</button>
               </div>
             </div><!-- end tabs -->
-            <h3 class="title">Распределение площадей торгового центра</h3><strong class="subtitle">Весь наш тогово-равзлекательный центр разделен на зоны, среди которых:</strong>
+            <div class="head">
+              <h3 class="title">Распределение площадей торгового центра</h3><strong class="subtitle">Весь наш тогово-равзлекательный центр разделен на зоны, среди которых:</strong>
+            </div>
             <div class="icons-group">
-              <figure class="small-figure"><i class="icon icon-food"></i>
-                <fiqcaption>Общественное питание: <strong>3 130 м<sup>2</sup></strong></fiqcaption>
+              <figure class="small-figure">
+                <div class="small-figure__icon"><i class="icon icon-food"></i></div>
+                <fiqcaption class="small-figure__text">Общественное питание: <strong>3 130 м<sup>2</sup></strong></fiqcaption>
               </figure>
-              <figure class="small-figure"><i class="icon icon-boutique"></i>
-                <fiqcaption>Бутики и торговые площади: <strong>31 255 м<sup>2</sup></strong></fiqcaption>
+              <figure class="small-figure">
+                <div class="small-figure__icon"><i class="icon icon-boutique"></i></div>
+                <fiqcaption class="small-figure__text">Бутики и торговые площади: <strong>31 255 м<sup>2</sup></strong></fiqcaption>
               </figure>
-              <figure class="small-figure"><i class="icon icon-bowling"></i>
-                <fiqcaption>Боулинг: <strong>1 555 м<sup>2</sup></strong></fiqcaption>
+              <figure class="small-figure">
+                <div class="small-figure__icon"><i class="icon icon-bowling"></i></div>
+                <fiqcaption class="small-figure__text">Боулинг: <strong>1 555 м<sup>2</sup></strong></fiqcaption>
               </figure>
-              <figure class="small-figure"><i class="icon icon-film"></i>
-                <fiqcaption>Кинотеатр: <strong>3 625 м<sup>2</sup></strong></fiqcaption>
+              <figure class="small-figure">
+                <div class="small-figure__icon"><i class="icon icon-film"></i></div>
+                <fiqcaption class="small-figure__text">Кинотеатр: <strong>3 625 м<sup>2</sup></strong></fiqcaption>
               </figure>
-              <figure class="small-figure"><i class="icon icon-office"></i>
-                <fiqcaption>Офисные помещения: <strong>6 280 м<sup>2</sup></strong></fiqcaption>
+              <figure class="small-figure">
+                <div class="small-figure__icon"><i class="icon icon-office"></i></div>
+                <fiqcaption class="small-figure__text">Офисные помещения: <strong>6 280 м<sup>2</sup></strong></fiqcaption>
               </figure>
-              <figure class="small-figure"><i class="icon icon-oma"></i>
-                <fiqcaption>Строймаркет “ОМА”: <strong>10 440 м<sup>2</sup></strong></fiqcaption>
+              <figure class="small-figure">
+                <div class="small-figure__icon"><i class="icon icon-oma"></i></div>
+                <fiqcaption class="small-figure__text">Строймаркет “ОМА”: <strong>10 440 м<sup>2</sup></strong></fiqcaption>
               </figure>
-              <figure class="small-figure"><i class="icon icon-euroopt"></i>
-                <fiqcaption>Гипермаркет “Евроопт”: <strong>8 445 м<sup>2</sup></strong></fiqcaption>
+              <figure class="small-figure">
+                <div class="small-figure__icon"><i class="icon icon-euroopt"></i></div>
+                <fiqcaption class="small-figure__text">Гипермаркет “Евроопт”: <strong>8 445 м<sup>2</sup></strong></fiqcaption>
               </figure>
-              <figure class="small-figure"><i class="icon icon-ice-arena"></i>
-                <fiqcaption>Ледовая арена: <strong>2 340 м<sup>2</sup></strong></fiqcaption>
+              <figure class="small-figure">
+                <div class="small-figure__icon"><i class="icon icon-ice-arena"></i></div>
+                <fiqcaption class="small-figure__text">Ледовая арена: <strong>2 340 м<sup>2</sup></strong></fiqcaption>
               </figure>
             </div>
-            <h3 class="title">Девелоперы и инвесторы проекта</h3>
-            <figure class="small-figure"><i class="icon icon-conte"></i>
-              <fiqcaption>
-                Команда “ОМА”- лмдер на рынке по про-<br>
-                даже строительных материалов и инстру-<br>
-                ментов, товаров для дома, сада и огоро-<br>
-                да.
-              </fiqcaption>
-            </figure>
-            <figure class="small-figure"><i class="icon icon-triniti"></i>
-              <fiqcaption>
-                Компания “Евроопт” - один из крупней-<br>
-                ших операторов продовольственного рын-<br>
-                ка Республики Беларусь с развитой ин-<br>
-                фраструктурой, логистическими центра-<br>
-                ми и высококвалифицированным персо-<br>
-                налом.
-              </fiqcaption>
-            </figure>
+            <div class="head">
+              <h3 class="title">Девелоперы и инвесторы проекта</h3>
+            </div>
+            <div class="l-two-col">
+              <div class="l-column">
+                <figure class="small-figure small-figure_big-icon">
+                  <div class="small-figure__icon"><i class="icon icon-conte"></i></div>
+                  <fiqcaption class="small-figure__text">
+                    Команда “ОМА”- лмдер на рынке по про-<br>
+                    даже строительных материалов и инстру-<br>
+                    ментов, товаров для дома, сада и огоро-<br>
+                    да.
+                  </fiqcaption>
+                </figure>
+              </div>
+              <div class="l-column">
+                <figure class="small-figure small-figure_big-icon">
+                  <div class="small-figure__icon"><i class="icon icon-triniti"></i></div>
+                  <fiqcaption class="small-figure__text">
+                    Компания “Евроопт” - один из крупней-<br>
+                    ших операторов продовольственного рын-<br>
+                    ка Республики Беларусь с развитой ин-<br>
+                    фраструктурой, логистическими центра-<br>
+                    ми и высококвалифицированным персо-<br>
+                    налом.
+                  </fiqcaption>
+                </figure>
+              </div>
+            </div>
           </div><!-- end content -->
         </div>
       </div><!-- begin footer -->

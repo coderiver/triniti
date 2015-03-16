@@ -16,6 +16,19 @@ $l-main-right-padding: 80px
   position: relative
   z-index: 0
   background: #FFF
+  +resize
+    margin-left: 35px
 
 .l-main__inner
   padding: 0 $l-main-right-padding 90px $l-main-left-padding
+
+.l-column
+  box-sizing: border-box
+
+.l-two-col
+  margin: 0 -20px
+  +clr
+  .l-column
+    float: left
+    width: 50%
+    padding: 0 20px

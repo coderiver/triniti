@@ -43,6 +43,7 @@
     float: right
     line-height: 180px
     margin-right: 50px
+    max-width: 490px
 
   &.is-fixed
     .header__inner
@@ -83,6 +84,11 @@
       &:before
         +sprite(logo-small)
 
+    .big-title
+      font-size: 46px
+      margin-right: 20px
+      max-width: 370px
+
 
 .header__inner
   +clr
@@ -99,6 +105,9 @@
   //   height: 200px
   //   width: 700px
   //   box-shadow: 0 50px 120px -30px rgba(#560001, 0.4)
+  .header__inner
+    // box-shadow: 0 50px 120px -30px rgba(#560001, 0.4)
+    box-shadow: 0 25px 120px -30px rgba(#162634, 0.4)
   +resize
     background-position: right 180px center
 
@@ -205,17 +214,6 @@
       height: auto
       margin-top: 60px
 
-  +resize
-    width: 294px
-    height: 290px
-    padding: 60px 50px 0 70px
-    &:last-child
-      width: 346px
-    &:hover
-      padding-top: 40px
-      .category__more
-        margin-top: 40px
-
 .category__number
   position: absolute
   top: -25px
@@ -266,6 +264,18 @@
   color: #FFF
   line-height: 1.8
   +trans
+
+.category_main
+  +resize
+    width: 294px
+    height: 290px
+    padding: 60px 50px 0 70px
+    &:last-child
+      width: 346px
+    &:hover
+      padding-top: 40px
+      .category__more
+        margin-top: 40px
 
 .category_narrow
   width: 33.33%
@@ -800,6 +810,14 @@
     margin-left: 35px
     width: 200px
 
+  +resize
+    .contacts
+      margin-left: 10px
+      width: 169px
+      top: 35px
+    .contacts__phone
+      font-size: 20px
+
 
 .line
   background: $dark
@@ -880,12 +898,12 @@
   +medium
   color: $dark-text
 
-.gellery__counter-current
+.gallery__counter-current
   font-size: 26px
   display: inline-block
   vertical-align: baseline
 
-.gellery__counter-all
+.gallery__counter-all
   display: inline-block
   vertical-align: baseline
   padding-left: 4px
@@ -903,21 +921,58 @@
     border-left: 1px solid
     transform: rotate(20deg)
 
+.gallery__pictures
+  overflow: hidden
+  img
+    display: block
+  > div
+    display: none
+    &:first-child
+      display: block
+
+.gallery__captions
+  overflow: hidden
+  > div
+    display: none
+    &:first-child
+      display: block
+
 
 .small-figure
   box-sizing: border-box
   +regular
   font-size: 13px
   line-height: 1.54
-  font-size: $dark-text
-  font-size: rgba($dark-text, 0.9)
-  b, strong
-    font-size: 14px
+  color: $dark-text
+  color: rgba($dark-text, 0.9)
   sup
     vertical-align: super
   .icon
     display: block
-    margin-bottom: 10px
+    margin-bottom: 13px
+
+.small-figure__icon
+  min-height: 50px
+  line-height: 50px
+  margin-bottom: 13px
+  .icon
+    display: inline-block
+    vertical-align: middle
+    margin: 0
+
+.small-figure__text
+  b, strong
+    font-size: 14px
+    display: inline-block
+    line-height: 1.43
+    margin-top: -3px
+
+.small-figure_big-icon
+  .small-figure__icon
+    min-height: 65px
+    line-height: 65px
+    margin-bottom: 25px
+
 
 .icons-group
   font-size: 0
@@ -938,6 +993,14 @@
 .tabs__main
   box-shadow: 0 6px 60px -10px rgba(#162634, 0.2)
   overflow: hidden
+
+.tabs__content
+  display: none
+  img
+    display: block
+  &.is-active
+    display: block
+
 
 .tabs__buttons
   position: absolute
@@ -962,7 +1025,7 @@
     background: $dark4
   &:nth-child(2)
     background: $dark2
-  &:hover
+  &:hover, &.is-active
     background: $red
 
 
