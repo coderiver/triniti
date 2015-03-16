@@ -129,9 +129,12 @@ $square-width: 180px
   text-shadow: 0 2px 30px rgba(16, 34, 49, 0.75)
 
 
-.clearfix
+div.clearfix
   display: table
   clear: both
+
+.clearfix
+  +clr
 
 
 .b
@@ -177,7 +180,7 @@ $square-width: 180px
   overflow: hidden
   +trans-button(color)
 
-  &:before
+  &:after
     content: ""
     position: absolute
     z-index: 0
@@ -196,11 +199,11 @@ $square-width: 180px
     margin: -1px 0 0 10px
     +trans-button(transform)
 
-  &:hover
+  &:hover, &:focus
     color: #FFF
     .icon-arr
       transform: translateX(40px)
-    &:before
+    &:after
       visibility: visible
       transform: translate3d(0,0,0)
 
@@ -232,10 +235,40 @@ a.button
 .button_red
   background: $red
   color: #FFF
-  &:before
+  &:after
     background: $red2
-  &:hover
+  &:hover, &:focus
     color: #FFF
+
+.button_sqr
+  vertical-align: top
+  box-sizing: border-box
+  width: 180px
+  height: 180px
+  padding: 10px
+  background: $red
+  color: #FFF
+  line-height: 1.667
+  +vertical
+  white-space: nowrap
+  +trans-link(background)
+  strong
+    display: block
+    font-size: 12px
+    text-transform: uppercase
+    letter-spacing: 0.1em
+    +heavy
+  .icon
+    margin-bottom: 15px
+
+.button__inner
+  position: relative
+  z-index: 1
+  display: inline-block
+  vertical-align: middle
+  font-size: 12px
+  white-space: normal
+  line-height: normal
 
 
 
@@ -332,35 +365,6 @@ a.button
     margin-bottom: 50px
 
 
-.sqr-button
-  display: inline-block
-  vertical-align: top
-  width: 180px
-  height: 180px
-  padding: 10px
-  box-sizing: border-box
-  background: $red
-  color: #FFF
-  line-height: 1.667
-  +vertical
-  white-space: nowrap
-  strong
-    display: block
-    font-size: 12px
-    text-transform: uppercase
-    letter-spacing: 0.1em
-    +heavy
-  .icon
-    margin-bottom: 15px
-
-.sqr-button__inner
-  display: inline-block
-  vertical-align: middle
-  font-size: 12px
-  white-space: normal
-
-
-
 .contacts
   line-height: 1.5
   color: #FFF
@@ -386,6 +390,98 @@ a.button
   margin-top: 15px
   color: #FF4043
   text-decoration: none
+
+
+
+.line-marked-list
+  margin-bottom: -45px
+  list-style-type: none
+  box-sizing: border-box
+  li
+    position: relative
+    padding-left: 55px
+    margin-bottom: 45px
+    font-size: 13px
+    box-sizing: border-box
+    +regular
+    font-style: italic
+    color: $dark-text
+    line-height: 1.54
+    &:before
+      content: ""
+      position: absolute
+      top: 0.7em
+      left: 0
+      width: 28px
+      height: 2px
+      background: #D12023
+
+.line-marked-list_half
+  font-size: 0
+  li
+    display: inline-block
+    vertical-align: top
+    width: 50%
+    padding-right: 30px
+
+
+
+.number-list
+  font-size: 0
+  margin: 0 -30px -35px
+  counter-reset: number-list
+  li
+    display: inline-block
+    vertical-align: top
+    width: 50%
+    padding: 0 30px
+    margin-bottom: 35px
+    box-sizing: border-box
+    font-size: 13px
+    position: relative
+    counter-increment: number-list
+    box-sizing: border-box
+
+.number-list__title
+  display: block
+  text-transform: uppercase
+  margin-bottom: 12px
+
+.number-list__num
+  display: block
+  margin-bottom: 10px
+  +light
+  font-size: 54px
+  line-height: 1
+  color: $red
+
+.number-list_counter
+  li
+    &:before
+      content: '0' counter(number-list)
+      display: block
+      margin-bottom: 10px
+      +light
+      font-size: 54px
+      line-height: 1
+      color: $red
+
+
+.important-text
+  display: block
+  margin: 65px 0
+  padding: 50px 25px
+  border: 5px solid $red
+  text-align: center
+  font-style: italic
+  font-weight: bold
+  +regular
+  font-size: 14px
+  line-height: 1.714
+  &:first-child
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0
 
 
 

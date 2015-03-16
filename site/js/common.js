@@ -73,15 +73,15 @@ head.ready(function() {
     }
 
 
-    var tabsFunc = function() {
+    var tabsFunc = function(containerSelector, tabSelector, tabContentSelector) {
 
-        var container = $('.js-tab-container');
+        var container = $(containerSelector);
 
         if ( container.length ) {
             container.each(function() {
                 var el           = $(this),
-                    tab          = el.find('.js-tab-button'),
-                    content      = el.find('.js-tab-content'),
+                    tab          = el.find(tabSelector),
+                    content      = el.find(tabContentSelector),
                     activeClass  = 'is-active',
                     tabs         = [],
                     tabsContent  = [],
@@ -128,6 +128,6 @@ head.ready(function() {
 
     };
 
-    tabsFunc();
+    tabsFunc('.tabs', '.tabs__button', '.tabs__content');
 
 });

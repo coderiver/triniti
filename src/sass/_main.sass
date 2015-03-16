@@ -312,6 +312,42 @@
       .icon
         transform: translateX(20px)
 
+  &.is-active
+    &:after
+      content: ""
+      position: absolute
+      top: 100%
+      left: 50%
+      width: 0
+      height: 0
+      margin-left: -16px
+      border: solid transparent
+      border-width: 14px 16px 0 16px
+      border-top-color: $dark
+    &:first-child
+      &:after
+        border-top-color: $dark4
+    &:nth-child(2)
+      &:after
+        border-top-color: $dark2
+    .category__title
+      color: $red
+    .category__number
+      color: rgba(#FF1922, 0.1)
+    .icon-arr
+      +sprite(arr-down-red)
+    &:hover
+      background: $dark
+      box-shadow: none
+      &:first-child
+        background: $dark4
+      &:nth-child(2)
+        background: $dark2
+      .category__title
+        color: $red
+        transform: none
+        .icon
+          transform: none
 
 .news
   display: block
@@ -643,7 +679,7 @@
 .footer
   position: relative
   z-index: 1
-  padding: 30px 0 60px
+  padding: 30px 0 90px
   +medium
   font-size: 18px
   line-height: 1.333
@@ -798,7 +834,7 @@
   padding: 70px 180px 20px $l-main-left-padding
   min-height: 180px
 
-  .sqr-button
+  .button
     position: absolute
     top: 0
     right: 0
@@ -1027,6 +1063,49 @@
     background: $dark2
   &:hover, &.is-active
     background: $red
+
+
+.text
+  line-height: 1.54
+  p, ul, ol
+    margin: 35px 0
+    &:first-child
+      margin-top: 0
+    &:last-child
+      margin-bottom: 0
+
+  ul, ol
+    margin-left: 35px
+
+  ul
+    list-style-type: initial
+
+  ol
+    list-style-type: decimal
+
+
+
+.text-figure
+  +clr
+  +resize
+    .text-figure__left
+      margin-left: -90px
+    .text-figure__right
+      margin-left: 305px
+
+.text-figure__left
+  width: 360px
+  height: 360px
+  box-sizing: border-box
+  float: left
+  margin: 0 35px 0 -180px
+  img
+    display: block
+
+.text-figure__right
+  margin-left: 215px
+
+
 
 
 .has-shadow

@@ -22,8 +22,8 @@ block content
         h2.bold-title
           | ТРК Тринити
 
-        a.sqr-button(href="#")
-          .sqr-button__inner
+        a.button.button_sqr.button_red(href="#")
+          .button__inner
             i.icon.icon-pdf
             strong
               | Скачать <br> презентацию
@@ -174,20 +174,20 @@ block content
             | Весь наш бизнес-центр поделен на зоны.
 
         <!-- begin tabs -->
-        .tabs.js-tab-container
+        .tabs
           .tabs__main
-            .tabs__content.js-tab-content.is-active(data-tab="1")
+            .tabs__content.is-active(data-tab="1")
               img(src="img/floor.jpg", alt="")
-            .tabs__content.js-tab-content(data-tab="2")
+            .tabs__content(data-tab="2")
               img(src="http://placehold.it/720x460&text=tab2")
-            .tabs__content.js-tab-content(data-tab="3")
+            .tabs__content(data-tab="3")
               img(src="http://placehold.it/720x460&text=tab3")
           .tabs__buttons
-            button.tabs__button.js-tab-button.is-active(data-tab="1")
+            button.tabs__button.is-active(data-tab="1")
               | 1
-            button.tabs__button.js-tab-button(data-tab="2")
+            button.tabs__button(data-tab="2")
               | 2
-            button.tabs__button.js-tab-button(data-tab="3")
+            button.tabs__button(data-tab="3")
               | 3
         <!-- end tabs -->
 
