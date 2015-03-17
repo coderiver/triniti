@@ -318,8 +318,6 @@ a.button
 
 
 
-
-
 .title
   display: block
   margin-bottom: 23px
@@ -333,6 +331,7 @@ a.button
 
 .bold-title
   display: block
+  margin-bottom: 30px
   +bold
   font-size: 32px
   line-height: 1.1
@@ -347,6 +346,8 @@ a.button
   color: $dark-text
   font-size: 18px
   line-height: 1.333
+  &:first-child
+    margin-top: 0
 
 
 .head
@@ -582,6 +583,53 @@ a.contacts__email:hover
   +heavy
   color: $red
   font-style: normal
+
+
+.buttons-group
+  margin-top: 55px
+
+
+.download-button
+  display: inline-block
+  width: 150px
+  vertical-align: top
+  text-transform: uppercase
+  color: $red
+  font-size: 12px
+  line-height: 1.667
+  +heavy
+  letter-spacing: 0.1em
+  text-decoration: none
+  +trans-link
+
+  .icon
+    display: block
+    margin-bottom: 20px
+
+  .icon-pdf-shadow
+    background: none
+    position: relative
+    &:before
+      content: ""
+      display: block
+      +sprite(pdf-shadow)
+      +trans-link(opacity)
+    &:after
+      opacity: 0
+      content: ""
+      position: absolute
+      top: 0
+      left: 0
+      +trans-link(opacity)
+      +sprite(pdf-shadow-h)
+
+  &:hover
+    color: $dark-text
+    .icon-pdf-shadow
+      &:before
+        opacity: 0
+      &:after
+        opacity: 1
 
 
 

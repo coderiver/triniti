@@ -1,0 +1,127 @@
+extends _layout
+
+block title
+  title Arendatoram
+
+block header-big-title
+  | Арендаторам
+
+block content
+
+  include includes/_header-content
+
+  <!-- begin content -->
+  .l
+    .l-main
+
+      <!-- begin page-header -->
+      header.page-header
+        ul.breadcrumbs
+          li
+            a(href="#")
+              | Главная
+          li
+            a(href="#")
+              | О комплексе
+
+        h2.bold-title
+          | Документация
+
+        a.button.button_sqr.button_red(href="#")
+          .button__inner
+            i.icon.icon-pdf
+            strong
+              | Скачать <br> презентацию
+
+        .contacts
+          span.contacts__label
+            | По вопросам аренды звоните:
+          .contacts__phone
+            a(href="tel:+375152660299")
+              | +375 (15) 266-02-99
+          .contacts__email
+            a(href="mailto:info@3niti.by")
+              | info@3niti.by
+      <!-- end page-header -->
+
+      .l-main__inner
+
+        strong.subtitle
+          | Здесь вы можете скачать всю необходимую документацию торгово-
+          | развлекательного центра “Тринити”
+
+        .buttons-group
+          a.download-button(href="#")
+            i.icon.icon-pdf-shadow
+            strong
+              | Скачать
+              br
+              | заявку
+
+          a.download-button(href="#")
+            i.icon.icon-pdf-shadow
+            strong
+              | Скачать
+              br
+              | реквизиты
+
+          a.download-button(href="#")
+            i.icon.icon-pdf-shadow
+            strong
+              | Скачать
+              br
+              | презентацию
+
+        .head
+          h2.bold-title
+            | Генеральный план
+          strong.title
+            | Генеральный план торгово-
+            br
+            | развлекательного центра тринити
+
+        <!-- begin tabs -->
+        .tabs
+          .tabs__main
+            .tabs__content.is-active(data-tab="1")
+              img(src="img/floor.jpg", alt="")
+            .tabs__content(data-tab="2")
+              img(src="http://placehold.it/720x460&text=tab2")
+            .tabs__content(data-tab="3")
+              img(src="http://placehold.it/720x460&text=tab3")
+          .tabs__buttons
+            button.tabs__button.is-active(data-tab="1")
+              | 1
+            button.tabs__button(data-tab="2")
+              | 2
+            button.tabs__button(data-tab="3")
+              | 3
+        <!-- end tabs -->
+
+        .head
+          h2.title
+            | Преимущества нашего бизнес-центра
+          strong.subtitle
+            | Наш бизнес-центр оснащен самыми новыми
+            | технологиями, среди которых:
+
+        .text
+          p
+            | Новый торгово-развлекательный комплекс будет
+            | располагаться в 7 минутах от центра города,
+            | где находятся главные исторические достопримечательности
+            | г.Гродно, посещаемые туристами. В 700 метрах от
+            | ТРЦ «Тринити» находится комфортабельная гостиница
+            | «Турист», а в 2,5 км – один из лучших ночных клубов
+            | Беларуси «БАЗА». Общедоступность ТРЦ обусловлена хорошо
+            | развитой транспортной инфраструктурой города.
+          p
+            | ТРЦ комплекс будет представлен в трех уровнях,
+            | на части которых разместятся продуктовый гипермаркет
+            | «ЕВРООПТ», площадью более 8000 м2, а также самый большой
+            | на территории Беларуси магазин товаров для дома «ОМА»,
+            | площадью 10 000 м.кв.
+
+  <!-- end content -->
+
+  include includes/_footer
