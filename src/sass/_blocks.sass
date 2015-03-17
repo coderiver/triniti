@@ -115,6 +115,7 @@ $square-width: 180px
 .icon
   display: inline-block
   vertical-align: baseline
+  background-color: transparent
 
 
 .big-title
@@ -309,6 +310,11 @@ a.button
     .icon-arr
       +sprite(arr-red)
 
+.button_fw
+  display: block
+  width: 100%
+  box-sizing: border-box
+
 
 
 
@@ -414,10 +420,13 @@ a.button
     margin-bottom: 50px
 
 
+
+
 .contacts
   line-height: 1.5
   color: #FFF
   font-size: 12px
+  +medium
 
 .contacts__label
   display: block
@@ -433,12 +442,48 @@ a.button
   text-decoration: none
   color: #FFF
   +light
+  a
+    text-decoration: none
+    color: inherit
 
 .contacts__email
   display: block
   margin-top: 15px
   color: #FF4043
   text-decoration: none
+  a
+    color: inherit
+    text-decoration: none
+    &:hover
+      text-decoration: underline
+
+a.contacts__email:hover
+  text-decoration: underline
+
+.contacts_mod
+  display: inline-block
+  vertical-align: top
+  width: 300px
+  color: $dark-text
+  font-size: 18px
+  .contacts__label
+    margin-bottom: 7px
+    text-transform: uppercase
+    color: $dark-text
+    color: rgba($dark-text, 0.8)
+  .contacts__phone
+    color: inherit
+    +medium
+    font-size: inherit
+  .contacts__email
+    margin-top: 0
+
+
+.contacts-group
+  margin-top: 50px
+  & + &
+    margin-top: 65px
+
 
 
 

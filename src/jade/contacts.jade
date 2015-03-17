@@ -1,0 +1,107 @@
+extends _layout
+
+block title
+  title Contacts
+
+block header-big-title
+  | Контакты
+
+block content
+
+  include includes/_header-content
+
+  <!-- begin content -->
+  .l
+    .l-main
+      <!-- begin form -->
+      form#form.form(method="POST", novalidate)
+        input.input-field(type="text", name="Name", placeholder="Имя", data-validetta="required")
+        input.input-field(type="tel", name="Phone" ,placeholder="Телефон", data-validetta="required,number,minLength[10],maxLength[13]")
+        input.input-field(type="email", name="Email", placeholder="E-mail", data-validetta="required,email")
+        textarea.input-field(name="Message", placeholder="Сообщение", data-validetta="required")
+        button.button.button_red.button_fw(type="submit")
+          span.button__text
+            | Отправить
+
+        .form__success
+          button.form__close.icon.icon-close
+          strong
+            | Спасибо!
+          p
+            | Наш менеджер свяжется с вами в ближайшее время
+          button.icon.icon-round-arr(type="button")
+
+
+      <!-- end form -->
+      .l-main__inner
+
+        <!-- begin contacts -->
+        .contacts-container
+          ul.breadcrumbs
+            li
+              a(href="#")
+                | Главная
+            li
+              a(href="#")
+                | Контакты
+
+          h1.bold-title
+            | Контактная информация
+
+          .contacts-group
+            .contacts.contacts_mod
+              span.contacts__label
+                | Адрес
+              span
+                | ООО “Тринити-инвест”
+                br
+                | Республика Беларусь, 230020,
+                br
+                | г. Гродно, ул. Кабяка 106
+
+            .contacts.contacts_mod
+              span.contacts__label
+                | Контактные данные
+              .contacts__phone
+                a(href="tel:+375152660299")
+                  | + 375 (15) 266 02 99
+              .contacts__phone
+                a(href="tel:+375152660399")
+                  | + 375 (15) 266 03 99
+              .contacts__email
+                a(href="mailto:@3niti.by")
+                  | info@3niti.by
+
+          .contacts-group
+            strong.title
+              | Отдел аренды
+
+            .contacts.contacts_mod
+              span.contacts__label
+                | Руководитель
+              .contacts__phone
+                a(href="tel:+375445851280")
+                  | +375 (44) 585 12 80
+              .contacts__email
+                a(href="mailto:@3niti.by")
+                  | aukse.patum@gmail.com
+
+            .contacts.contacts_mod
+              span.contacts__label
+                | Менеджер
+              .contacts__phone
+                a(href="tel:+375291892950")
+                  | +375 (29) 189 29 50
+              .contacts__email
+                a(href="mailto:@3niti.by")
+                  | info@oldcity.by
+        <!-- end contacts -->
+
+      <!-- begin big-map -->
+      .big-map
+      <!-- end big-map -->
+
+
+  <!-- end content -->
+
+  include includes/_footer

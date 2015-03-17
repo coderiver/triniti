@@ -7,6 +7,7 @@ head.ready(function() {
     var gallery         = $('.js-gallery');
     var gallerySlides   = gallery.children().length;
     var galleryCaptions = $('.js-gallery-captions');
+    var form            = $('#form');
 
     if ( slider.length ) {
         slider.slick({
@@ -129,5 +130,33 @@ head.ready(function() {
     };
 
     tabsFunc('.tabs', '.tabs__button', '.tabs__content');
+
+    if ( form.length ) {
+        // for form validation was used this jQuery plugin
+        // http://lab.hasanaydogdu.com/validetta/
+        form.validetta({
+            onValid : function() {
+                var msg = $('#form .form__success');
+                var closeBtn = $('#form .form__close');
+                msg.fadeIn(200);
+                closeBtn.on('click', function(event) {
+                    event.preventDefault();
+                    msg.fadeOut('200');
+                    form.find('input, textarea').val('');
+                });
+            },
+            onError : function() {
+                console.log('error');
+            }
+        });
+    }
+
+    // remove on production
+    form.submit(function(event) {
+        event.preventDefault();
+        if (form.hasClass('is-success')) {
+            alert('Succes! Need send request to server');
+        }
+    });
 
 });

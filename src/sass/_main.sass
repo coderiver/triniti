@@ -531,7 +531,7 @@
   bottom: 0
   width: 360px
   background: #F0EDE4
-  box-shadow: inset 5px 0 10px -5px rgba(#162634, 0.2)
+  box-shadow: inset 10px 0 10px -10px rgba(#162634, 0.2)
   overflow: hidden
   &:before
     content: ""
@@ -1280,6 +1280,81 @@
   font-size: 0
   margin-left: -$l-main-left-padding
   margin-right: -$l-main-right-padding
+
+
+.contacts-container
+  padding: 70px 0 0
+
+
+.big-map
+  height: 380px
+  background: #F0EDE4
+  box-shadow: 25px 35px 80px -20px rgba(#162634, 0.2), inset 0 10px 10px -10px rgba(#162634, 0.2)
+
+
+
+.form
+  display: block
+  position: absolute
+  z-index: 1
+  top: 117px
+  left: 100%
+  margin-left: 55px
+  width: 250px
+
+.form__success
+  display: none
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 2
+  text-align: center
+  color: #FFF
+  background: $dark
+  font-size: 18px
+  line-height: 1.333
+  +medium
+  > strong
+    text-transform: uppercase
+    font-size: 32px
+    line-height: 1
+  > p
+    margin: 30px 0
+    &:first-child
+      margin-top: 0
+    &:last-child
+      margin-bottom: 0
+
+.form__close
+  position: absolute
+  top: -20px
+  right: -55px
+  +trans(transform)
+  &:hover
+    transform: rotate(180deg)
+
+
+.input-field
+  display: block
+  margin-bottom: 12px
+  width: 100%
+  padding: 10px 15px
+  box-sizing: border-box
+  +regular
+  font-size: 13px
+  line-height: 1.54
+  color: $dark-text
+  +placeholder
+    +regular
+    color: rgba($dark-text, 0.5)
+
+textarea.input-field
+  height: 140px
+  border: none
+  box-shadow: none
+  resize: none
 
 
 

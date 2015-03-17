@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Contacts</title>
+    <meta name="viewport" content="width=1044">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" media="all" href="css/screen.css"><!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+  </head>
+  <body>
+    <div class="out"><!-- begin header -->
+      <header class="header header_content">
+        <div class="l">
+          <div class="header__inner"><a href="/" class="logo">Triniti</a>
+            <div class="sqr sqr_center sqr_btn">
+              <div class="sqr__inner"><i class="icon icon-phone"></i><strong>Контакты</strong><span>Контактная информация и обратная связь</span></div>
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li><a href="#" class="menu__link is-active">Главная</a></li>
+                <li><a href="#" class="menu__link">Застройщик</a></li>
+                <li><a href="#" class="menu__link">О комплексе</a></li>
+                <li><a href="#" class="menu__link">Арендаторам</a></li>
+                <li><a href="#" class="menu__link">Новости</a></li>
+              </ul>
+            </nav>
+            <div class="big-title">Контакты</div>
+          </div>
+        </div>
+      </header><!-- end header --><!-- begin content -->
+      <div class="l">
+        <div class="l-main"><!-- begin form -->
+          <form id="form" method="POST" novalidate class="form">
+            <input type="text" name="Name" placeholder="Имя" data-validetta="required" class="input-field">
+            <input type="tel" name="Phone" placeholder="Телефон" data-validetta="required,number,minLength[10],maxLength[13]" class="input-field">
+            <input type="email" name="Email" placeholder="E-mail" data-validetta="required,email" class="input-field">
+            <textarea name="Message" placeholder="Сообщение" data-validetta="required" class="input-field"></textarea>
+            <button type="submit" class="button button_red button_fw"><span class="button__text">Отправить</span></button>
+            <div class="form__success">
+              <button class="form__close icon icon-close"></button><strong>Спасибо!</strong>
+              <p>Наш менеджер свяжется с вами в ближайшее время</p>
+              <button type="button" class="icon icon-round-arr"></button>
+            </div>
+          </form><!-- end form -->
+          <div class="l-main__inner"><!-- begin contacts -->
+            <div class="contacts-container">
+              <ul class="breadcrumbs">
+                <li><a href="#">Главная</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <h1 class="bold-title">Контактная информация</h1>
+              <div class="contacts-group">
+                <div class="contacts contacts_mod"><span class="contacts__label">Адрес</span><span>ООО “Тринити-инвест”<br>Республика Беларусь, 230020,<br>г. Гродно, ул. Кабяка 106</span></div>
+                <div class="contacts contacts_mod"><span class="contacts__label">Контактные данные</span>
+                  <div class="contacts__phone"><a href="tel:+375152660299">+ 375 (15) 266 02 99</a></div>
+                  <div class="contacts__phone"><a href="tel:+375152660399">+ 375 (15) 266 03 99</a></div>
+                  <div class="contacts__email"><a href="mailto:@3niti.by">info@3niti.by</a></div>
+                </div>
+              </div>
+              <div class="contacts-group"><strong class="title">Отдел аренды</strong>
+                <div class="contacts contacts_mod"><span class="contacts__label">Руководитель</span>
+                  <div class="contacts__phone"><a href="tel:+375445851280">+375 (44) 585 12 80</a></div>
+                  <div class="contacts__email"><a href="mailto:@3niti.by">aukse.patum@gmail.com</a></div>
+                </div>
+                <div class="contacts contacts_mod"><span class="contacts__label">Менеджер</span>
+                  <div class="contacts__phone"><a href="tel:+375291892950">+375 (29) 189 29 50</a></div>
+                  <div class="contacts__email"><a href="mailto:@3niti.by">info@oldcity.by</a></div>
+                </div>
+              </div>
+            </div><!-- end contacts -->
+          </div><!-- begin big-map -->
+          <div class="big-map"></div><!-- end big-map -->
+        </div>
+      </div><!-- end content --><!-- begin footer -->
+      <footer class="footer">
+        <div class="l">
+          <div class="footer__inner"><span class="footer__copy">© 2015 triniti-grodno.by</span>
+            <div class="footer__contacts"><a href="tel:+375152660299" class="tel">+375 (15) 266-02-99</a><a href="mailto:info@3niti.by" class="email">info@3niti.by</a></div>
+            <div href="#" class="footer__creator"><a href="#" class="flex"><i class="flex__icon"></i><span class="flex__text">site by flex media <em>2015</em></span></a></div>
+            <div class="footer__socials"><a href="#" class="social-button social-button_inst"></a><a href="#" class="social-button social-button_vk"></a><a href="#" class="social-button social-button_fb"></a></div>
+          </div>
+        </div>
+      </footer><!-- end footer -->
+    </div><!-- load scripts -->
+    <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+  </body>
+</html>

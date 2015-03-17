@@ -113,15 +113,25 @@ body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 .slick-dots li button:hover:before { background: #D12023; }
 .slick-dots li.slick-active button:before { background: #D12023; }
 
+.validetta-bubble { position: absolute; background-color: #D12023; width: 200px; color: white; padding: 5px 12px; }
+
+.validetta-bubble:before { content: ''; display: block; position: absolute; top: 7px; right: -5px; width: 0; height: 0; border-left: 5px solid #CD2E26; border-bottom: 5px solid transparent; border-top: 5px solid transparent; }
+
+.validetta-bubbleClose { display: block; cursor: pointer; position: absolute; top: -1px; right: 3px; color: white; font-weight: bold; }
+
+.validetta-inline, .validetta-bubble { display: block; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; line-height: 1.2; }
+
+.validetta-inline { color: #CD2E26; }
+
 .icon-arr-down-red { width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -252px -240px; }
 
-.icon-arr-left-red { width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -283px -240px; }
+.icon-arr-left-red { width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -314px -240px; }
 
-.icon-arr-left { width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -314px -240px; }
+.icon-arr-left { width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -283px -240px; }
 
 .icon-arr-red { width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -345px -240px; }
 
-.icon-arr { width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -336px -176px; }
+.icon-arr { width: 21px; height: 21px; background-image: url("../img/icons.png"); background-position: -93px -305px; }
 
 .icon-baloon { width: 24px; height: 39px; background-image: url("../img/icons.png"); background-position: -191px -240px; }
 
@@ -129,19 +139,21 @@ body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 
 .icon-bowling { width: 80px; height: 36px; background-image: url("../img/icons.png"); background-position: -208px -129px; }
 
-.icon-bus { width: 17px; height: 21px; background-image: url("../img/icons.png"); background-position: -378px 0px; }
+.icon-bus { width: 17px; height: 21px; background-image: url("../img/icons.png"); background-position: -378px -31px; }
 
-.icon-clock { width: 22px; height: 22px; background-image: url("../img/icons.png"); background-position: -304px -176px; }
+.icon-clock { width: 22px; height: 22px; background-image: url("../img/icons.png"); background-position: -337px -176px; }
+
+.icon-close { width: 23px; height: 23px; background-image: url("../img/icons.png"); background-position: -304px -176px; }
 
 .icon-conte { width: 158px; height: 61px; background-image: url("../img/icons.png"); background-position: 0px 0px; }
 
-.icon-corona { width: 22px; height: 18px; background-image: url("../img/icons.png"); background-position: -122px -305px; }
+.icon-corona { width: 22px; height: 18px; background-image: url("../img/icons.png"); background-position: -153px -305px; }
 
 .icon-euroopt-big { width: 200px; height: 45px; background-image: url("../img/icons.png"); background-position: -168px 0px; }
 
 .icon-euroopt { width: 55px; height: 38px; background-image: url("../img/icons.png"); background-position: -205px -176px; }
 
-.icon-fb { width: 12px; height: 23px; background-image: url("../img/icons.png"); background-position: -378px -62px; }
+.icon-fb { width: 12px; height: 23px; background-image: url("../img/icons.png"); background-position: -378px -121px; }
 
 .icon-film { width: 35px; height: 47px; background-image: url("../img/icons.png"); background-position: -48px -305px; }
 
@@ -155,17 +167,17 @@ body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 
 .icon-instagram { width: 26px; height: 27px; background-image: url("../img/icons.png"); background-position: -298px -129px; }
 
-.icon-lock { width: 16px; height: 21px; background-image: url("../img/icons.png"); background-position: -378px -31px; }
+.icon-lock { width: 16px; height: 21px; background-image: url("../img/icons.png"); background-position: -378px -62px; }
 
 .icon-logo-small { width: 68px; height: 55px; background-image: url("../img/icons.png"); background-position: 0px -240px; }
 
 .icon-logo { width: 98px; height: 95px; background-image: url("../img/icons.png"); background-position: 0px -71px; }
 
-.icon-man { width: 19px; height: 21px; background-image: url("../img/icons.png"); background-position: -93px -305px; }
+.icon-man { width: 19px; height: 21px; background-image: url("../img/icons.png"); background-position: -124px -305px; }
 
 .icon-map-pin { width: 17px; height: 27px; background-image: url("../img/icons.png"); background-position: -225px -240px; }
 
-.icon-next { width: 8px; height: 13px; background-image: url("../img/icons.png"); background-position: -378px -95px; }
+.icon-next { width: 8px; height: 13px; background-image: url("../img/icons.png"); background-position: -378px -154px; }
 
 .icon-office { width: 50px; height: 48px; background-image: url("../img/icons.png"); background-position: -145px -176px; }
 
@@ -175,15 +187,17 @@ body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 
 .icon-pdf { width: 38px; height: 52px; background-image: url("../img/icons.png"); background-position: 0px -305px; }
 
-.icon-person { width: 21px; height: 18px; background-image: url("../img/icons.png"); background-position: -154px -305px; }
+.icon-person { width: 21px; height: 18px; background-image: url("../img/icons.png"); background-position: -185px -305px; }
 
-.icon-phone { width: 18px; height: 18px; background-image: url("../img/icons.png"); background-position: 0px -367px; }
+.icon-phone { width: 18px; height: 18px; background-image: url("../img/icons.png"); background-position: -378px -93px; }
 
-.icon-prev { width: 7px; height: 12px; background-image: url("../img/icons.png"); background-position: -378px -118px; }
+.icon-prev { width: 7px; height: 12px; background-image: url("../img/icons.png"); background-position: -378px -177px; }
+
+.icon-round-arr { width: 18px; height: 21px; background-image: url("../img/icons.png"); background-position: -378px 0px; }
 
 .icon-triniti { width: 183px; height: 48px; background-image: url("../img/icons.png"); background-position: -108px -71px; }
 
-.icon-vk { width: 23px; height: 15px; background-image: url("../img/icons.png"); background-position: -185px -305px; }
+.icon-vk { width: 23px; height: 15px; background-image: url("../img/icons.png"); background-position: -216px -305px; }
 
 .logo { display: inline-block; vertical-align: top; font: 0/0 a; text-shadow: none; color: transparent; width: 180px; height: 180px; line-height: 180px; text-align: center; background: #D12023; }
 .logo:before { content: ""; display: inline-block; vertical-align: middle; background-image: url("../img/icons.png"); width: 98px; height: 95px; background-position: 0px -71px; }
@@ -221,7 +235,7 @@ body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 @media only screen and (max-width: 1295px) { .sqr_icon { width: 135px; height: 135px; padding: 15px 10px 10px 15px; }
   .sqr_icon .icon { margin-bottom: 5px; } }
 
-.icon { display: inline-block; vertical-align: baseline; }
+.icon { display: inline-block; vertical-align: baseline; background-color: transparent; }
 
 .big-title { display: block; font-family: "FuturaNewBold", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 56px; line-height: 1; text-transform: uppercase; color: #FFF; }
 
@@ -280,10 +294,12 @@ a.button:hover { text-decoration: none; }
 .button_prev:after, .button_next:after { display: none; }
 .button_prev:hover, .button_next:hover { color: #D12023; }
 
-.button_prev:hover .icon-arr-left { background-image: url("../img/icons.png"); width: 21px; height: 21px; background-position: -283px -240px; }
+.button_prev:hover .icon-arr-left { background-image: url("../img/icons.png"); width: 21px; height: 21px; background-position: -314px -240px; }
 
 .button_next { background-image: url("../img/button-bg.jpg"); }
 .button_next:hover .icon-arr { background-image: url("../img/icons.png"); width: 21px; height: 21px; background-position: -345px -240px; }
+
+.button_fw { display: block; width: 100%; box-sizing: border-box; }
 
 .title { display: block; margin-bottom: 23px; font-size: 24px; line-height: 1.42; text-transform: uppercase; font-family: "FuturaNewMedium", Helvetica, Arial, sans-serif; font-weight: normal; color: #2B3B48; letter-spacing: -0.03em; color: #414E5A; }
 
@@ -318,13 +334,26 @@ a.button:hover { text-decoration: none; }
 .numbers-group { font-size: 0; margin-bottom: -50px; }
 .numbers-group .number { display: inline-block; vertical-align: top; width: 50%; margin-bottom: 50px; }
 
-.contacts { line-height: 1.5; color: #FFF; font-size: 12px; }
+.contacts { line-height: 1.5; color: #FFF; font-size: 12px; font-family: "FuturaNewMedium", Helvetica, Arial, sans-serif; font-weight: normal; }
 
 .contacts__label { display: block; margin-bottom: 15px; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; font-size: 12px; color: rgba(255, 255, 255, 0.5); }
 
 .contacts__phone { display: block; font-size: 24px; letter-spacing: -0.04em; text-decoration: none; color: #FFF; font-family: "FuturaNewLight", Helvetica, Arial, sans-serif; font-weight: normal; }
+.contacts__phone a { text-decoration: none; color: inherit; }
 
 .contacts__email { display: block; margin-top: 15px; color: #FF4043; text-decoration: none; }
+.contacts__email a { color: inherit; text-decoration: none; }
+.contacts__email a:hover { text-decoration: underline; }
+
+a.contacts__email:hover { text-decoration: underline; }
+
+.contacts_mod { display: inline-block; vertical-align: top; width: 300px; color: #33424F; font-size: 18px; }
+.contacts_mod .contacts__label { margin-bottom: 7px; text-transform: uppercase; color: #33424F; color: rgba(51, 66, 79, 0.8); }
+.contacts_mod .contacts__phone { color: inherit; font-family: "FuturaNewMedium", Helvetica, Arial, sans-serif; font-weight: normal; font-size: inherit; }
+.contacts_mod .contacts__email { margin-top: 0; }
+
+.contacts-group { margin-top: 50px; }
+.contacts-group + .contacts-group { margin-top: 65px; }
 
 .line-marked-list { margin-bottom: -45px; list-style-type: none; box-sizing: border-box; }
 .line-marked-list li { position: relative; padding-left: 55px; margin-bottom: 45px; font-size: 13px; box-sizing: border-box; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; font-style: italic; color: #33424F; line-height: 1.54; }
@@ -504,7 +533,7 @@ a.button:hover { text-decoration: none; }
 
 .location__title { display: block; margin-bottom: 45px; padding-left: 145px; font-size: 32px; line-height: 1; text-transform: uppercase; font-family: "FuturaNewBold", Helvetica, Arial, sans-serif; font-weight: normal; color: #2B3B48; letter-spacing: -0.02em; }
 
-.location__map { position: absolute; top: 0; right: 0; bottom: 0; width: 360px; background: #F0EDE4; box-shadow: inset 5px 0 10px -5px rgba(22, 38, 52, 0.2); overflow: hidden; }
+.location__map { position: absolute; top: 0; right: 0; bottom: 0; width: 360px; background: #F0EDE4; box-shadow: inset 10px 0 10px -10px rgba(22, 38, 52, 0.2); overflow: hidden; }
 .location__map:before { content: ""; position: absolute; top: 85px; left: -9px; width: 18px; height: 18px; background: #FFF; -webkit-transform: rotate(-45deg); -ms-transform: rotate(-45deg); transform: rotate(-45deg); box-shadow: 0 0 7px 0 rgba(22, 38, 52, 0.2); }
 
 .location__about { float: right; width: 60.5042%; font-size: 18px; line-height: 1.333; letter-spacing: 0; font-family: "FuturaNewMedium", Helvetica, Arial, sans-serif; font-weight: normal; color: #33424F; }
@@ -583,11 +612,11 @@ a.button:hover { text-decoration: none; }
 .social-button_inst:hover { background: #75493F; }
 
 .social-button_vk { background: #54769B; }
-.social-button_vk:before { background-image: url("../img/icons.png"); width: 23px; height: 15px; background-position: -185px -305px; }
+.social-button_vk:before { background-image: url("../img/icons.png"); width: 23px; height: 15px; background-position: -216px -305px; }
 .social-button_vk:hover { background: #3D6287; }
 
 .social-button_fb { background: #4A63B5; }
-.social-button_fb:before { background-image: url("../img/icons.png"); width: 12px; height: 23px; background-position: -378px -62px; }
+.social-button_fb:before { background-image: url("../img/icons.png"); width: 12px; height: 23px; background-position: -378px -121px; }
 .social-button_fb:hover { background: #3F5BA7; }
 
 .breadcrumbs { margin-bottom: 25px; font-size: 0; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; line-height: 1.5; color: #BEBEBE; }
@@ -736,6 +765,29 @@ a.button:hover { text-decoration: none; }
 .article__date small { display: block; margin-top: 7px; font-size: 9px; text-transform: uppercase; color: rgba(255, 255, 255, 0.5); letter-spacing: 0.1em; }
 
 .nav-buttons { position: relative; top: 90px; font-size: 0; margin-left: -90px; margin-right: -80px; }
+
+.contacts-container { padding: 70px 0 0; }
+
+.big-map { height: 380px; background: #F0EDE4; box-shadow: 25px 35px 80px -20px rgba(22, 38, 52, 0.2), inset 0 10px 10px -10px rgba(22, 38, 52, 0.2); }
+
+.form { display: block; position: absolute; z-index: 1; top: 117px; left: 100%; margin-left: 55px; width: 250px; }
+
+.form__success { display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 2; text-align: center; color: #FFF; background: #3B4D5D; font-size: 18px; line-height: 1.333; font-family: "FuturaNewMedium", Helvetica, Arial, sans-serif; font-weight: normal; }
+.form__success > strong { text-transform: uppercase; font-size: 32px; line-height: 1; }
+.form__success > p { margin: 30px 0; }
+.form__success > p:first-child { margin-top: 0; }
+.form__success > p:last-child { margin-bottom: 0; }
+
+.form__close { position: absolute; top: -20px; right: -55px; -webkit-transition: -webkit-transform 0.15s linear; transition: transform 0.15s linear; }
+.form__close:hover { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+
+.input-field { display: block; margin-bottom: 12px; width: 100%; padding: 10px 15px; box-sizing: border-box; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; font-size: 13px; line-height: 1.54; color: #33424F; }
+.input-field:-ms-input-placeholder { font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; color: rgba(51, 66, 79, 0.5); }
+.input-field::-moz-placeholder { font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; color: rgba(51, 66, 79, 0.5); }
+.input-field::-webkit-input-placeholder { font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; color: rgba(51, 66, 79, 0.5); }
+.input-field::placeholder { font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; color: rgba(51, 66, 79, 0.5); }
+
+textarea.input-field { height: 140px; border: none; box-shadow: none; resize: none; }
 
 .has-shadow { box-shadow: 25px 25px 80px -20px rgba(22, 38, 52, 0.2); }
 
