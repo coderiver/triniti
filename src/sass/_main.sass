@@ -494,6 +494,7 @@
     position: absolute
     bottom: 45px
     right: 360px
+    width: 450px
 
   +resize
     padding: 40px 400px 155px 35px
@@ -1010,6 +1011,16 @@
       display: block
 
 
+.gallery_right
+  float: right
+  margin: 35px
+  margin-right: -(180px + $l-main-right-padding)
+  &:first-child
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0
+
+
 .small-figure
   box-sizing: border-box
   +regular
@@ -1101,25 +1112,6 @@
     background: $red
 
 
-.text
-  line-height: 1.54
-  p, ul, ol
-    margin: 35px 0
-    &:first-child
-      margin-top: 0
-    &:last-child
-      margin-bottom: 0
-
-  ul, ol
-    margin-left: 35px
-
-  ul
-    list-style-type: initial
-
-  ol
-    list-style-type: decimal
-
-
 
 .text-figure
   +clr
@@ -1203,7 +1195,91 @@
     margin-right: 258px
 
 
+.text
+  line-height: 1.54
+  p, ul, ol
+    margin: 35px 0
+    &:first-child
+      margin-top: 0
+    &:last-child
+      margin-bottom: 0
 
+  ul, ol
+    margin-left: 35px
+
+  ul
+    list-style-type: initial
+
+  ol
+    list-style-type: decimal
+
+
+
+
+.article
+  @extend .text
+  position: relative
+  +clr
+
+  blockquote
+    position: relative
+    padding-left: 56px
+    font-size: 14px
+    line-height: 1.714
+    font-weight: bold
+    font-style: italic
+    &:before
+      content: ""
+      position: absolute
+      top: 0.7em
+      left: 12px
+      width: 26px
+      height: 0
+      border: 1px solid
+    cite
+      display: block
+      margin-top: 8px
+      font-style: normal
+      font-weight: normal
+      color: #9A9A9A
+      font-size: 13px
+
+
+.article__date
+  position: absolute
+  z-index: 1
+  top: -35px
+  left: 100%
+  margin-left: $l-main-right-padding
+  width: 90px
+  height: 180px
+  box-sizing: border-box
+  padding-top: 54px
+  text-align: center
+  background: $red
+  color: #FFF
+  big
+    display: block
+    font-size: 50px
+    +light
+    letter-spacing: -0.05em
+    line-height: 1
+  small
+    display: block
+    margin-top: 7px
+    font-size: 9px
+    text-transform: uppercase
+    color: rgba(#FFF, 0.5)
+    letter-spacing: 0.1em
+
+
+
+.nav-buttons
+  position: relative
+  top: 90px
+  font-size: 0
+  margin-left: -$l-main-left-padding
+  margin-right: -$l-main-right-padding
 
 
 
