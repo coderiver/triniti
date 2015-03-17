@@ -54,6 +54,7 @@ body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 .l-three-col .l-column { float: left; width: 33.333%; padding: 0 20px; }
 
 .l-news { width: 900px; margin-left: 90px; position: relative; z-index: auto; }
+@media only screen and (max-width: 1295px) { .l-news { margin-left: 35px; } }
 
 /* Slider */
 .slick-slider { position: relative; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; -ms-touch-action: pan-y; touch-action: pan-y; -webkit-tap-highlight-color: transparent; }
@@ -691,6 +692,9 @@ a.button:hover { text-decoration: none; }
 .news-box__left { float: left; width: 450px; }
 
 .news-box__right { float: right; width: 450px; background: #3B4D5D; }
+
+.news-box__footer { clear: both; float: right; height: 90px; line-height: 90px; margin-right: 90px; padding-right: 45px; }
+@media only screen and (max-width: 1295px) { .news-box__footer { margin-right: 258px; } }
 
 .has-shadow { box-shadow: 25px 25px 80px -20px rgba(22, 38, 52, 0.2); }
 
