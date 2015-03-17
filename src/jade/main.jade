@@ -3,6 +3,10 @@ extends _layout
 block title
   title Main Page
 
+block add-script
+  script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?v=3.exp")
+  script(type="text/javascript", src="js/map.js")
+
 block content
 
   <!-- begin toparea -->
@@ -71,14 +75,14 @@ block content
       .b.b-news
         .logo.logo_small
 
-        figure.news.news_resize.has-shadow
+        a.news.news_resize.has-shadow(href="#")
           .news__pic(style="background-image:url('img/news/news.jpg')")
             //- img(src="img/news.jpg", alt="")
-          figcaption.news__footer
+          .news__footer
             .news__date
               big 25
               small Сентября
-            a.news__title(href="#")
+            strong.news__title
               | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
 
         ul.news-list
@@ -120,6 +124,7 @@ block content
             i.icon.icon-arr
 
           .location__map
+            #map
       <!-- end location -->
 
       <!-- begin promo 1 -->

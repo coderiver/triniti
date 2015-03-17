@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=1044">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/screen.css"><!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="js/map.js"></script>
   </head>
   <body>
     <div class="out"><!-- begin toparea -->
       <div class="toparea"><!-- begin header -->
         <header class="header">
           <div class="l">
-            <div class="header__inner"><a href="/" class="logo">Triniti</a>
-              <div class="sqr sqr_center sqr_btn">
-                <div class="sqr__inner"><i class="icon icon-phone"></i><strong>Контакты</strong><span>Контактная информация и обратная связь</span></div>
-              </div>
+            <div class="header__inner"><a href="/" class="logo">Triniti</a><a href="#" class="contact-button">
+                <div class="contact-button__inner"><i class="icon icon-phone"></i><strong>Контакты</strong><span>Контактная информация и обратная связь</span></div></a>
               <nav class="menu">
                 <ul class="menu__list">
                   <li><a href="#" class="menu__link is-active">Главная</a></li>
@@ -58,16 +58,14 @@
               <p class="category__text">Рестораны, кафе и бары. Боулинг и кинотеатр — всё что нужно для проведения замечательного отдыха всей семьёй.</p><span class="category__more">Подробнее</span></a></div><!-- end categories -->
           <!-- begin news -->
           <div class="b b-news">
-            <div class="logo logo_small"></div>
-            <figure class="news news_resize has-shadow">
+            <div class="logo logo_small"></div><a href="#" class="news news_resize has-shadow">
               <div style="background-image:url('img/news/news.jpg')" class="news__pic">
               </div>
-              <figcaption class="news__footer">
+              <div class="news__footer">
                 <div class="news__date">
                   <big>25</big><small>Сентября</small>
-                </div><a href="#" class="news__title">Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.</a>
-              </figcaption>
-            </figure>
+                </div><strong class="news__title">Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.</strong>
+              </div></a>
             <ul class="news-list">
               <li class="news-list__item"><a href="#" class="news-list__title">Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.</a><span class="news-list__date">25 Сентября 2015</span></li>
               <li class="news-list__item"><a href="#" class="news-list__title">Уникальный торговый центр «Тринити» располагается.</a><span class="news-list__date">25 Сентября 2015</span></li>
@@ -89,7 +87,9 @@
                 </p>
               </div>
               <button type="button" class="button button_red"><span class="button__text">Подробнее о комплексе</span><i class="icon icon-arr"></i></button>
-              <div class="location__map"></div>
+              <div class="location__map">
+                <div id="map"></div>
+              </div>
             </div>
           </div><!-- end location -->
           <!-- begin promo 1 -->

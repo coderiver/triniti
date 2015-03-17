@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=1044">
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" media="all" href="css/screen.css"><!--[if IE]><script src="js/html5shiv.js"></script><![endif]-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+    <script type="text/javascript" src="js/map.js"></script>
   </head>
   <body>
     <div class="out"><!-- begin header -->
       <header class="header header_content">
         <div class="l">
-          <div class="header__inner"><a href="/" class="logo">Triniti</a>
-            <div class="sqr sqr_center sqr_btn">
-              <div class="sqr__inner"><i class="icon icon-phone"></i><strong>Контакты</strong><span>Контактная информация и обратная связь</span></div>
-            </div>
+          <div class="header__inner"><a href="/" class="logo">Triniti</a><a href="#" class="contact-button">
+              <div class="contact-button__inner"><i class="icon icon-phone"></i><strong>Контакты</strong><span>Контактная информация и обратная связь</span></div></a>
             <nav class="menu">
               <ul class="menu__list">
                 <li><a href="#" class="menu__link is-active">Главная</a></li>
@@ -69,7 +69,9 @@
               </div>
             </div><!-- end contacts -->
           </div><!-- begin big-map -->
-          <div class="big-map"></div><!-- end big-map -->
+          <div class="big-map">
+            <div id="map"></div>
+          </div><!-- end big-map -->
         </div>
       </div><!-- end content --><!-- begin footer -->
       <footer class="footer">

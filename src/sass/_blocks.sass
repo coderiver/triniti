@@ -55,28 +55,6 @@ $square-width: 180px
 .sqr_dark
   background: $dark4
 
-.sqr_btn
-  display: block
-  padding: 10px
-  background: $dark4
-  color: #FFF
-  color: rgba(#FFF, 0.1)
-  line-height: 1.5
-  strong
-    display: block
-    margin: 15px 0 9px
-    font-size: 12px
-    text-transform: uppercase
-    color: #FFF
-    color: rgba(#FFF, 0.4)
-    letter-spacing: 0.1em
-    +heavy
-
-  .sqr__inner
-    font-size: 12px
-    line-height: 1.5
-    letter-spacing: 0.05em
-
 .sqr_bottom
   .sqr__inner
     vertical-align: bottom
@@ -109,6 +87,41 @@ $square-width: 180px
     padding: 15px 10px 10px 15px
     .icon
       margin-bottom: 5px
+
+
+.contact-button
+  width: 180px
+  height: 180px
+  box-sizing: border-box
+  display: block
+  padding: 10px
+  background: $dark4
+  color: #FFF
+  color: rgba(#FFF, 0.3)
+  line-height: 1.5
+  +vertical
+  white-space: nowrap
+  strong
+    display: block
+    margin: 15px 0 9px
+    font-size: 12px
+    text-transform: uppercase
+    color: #FFF
+    letter-spacing: 0.1em
+    +heavy
+  &:hover
+    .contact-button__inner
+      opacity: 1
+
+.contact-button__inner
+  display: inline-block
+  vertical-align: middle
+  white-space: normal
+  font-size: 12px
+  line-height: 1.5
+  letter-spacing: 0.05em
+  opacity: 0.4
+  +trans-link(opacity)
 
 
 

@@ -6,6 +6,10 @@ block title
 block header-big-title
   | Контакты
 
+block add-script
+  script(type="text/javascript", src="https://maps.googleapis.com/maps/api/js?v=3.exp")
+  script(type="text/javascript", src="js/map.js")
+
 block content
 
   include includes/_header-content
@@ -99,6 +103,7 @@ block content
 
       <!-- begin big-map -->
       .big-map
+        #map
       <!-- end big-map -->
 
 
