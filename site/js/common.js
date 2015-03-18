@@ -1,13 +1,43 @@
 head.ready(function() {
 
-    var win             = $(window);
-    var body            = $('body');
-    var header          = $('header');
-    var slider          = $('.js-slick');
-    var gallery         = $('.js-gallery');
-    var gallerySlides   = gallery.children().length;
-    var galleryCaptions = $('.js-gallery-captions');
-    var form            = $('#form');
+    var win             = $(window),
+        doc             = $(document),
+        body            = $('body'),
+        header          = $('header'),
+        slider          = $('.js-slick'),
+        gallery         = $('.js-gallery'),
+        gallerySlides   = gallery.children().length,
+        galleryCaptions = $('.js-gallery-captions'),
+        form            = $('#form'),
+        logo            = $('.header__logo'),
+        scrollPosition  = 0;
+
+
+    var whatLogo = function() {
+        if ( doc.width() <= 1280 ) {
+            logo
+                .removeClass('is-fixed')
+                .addClass('is-small');
+        } else {
+            logo.removeClass('is-small');
+        }
+    };
+
+    win.on('resize', function() {
+        whatLogo();
+    });
+
+    win.on('scroll', function(event) {
+        scrollPosition = win.scrollTop();
+
+        if ( scrollPosition > 180 && !logo.hasClass('is-fixed') && !logo.hasClass('is-small') ) {
+            logo.addClass('is-fixed');
+        }
+
+        if ( scrollPosition < 180 && logo.hasClass('is-fixed') ) {
+            logo.removeClass('is-fixed');
+        }
+    });
 
     if ( slider.length ) {
         slider.slick({
@@ -135,9 +165,11 @@ head.ready(function() {
         // for form validation was used this jQuery plugin
         // http://lab.hasanaydogdu.com/validetta/
         form.validetta({
+            errorClass : 'is-error',
+            validClass : 'is-success',
             onValid : function() {
                 var msg = $('#form .form__success');
-                var closeBtn = $('#form .form__close');
+                var closeBtn = $('#form .form__refresh');
                 msg.fadeIn(200);
                 closeBtn.on('click', function(event) {
                     event.preventDefault();
@@ -154,9 +186,27 @@ head.ready(function() {
     // remove on production
     form.submit(function(event) {
         event.preventDefault();
-        if (form.hasClass('is-success')) {
+        if ( form.hasClass('is-success') ) {
             alert('Succes! Need send request to server');
         }
+    });
+
+
+    $('.animation').each(function() {
+        var el    = $(this),
+            elTop = el.offset().top,
+            startPoint = scrollPosition + win.height();
+
+            if ( startPoint > elTop ) {
+                el.addClass('done');
+            }
+
+            win.on('scroll', function() {
+                if ( startPoint > elTop ) {
+                    el.addClass('done');
+                }
+            });
+
     });
 
 });

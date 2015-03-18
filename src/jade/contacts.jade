@@ -22,18 +22,17 @@ block content
         input.input-field(type="text", name="Name", placeholder="Имя", data-validetta="required")
         input.input-field(type="tel", name="Phone" ,placeholder="Телефон", data-validetta="required,number,minLength[10],maxLength[13]")
         input.input-field(type="email", name="Email", placeholder="E-mail", data-validetta="required,email")
-        textarea.input-field(name="Message", placeholder="Сообщение", data-validetta="required")
+        textarea.input-field(name="Message", placeholder="Сообщение")
         button.button.button_red.button_fw(type="submit")
           span.button__text
             | Отправить
 
         .form__success
-          button.form__close.icon.icon-close
           strong
             | Спасибо!
           p
             | Наш менеджер свяжется с вами в ближайшее время
-          button.icon.icon-round-arr(type="button")
+          button.form__refresh.icon.icon-round-arr(type="button")
 
 
       <!-- end form -->

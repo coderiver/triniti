@@ -14,6 +14,13 @@ $square-width: 180px
     display: inline-block
     vertical-align: middle
     +sprite(logo)
+  .header__logo.is-fixed &
+    width: ($square-width / 2)
+    height: ($square-width / 2)
+    line-height: ($square-width / 2)
+    animation: logo 0.5s ease 1
+    &:before
+      +sprite(logo-small)
 
 .logo_small
   width: ($square-width / 2)
@@ -21,6 +28,12 @@ $square-width: 180px
   line-height: ($square-width / 2)
   &:before
     +sprite(logo-small)
+
+@keyframes logo
+  from
+    transform: translateY(-100%)
+  to
+    transform: translateY(0)
 
 
 

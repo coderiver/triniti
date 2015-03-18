@@ -3,10 +3,12 @@ header.header
   .l
     .header__inner
 
-      a.logo(href="/")
-        | Triniti
+      .header__logo.animation.left-bottom
 
-      a.contact-button(href="#")
+        a.logo(href="/")
+          | Triniti
+
+      a.contact-button(href="#").animation.right
         .contact-button__inner
           i.icon.icon-phone
           strong
@@ -30,7 +32,7 @@ header.header
       //-     span
       //-       | Свободная площадь и условия
 
-      nav.menu
+      nav.menu.animation.top
         ul.menu__list
           li
             a.menu__link.is-active(href="#")

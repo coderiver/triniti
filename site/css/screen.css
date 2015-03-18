@@ -44,7 +44,7 @@ body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 @media only screen and (max-width: 1295px) { .l { width: 1024px; } }
 
 .l-main { width: 810px; margin: 0 0 90px 90px; box-sizing: border-box; position: relative; z-index: auto; background: #FFF; }
-@media only screen and (max-width: 1295px) { .l-main { margin-left: 35px; } }
+@media only screen and (max-width: 1295px) { .l-main { margin-left: 34px; } }
 
 .l-main__inner { padding: 0 80px 90px 90px; }
 
@@ -208,10 +208,17 @@ body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-
 
 .logo { display: inline-block; vertical-align: top; font: 0/0 a; text-shadow: none; color: transparent; width: 180px; height: 180px; line-height: 180px; text-align: center; background: #D12023; }
 .logo:before { content: ""; display: inline-block; vertical-align: middle; background-image: url("../img/icons.png"); width: 98px; height: 95px; background-position: 0px -71px; }
+.header__logo.is-fixed .logo { width: 90px; height: 90px; line-height: 90px; -webkit-animation: logo 0.5s ease 1; animation: logo 0.5s ease 1; }
+.header__logo.is-fixed .logo:before { background-image: url("../img/icons.png"); width: 68px; height: 55px; background-position: -132px -240px; }
 
 .logo_small { width: 90px; height: 90px; line-height: 90px; }
 .logo_small:before { background-image: url("../img/icons.png"); width: 68px; height: 55px; background-position: -132px -240px; }
 
+@-webkit-keyframes logo { from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+  to { -webkit-transform: translateY(0); transform: translateY(0); } }
+
+@keyframes logo { from { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+  to { -webkit-transform: translateY(0); transform: translateY(0); } }
 .sqr { width: 180px; height: 180px; box-sizing: border-box; }
 
 .sqr_center { text-align: center; font-size: 0; white-space: nowrap; }
@@ -425,7 +432,6 @@ a.contacts__email:hover { text-decoration: underline; }
 
 .header { position: relative; z-index: 1; *zoom: 1; }
 .header:after { content: " "; display: table; clear: both; }
-.header .logo { float: left; }
 .header .contact-button, .header .menu { float: right; }
 .header .big-title { float: right; line-height: 180px; margin-right: 50px; max-width: 490px; }
 .header.is-fixed .header__inner { background: #FFF; }
@@ -445,6 +451,10 @@ a.contacts__email:hover { text-decoration: underline; }
 
 .header__inner { *zoom: 1; }
 .header__inner:after { content: " "; display: table; clear: both; }
+
+.header__logo { float: left; width: 180px; height: 180px; }
+@media only screen and (max-width: 1295px) { .header__logo { width: 90px; height: 90px; } }
+.header__logo.is-small, .header__logo.is-fixed { position: fixed; z-index: 99; top: 0; width: 90px; height: 90px; }
 
 .header_content { background: url("../img/header-bg.jpg") no-repeat left center; }
 .header_content .header__inner { box-shadow: 0 25px 120px -30px rgba(22, 38, 52, 0.4); }
@@ -565,12 +575,11 @@ a.contacts__email:hover { text-decoration: underline; }
 
 .location__name { display: block; float: left; width: 31.93277%; margin-top: 3px; text-align: right; font-style: italic; color: #33424F; color: rgba(51, 66, 79, 0.7); font-size: 12px; line-height: 1.66; letter-spacing: 0.02em; }
 
-.b-news { *zoom: 1; }
+.b-news { margin-left: 90px; *zoom: 1; }
 .b-news:after { content: " "; display: table; clear: both; }
 .b-news > .logo, .b-news > .news, .b-news > .news-list, .b-news > .button { float: left; }
 .b-news .button { height: 360px; }
 @media only screen and (max-width: 1295px) { .b-news { margin-left: 45px; }
-  .b-news .logo { display: none; margin-left: 45px; }
   .b-news .button { height: 300px; } }
 
 .b-promo1 { position: relative; font-size: 0; width: auto; }
@@ -796,6 +805,7 @@ a.contacts__email:hover { text-decoration: underline; }
 .big-map:before { content: ""; position: absolute; z-index: 1; top: -1px; left: 0; right: 0; height: 1px; box-shadow: 0 0 10px 0 rgba(22, 38, 52, 0.2); }
 
 .form { display: block; position: absolute; z-index: 1; top: 117px; left: 100%; margin-left: 55px; width: 250px; }
+@media only screen and (max-width: 1295px) { .form { margin-left: 10px; width: 170px; } }
 
 .form__success { display: none; position: absolute; top: 0; left: 0; right: 0; bottom: 0; z-index: 2; text-align: center; color: #FFF; background: #3B4D5D; font-size: 18px; line-height: 1.333; font-family: "FuturaNewMedium", Helvetica, Arial, sans-serif; font-weight: normal; }
 .form__success > strong { text-transform: uppercase; font-size: 32px; line-height: 1; }
@@ -806,6 +816,9 @@ a.contacts__email:hover { text-decoration: underline; }
 .form__close { position: absolute; top: -20px; right: -55px; -webkit-transition: -webkit-transform 0.15s linear; transition: transform 0.15s linear; }
 .form__close:hover { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
 
+.form__refresh { -webkit-transition: -webkit-transform 0.15s linear; transition: transform 0.15s linear; }
+.form__refresh:hover { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
+
 .input-field { display: block; margin-bottom: 12px; width: 100%; padding: 10px 15px; box-sizing: border-box; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; font-size: 13px; line-height: 1.54; color: #33424F; }
 .input-field:-ms-input-placeholder { font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; color: rgba(51, 66, 79, 0.5); }
 .input-field::-moz-placeholder { font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; color: rgba(51, 66, 79, 0.5); }
@@ -815,6 +828,20 @@ a.contacts__email:hover { text-decoration: underline; }
 textarea.input-field { height: 140px; border: none; box-shadow: none; resize: none; }
 
 .has-shadow { box-shadow: 25px 25px 80px -20px rgba(22, 38, 52, 0.2); }
+
+.animation { -webkit-transition: -webkit-transform 0.4s ease, opacity 0.4s ease; transition: transform 0.4s ease, opacity 0.4s ease; }
+.animation.right-bottom { -webkit-transform: translate(200px, 200px); -ms-transform: translate(200px, 200px); transform: translate(200px, 200px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
+.animation.right-top { -webkit-transform: translate(200px, -200px); -ms-transform: translate(200px, -200px); transform: translate(200px, -200px); -webkit-transition-delay: 0.5s; transition-delay: 0.5s; opacity: 0; }
+.animation.left-bottom { -webkit-transform: translate(-200px, 200px); -ms-transform: translate(-200px, 200px); transform: translate(-200px, 200px); -webkit-transition-delay: 0.7s; transition-delay: 0.7s; opacity: 0; }
+.animation.left-top { -webkit-transform: translate(-200px, -200px); -ms-transform: translate(-200px, -200px); transform: translate(-200px, -200px); -webkit-transition-delay: 0.5s; transition-delay: 0.5s; opacity: 0; }
+.animation.left { -webkit-transform: translateX(-200px); -ms-transform: translateX(-200px); transform: translateX(-200px); -webkit-transition-delay: 0.3s; transition-delay: 0.3s; opacity: 0; }
+.animation.right { -webkit-transform: translateX(200px); -ms-transform: translateX(200px); transform: translateX(200px); opacity: 0; }
+.animation.top { -webkit-transform: translateY(-200px); -ms-transform: translateY(-200px); transform: translateY(-200px); -webkit-transition-delay: 0.6s; transition-delay: 0.6s; opacity: 0; }
+.animation.bottom { -webkit-transform: translateY(200px); -ms-transform: translateY(200px); transform: translateY(200px); opacity: 0; }
+.animation.delay1 { -webkit-transition-delay: 0.3s; transition-delay: 0.3s; }
+.animation.delay2 { -webkit-transition-delay: 0.6s; transition-delay: 0.6s; }
+.animation.delay3 { -webkit-transition-delay: 0.9s; transition-delay: 0.9s; }
+.animation.done { -webkit-transform: none; -ms-transform: none; transform: none; opacity: 1; }
 
 
 

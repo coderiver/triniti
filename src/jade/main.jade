@@ -17,7 +17,7 @@ block content
     .l
       .toparea__inner
         <!-- begin slider -->
-        .slider.js-slick
+        .slider.js-slick.animation.left
           //- .slider__item(style="background-image:url('img/slider/slide1.jpg')")
           .slider__item
             img(src="img/slider/slide1.jpg", alt="")
@@ -31,7 +31,7 @@ block content
             img(src="img/slider/slide1.jpg", alt="")
         <!-- end slider -->
 
-        h1.big-title.big-title_shadow
+        h1.big-title.big-title_shadow.animation.bottom
           | Тогово-развлекательный комплекс Triniti
   <!-- end toparea -->
 
@@ -39,7 +39,7 @@ block content
     .main-wrap
 
       <!-- begin categories -->
-      .b.b_r
+      .b.b_r.animation.right
         a.category.category_main(href="#")
           .category__title
             span.category__number 01
@@ -73,7 +73,6 @@ block content
 
       <!-- begin news -->
       .b.b-news
-        .logo.logo_small
 
         a.news.news_resize.has-shadow(href="#")
           .news__pic(style="background-image:url('img/news/news.jpg')")

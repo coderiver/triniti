@@ -1,11 +1,11 @@
 var map;
 var pointsOnMap = [
         [53.6448827, 23.8546979, 1, {
-            'head'    : 'First point',
-            'address' : 'address 1',
-            'tel'     : '0800-800-800',
-            'open'    : '8:30AM - 5:00PM',
-            'common'  : 'some text'
+            'head'    : 'Name',
+            'address' : 'Address',
+            'tel'     : 'Phone',
+            'open'    : 'Opened from: - to:',
+            'common'  : 'Some text'
 
         }]
     ];

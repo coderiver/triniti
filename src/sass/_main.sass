@@ -33,9 +33,6 @@
   z-index: 1
   +clr
 
-  .logo
-    float: left
-
   .contact-button, .menu
     float: right
 
@@ -93,18 +90,23 @@
 .header__inner
   +clr
 
+.header__logo
+  float: left
+  width: 180px
+  height: 180px
+  +resize
+    width: 90px
+    height: 90px
+  &.is-small,
+  &.is-fixed
+    position: fixed
+    z-index: 99
+    top: 0
+    width: 90px
+    height: 90px
+
 .header_content
   background: url('../img/header-bg.jpg') no-repeat left center
-  // &:before
-  //   content: ""
-  //   position: absolute
-  //   z-index: -1
-  //   bottom: 0
-  //   right: 50%
-  //   margin-right: -90px
-  //   height: 200px
-  //   width: 700px
-  //   box-shadow: 0 50px 120px -30px rgba(#560001, 0.4)
   .header__inner
     // box-shadow: 0 50px 120px -30px rgba(#560001, 0.4)
     box-shadow: 0 25px 120px -30px rgba(#162634, 0.4)
@@ -591,6 +593,7 @@
 
 
 .b-news
+  margin-left: 90px
   +clr
   > .logo, > .news, > .news-list, > .button
     float: left
@@ -598,9 +601,6 @@
     height: 360px
   +resize
     margin-left: 45px
-    .logo
-      display: none
-      margin-left: 45px
     .button
       height: 300px
 
@@ -1329,6 +1329,9 @@
   left: 100%
   margin-left: 55px
   width: 250px
+  +resize
+    margin-left: 10px
+    width: 170px
 
 .form__success
   display: none
@@ -1363,6 +1366,11 @@
   &:hover
     transform: rotate(180deg)
 
+.form__refresh
+  +trans(transform)
+  &:hover
+    transform: rotate(180deg)
+
 
 .input-field
   display: block
@@ -1388,3 +1396,49 @@ textarea.input-field
 
 .has-shadow
   box-shadow: 25px 25px 80px -20px rgba(#162634, 0.2)
+
+
+.animation
+  transition: transform 0.4s ease, opacity 0.4s ease
+  &.right-bottom
+    transform: translate(200px, 200px)
+    transition-delay: 1s
+    opacity: 0
+  &.right-top
+    transform: translate(200px, -200px)
+    transition-delay: 0.5s
+    opacity: 0
+  &.left-bottom
+    transform: translate(-200px, 200px)
+    transition-delay: 0.7s
+    opacity: 0
+  &.left-top
+    transform: translate(-200px, -200px)
+    transition-delay: 0.5s
+    opacity: 0
+  &.left
+    transform: translateX(-200px)
+    transition-delay: 0.3s
+    opacity: 0
+  &.right
+    transform: translateX(200px)
+    // transition-delay: 0.3s
+    opacity: 0
+  &.top
+    transform: translateY(-200px)
+    transition-delay: 0.6s
+    opacity: 0
+  &.bottom
+    transform: translateY(200px)
+    // transition-delay: 0.9s
+    opacity: 0
+  &.delay1
+    transition-delay: 0.3s
+  &.delay2
+    transition-delay: 0.6s
+  &.delay3
+    transition-delay: 0.9s
+
+  &.done
+    transform: none
+    opacity: 1

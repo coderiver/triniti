@@ -13,7 +13,8 @@
     <div class="out"><!-- begin header -->
       <header class="header header_content">
         <div class="l">
-          <div class="header__inner"><a href="/" class="logo">Triniti</a><a href="#" class="contact-button">
+          <div class="header__inner">
+            <div class="header__logo"><a href="/" class="logo">Triniti</a></div><a href="#" class="contact-button">
               <div class="contact-button__inner"><i class="icon icon-phone"></i><strong>Контакты</strong><span>Контактная информация и обратная связь</span></div></a>
             <nav class="menu">
               <ul class="menu__list">
@@ -34,12 +35,11 @@
             <input type="text" name="Name" placeholder="Имя" data-validetta="required" class="input-field">
             <input type="tel" name="Phone" placeholder="Телефон" data-validetta="required,number,minLength[10],maxLength[13]" class="input-field">
             <input type="email" name="Email" placeholder="E-mail" data-validetta="required,email" class="input-field">
-            <textarea name="Message" placeholder="Сообщение" data-validetta="required" class="input-field"></textarea>
+            <textarea name="Message" placeholder="Сообщение" class="input-field"></textarea>
             <button type="submit" class="button button_red button_fw"><span class="button__text">Отправить</span></button>
-            <div class="form__success">
-              <button class="form__close icon icon-close"></button><strong>Спасибо!</strong>
+            <div class="form__success"><strong>Спасибо!</strong>
               <p>Наш менеджер свяжется с вами в ближайшее время</p>
-              <button type="button" class="icon icon-round-arr"></button>
+              <button type="button" class="form__refresh icon icon-round-arr"></button>
             </div>
           </form><!-- end form -->
           <div class="l-main__inner"><!-- begin contacts -->
