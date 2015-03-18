@@ -121,7 +121,7 @@ body { position: relative; font-family: "Trebuchet MS", Helvetica, Arial, sans-s
 .slick-dots li button:hover:before { background: #D12023; }
 .slick-dots li.slick-active button:before { background: #D12023; }
 
-.validetta-bubble { position: absolute; background-color: #D12023; width: 200px; color: white; padding: 5px 12px; }
+.validetta-bubble { display: none !important; position: absolute; background-color: #D12023; width: 200px; color: white; padding: 5px 12px; }
 
 .validetta-bubble:before { content: ''; display: block; position: absolute; top: 7px; right: -5px; width: 0; height: 0; border-left: 5px solid #CD2E26; border-bottom: 5px solid transparent; border-top: 5px solid transparent; }
 
@@ -831,11 +831,12 @@ a.contacts__email:hover { text-decoration: underline; }
 .form__refresh { -webkit-transition: -webkit-transform 0.15s linear; transition: transform 0.15s linear; }
 .form__refresh:hover { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); }
 
-.input-field { display: block; margin-bottom: 12px; width: 100%; padding: 10px 15px; box-sizing: border-box; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; font-size: 13px; line-height: 1.54; color: #33424F; }
+.input-field { display: block; margin-bottom: 12px; width: 100%; padding: 10px 15px; box-sizing: border-box; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; font-size: 13px; line-height: 1.54; color: #33424F; -webkit-transition: all 0.15s linear; transition: all 0.15s linear; }
 .input-field:-ms-input-placeholder { font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; color: rgba(51, 66, 79, 0.5); }
 .input-field::-moz-placeholder { font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; color: rgba(51, 66, 79, 0.5); }
 .input-field::-webkit-input-placeholder { font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; color: rgba(51, 66, 79, 0.5); }
 .input-field::placeholder { font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; letter-spacing: 0.02em; color: rgba(51, 66, 79, 0.5); }
+.form__field.is-error .input-field { background: #FFA1A1; color: #D12023; }
 
 textarea.input-field { height: 140px; border: none; box-shadow: none; resize: none; }
 

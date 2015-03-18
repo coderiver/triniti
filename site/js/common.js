@@ -180,7 +180,12 @@ head.ready(function() {
         form.validetta({
             errorClass : 'is-error',
             validClass : 'is-success',
-            onValid : function() {
+            realTime : true,
+            onValid : function(event) {
+                // prevent default event when submit
+                event.preventDefault();
+                alert('Succes! Need send request to server');
+
                 var msg = $('#form .form__success');
                 var closeBtn = $('#form .form__refresh');
                 msg.fadeIn(200);
@@ -191,18 +196,18 @@ head.ready(function() {
                 });
             },
             onError : function() {
-                console.log('error');
+                console.log('Form validation error');
             }
         });
     }
 
-    // remove on production
-    form.submit(function(event) {
-        event.preventDefault();
-        if ( form.hasClass('is-success') ) {
-            alert('Succes! Need send request to server');
-        }
-    });
+    // // remove on production
+    // form.submit(function(event) {
+    //     event.preventDefault();
+    //     if ( form.hasClass('is-success') ) {
+    //         alert('Succes! Need send request to server');
+    //     }
+    // });
 
 
     $('.animation').each(function() {

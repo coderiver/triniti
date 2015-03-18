@@ -1401,9 +1401,13 @@
   font-size: 13px
   line-height: 1.54
   color: $dark-text
+  +trans(all)
   +placeholder
     +regular
     color: rgba($dark-text, 0.5)
+  .form__field.is-error &
+    background: #FFA1A1
+    color: $red
 
 textarea.input-field
   height: 140px

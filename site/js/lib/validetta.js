@@ -477,6 +477,7 @@
              */
             close : function( el ) {
                 el.parentNode.removeChild( el );
+                $( el ).removeClass('is-error');
                 // set to handler false
                 // otherwise at the next validation attempt, submit will not continue even the validation is successful
                 this.handler = false ;

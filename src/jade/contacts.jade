@@ -60,10 +60,14 @@ block content
     .l-main.l-main_contacts
       <!-- begin form -->
       form#form.form(method="POST", novalidate)
-        input.input-field.animation.top(type="text", name="Name", placeholder="Имя", data-validetta="required")
-        input.input-field.animation.right(type="tel", name="Phone" ,placeholder="Телефон", data-validetta="required,number,minLength[10],maxLength[13]")
-        input.input-field.animation.left(type="email", name="Email", placeholder="E-mail", data-validetta="required,email")
-        textarea.input-field.animation.right(name="Message", placeholder="Сообщение")
+        .form__field.animation.top
+          input.input-field(type="text", name="Name", placeholder="Имя", data-validetta="required")
+        .form__field.animation.right
+          input.input-field(type="tel", name="Phone" ,placeholder="Телефон", data-validetta="required,number,minLength[10],maxLength[13]")
+        .form__field.animation.left
+          input.input-field(type="email", name="Email", placeholder="E-mail", data-validetta="required,email")
+        .form__field.animation.right
+          textarea.input-field(name="Message", placeholder="Сообщение")
         button.button.button_red.button_fw.animation.bottom(type="submit")
           span.button__text
             | Отправить

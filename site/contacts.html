@@ -37,10 +37,18 @@
       <div class="l">
         <div class="l-main l-main_contacts"><!-- begin form -->
           <form id="form" method="POST" novalidate class="form">
-            <input type="text" name="Name" placeholder="Имя" data-validetta="required" class="input-field animation top">
-            <input type="tel" name="Phone" placeholder="Телефон" data-validetta="required,number,minLength[10],maxLength[13]" class="input-field animation right">
-            <input type="email" name="Email" placeholder="E-mail" data-validetta="required,email" class="input-field animation left">
-            <textarea name="Message" placeholder="Сообщение" class="input-field animation right"></textarea>
+            <div class="form__field animation top">
+              <input type="text" name="Name" placeholder="Имя" data-validetta="required" class="input-field">
+            </div>
+            <div class="form__field animation right">
+              <input type="tel" name="Phone" placeholder="Телефон" data-validetta="required,number,minLength[10],maxLength[13]" class="input-field">
+            </div>
+            <div class="form__field animation left">
+              <input type="email" name="Email" placeholder="E-mail" data-validetta="required,email" class="input-field">
+            </div>
+            <div class="form__field animation right">
+              <textarea name="Message" placeholder="Сообщение" class="input-field"></textarea>
+            </div>
             <button type="submit" class="button button_red button_fw animation bottom"><span class="button__text">Отправить</span></button>
             <div class="form__success"><strong>Спасибо!</strong>
               <p>Наш менеджер свяжется с вами в ближайшее время</p>

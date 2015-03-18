@@ -4,6 +4,7 @@
 // Copyright 2013-2014 Hasan Aydoğdu - http://www.hasanaydogdu.com
 
 .validetta-bubble {
+    display: none !important;
     position: absolute;
     background-color: $red;
     width: 200px;
