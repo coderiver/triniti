@@ -74,7 +74,7 @@ block content
       <!-- begin news -->
       .b.b-news
 
-        a.news.news_resize.has-shadow(href="#")
+        a.news.news_resize.has-shadow.animation.left-bottom(href="#")
           .news__pic(style="background-image:url('img/news/news.jpg')")
             //- img(src="img/news.jpg", alt="")
           .news__footer
@@ -84,7 +84,7 @@ block content
             strong.news__title
               | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
 
-        ul.news-list
+        ul.news-list.animation.right-top
           li.news-list__item
             a.news-list__title(href="#")
               | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
@@ -96,20 +96,20 @@ block content
             span.news-list__date
               | 25 Сентября 2015
 
-        button.button.button_vert(type="button")
+        button.button.button_vert.animation.right(type="button")
           span.button__text Все новости
       <!-- end news -->
 
       <!-- begin location -->
       .b.b_r
         .location
-          h3.location__title
+          h3.location__title.animation.left
             | Стратегически удобное расположение
 
           em.location__name
             | Республика Беларусь, г.Гродно, пересечение пр.Клятского и пр.Янки Купалы
 
-          .location__about
+          .location__about.animation.right
             p
               | Уникальный торговый центр «Тринити» располагается в 7 минутах от
               | центра города, где находятся главные исторические достопри- мечательности Гродно, посещаемые туристами.
@@ -118,24 +118,24 @@ block content
               | В 700 м от ТРЦ «Тринити» находится комфортабельная гостиница «Турист»,
               | а в 2,5 км располагается один из лучших ночных клубов Беларуси — «База».
 
-          button.button.button_red(type="button")
+          button.button.button_red.animation.bottom(type="button")
             span.button__text Подробнее о комплексе
             i.icon.icon-arr
 
-          .location__map
+          .location__map.animation.right
             #map
       <!-- end location -->
 
       <!-- begin promo 1 -->
       .b.b_r.b-promo1
 
-        .sqr.sqr_2x.sqr_promo.has-shadow(style="background-image:url('img/promo/promo1.jpg')")
+        .sqr.sqr_2x.sqr_promo.has-shadow.animation.left(style="background-image:url('img/promo/promo1.jpg')")
           .sqr.sqr_icon
             i.icon.icon-corona
             p
               | Первый региональ-<br>ный торгово-развлекательный бизнес-центр.
 
-        .sqr.sqr_icon
+        .sqr.sqr_icon.animation.bottom
           i.icon.icon-clock
           p
             | Более 400 000 человек способны попасть в ТРК в течение 20 минут.
@@ -149,12 +149,12 @@ block content
                 | Вместимость машиномест
 
         .sqr.sqr_2x.sqr_promo.has-shadow(style="background-image:url('img/promo/promo2.jpg')")
-          .sqr.sqr_icon
+          .sqr.sqr_icon.animation.left-top
             i.icon.icon-man
             p
               | Более 50 000 человек в пешеходной доступности.
 
-        .sqr.sqr_2x.sqr_center
+        .sqr.sqr_2x.sqr_center.animation.right
           .sqr__inner
             dl.number.number_light
               dt.number__big
@@ -165,8 +165,8 @@ block content
 
       <!-- begin pomo 2 -->
       .b.b_r.b-promo2
-        .sqr.sqr_2x.sqr_promo.has-shadow(style="background-image:url('img/promo/promo3.jpg')")
-          .sqr.sqr_icon
+        .sqr.sqr_2x.sqr_promo.has-shadow.animation.bottom(style="background-image:url('img/promo/promo3.jpg')")
+          .sqr.sqr_icon.animation.left-top
             i.icon.icon-map-pin
             p
               | Всего 7 минут от центра города Гродно.
@@ -179,7 +179,7 @@ block content
               dd.number__small
                 | Бутики и торговые площади
 
-        .sqr.sqr_icon
+        .sqr.sqr_icon.animation.right-bottom
           i.icon.icon-bus
           p
             | Расположение вблизи основных транспортных развязок.
@@ -189,9 +189,9 @@ block content
 
       <!-- begin about -->
       .about
-        h3.about__title
+        h3.about__title.animation.top
           | Девелопер и Партнёры проекта
-        p.about__text
+        p.about__text.animation.left
           | ООО «Тринити Инвест» входит в группу компаний «Конте».
           | Основным направлением деятельности динамично развивающейся компании
           | является организация строительства торгово-развлекательного и бизнес-центра «Тринити».

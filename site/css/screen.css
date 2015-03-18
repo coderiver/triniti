@@ -830,17 +830,14 @@ textarea.input-field { height: 140px; border: none; box-shadow: none; resize: no
 .has-shadow { box-shadow: 25px 25px 80px -20px rgba(22, 38, 52, 0.2); }
 
 .animation { -webkit-transition: -webkit-transform 0.4s ease, opacity 0.4s ease; transition: transform 0.4s ease, opacity 0.4s ease; }
-.animation.right-bottom { -webkit-transform: translate(200px, 200px); -ms-transform: translate(200px, 200px); transform: translate(200px, 200px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
-.animation.right-top { -webkit-transform: translate(200px, -200px); -ms-transform: translate(200px, -200px); transform: translate(200px, -200px); -webkit-transition-delay: 0.5s; transition-delay: 0.5s; opacity: 0; }
-.animation.left-bottom { -webkit-transform: translate(-200px, 200px); -ms-transform: translate(-200px, 200px); transform: translate(-200px, 200px); -webkit-transition-delay: 0.7s; transition-delay: 0.7s; opacity: 0; }
-.animation.left-top { -webkit-transform: translate(-200px, -200px); -ms-transform: translate(-200px, -200px); transform: translate(-200px, -200px); -webkit-transition-delay: 0.5s; transition-delay: 0.5s; opacity: 0; }
-.animation.left { -webkit-transform: translateX(-200px); -ms-transform: translateX(-200px); transform: translateX(-200px); -webkit-transition-delay: 0.3s; transition-delay: 0.3s; opacity: 0; }
-.animation.right { -webkit-transform: translateX(200px); -ms-transform: translateX(200px); transform: translateX(200px); opacity: 0; }
-.animation.top { -webkit-transform: translateY(-200px); -ms-transform: translateY(-200px); transform: translateY(-200px); -webkit-transition-delay: 0.6s; transition-delay: 0.6s; opacity: 0; }
-.animation.bottom { -webkit-transform: translateY(200px); -ms-transform: translateY(200px); transform: translateY(200px); opacity: 0; }
-.animation.delay1 { -webkit-transition-delay: 0.3s; transition-delay: 0.3s; }
-.animation.delay2 { -webkit-transition-delay: 0.6s; transition-delay: 0.6s; }
-.animation.delay3 { -webkit-transition-delay: 0.9s; transition-delay: 0.9s; }
+.animation.right-bottom { -webkit-transform: translate(100px, 100px); -ms-transform: translate(100px, 100px); transform: translate(100px, 100px); -webkit-transition-delay: 1.7s; transition-delay: 1.7s; opacity: 0; }
+.animation.right-top { -webkit-transform: translate(100px, -100px); -ms-transform: translate(100px, -100px); transform: translate(100px, -100px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
+.animation.left-bottom { -webkit-transform: translate(-100px, 100px); -ms-transform: translate(-100px, 100px); transform: translate(-100px, 100px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
+.animation.left-top { -webkit-transform: translate(-100px, -100px); -ms-transform: translate(-100px, -100px); transform: translate(-100px, -100px); -webkit-transition-delay: 2s; transition-delay: 2s; opacity: 0; }
+.animation.left { -webkit-transform: translateX(-100px); -ms-transform: translateX(-100px); transform: translateX(-100px); -webkit-transition-delay: 1.5s; transition-delay: 1.5s; opacity: 0; }
+.animation.right { -webkit-transform: translateX(100px); -ms-transform: translateX(100px); transform: translateX(100px); -webkit-transition-delay: 1.5s; transition-delay: 1.5s; opacity: 0; }
+.animation.top { -webkit-transform: translateY(-100px); -ms-transform: translateY(-100px); transform: translateY(-100px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
+.animation.bottom { -webkit-transform: translateY(100px); -ms-transform: translateY(100px); transform: translateY(100px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
 .animation.done { -webkit-transform: none; -ms-transform: none; transform: none; opacity: 1; }
 
 

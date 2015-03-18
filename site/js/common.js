@@ -194,15 +194,14 @@ head.ready(function() {
 
     $('.animation').each(function() {
         var el    = $(this),
-            elTop = el.offset().top,
-            startPoint = scrollPosition + win.height();
+            elTop = el.offset().top;
 
-            if ( startPoint > elTop ) {
+            if ( scrollPosition + win.height() >= elTop ) {
                 el.addClass('done');
             }
 
             win.on('scroll', function() {
-                if ( startPoint > elTop ) {
+                if ( scrollPosition + win.height() >= elTop ) {
                     el.addClass('done');
                 }
             });
