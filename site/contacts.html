@@ -10,13 +10,14 @@
     <script type="text/javascript" src="js/map.js"></script>
   </head>
   <body>
+    <div class="page-bg"></div>
     <div class="out"><!-- begin header -->
       <header class="header header_content">
         <div class="l">
           <div class="header__inner">
-            <div class="header__logo"><a href="/" class="logo">Triniti</a></div><a href="#" class="contact-button">
+            <div class="header__logo animation right"><a href="/" class="logo">Triniti</a></div><a href="#" class="contact-button animation bottom">
               <div class="contact-button__inner"><i class="icon icon-phone"></i><strong>Контакты</strong><span>Контактная информация и обратная связь</span></div></a>
-            <nav class="menu">
+            <nav class="menu animation top">
               <ul class="menu__list">
                 <li><a href="#" class="menu__link is-active">Главная</a></li>
                 <li><a href="#" class="menu__link">Застройщик</a></li>
@@ -25,18 +26,18 @@
                 <li><a href="#" class="menu__link">Новости</a></li>
               </ul>
             </nav>
-            <div class="big-title">Контакты</div>
+            <div class="big-title animation left">Контакты</div>
           </div>
         </div>
       </header><!-- end header --><!-- begin content -->
       <div class="l">
         <div class="l-main"><!-- begin form -->
           <form id="form" method="POST" novalidate class="form">
-            <input type="text" name="Name" placeholder="Имя" data-validetta="required" class="input-field">
-            <input type="tel" name="Phone" placeholder="Телефон" data-validetta="required,number,minLength[10],maxLength[13]" class="input-field">
-            <input type="email" name="Email" placeholder="E-mail" data-validetta="required,email" class="input-field">
-            <textarea name="Message" placeholder="Сообщение" class="input-field"></textarea>
-            <button type="submit" class="button button_red button_fw"><span class="button__text">Отправить</span></button>
+            <input type="text" name="Name" placeholder="Имя" data-validetta="required" class="input-field animation top">
+            <input type="tel" name="Phone" placeholder="Телефон" data-validetta="required,number,minLength[10],maxLength[13]" class="input-field animation right">
+            <input type="email" name="Email" placeholder="E-mail" data-validetta="required,email" class="input-field animation left">
+            <textarea name="Message" placeholder="Сообщение" class="input-field animation right"></textarea>
+            <button type="submit" class="button button_red button_fw animation bottom"><span class="button__text">Отправить</span></button>
             <div class="form__success"><strong>Спасибо!</strong>
               <p>Наш менеджер свяжется с вами в ближайшее время</p>
               <button type="button" class="form__refresh icon icon-round-arr"></button>
@@ -69,7 +70,7 @@
               </div>
             </div><!-- end contacts -->
           </div><!-- begin big-map -->
-          <div class="big-map">
+          <div class="big-map animation bottom">
             <div id="map"></div>
           </div><!-- end big-map -->
         </div>
@@ -79,7 +80,7 @@
           <div class="footer__inner"><span class="footer__copy">© 2015 triniti-grodno.by</span>
             <div class="footer__contacts"><a href="tel:+375152660299" class="tel">+375 (15) 266-02-99</a><a href="mailto:info@3niti.by" class="email">info@3niti.by</a></div>
             <div href="#" class="footer__creator"><a href="#" class="flex"><i class="flex__icon"></i><span class="flex__text">site by flex media <em>2015</em></span></a></div>
-            <div class="footer__socials"><a href="#" class="social-button social-button_inst"></a><a href="#" class="social-button social-button_vk"></a><a href="#" class="social-button social-button_fb"></a></div>
+            <div class="footer__socials animation left"><a href="#" class="social-button social-button_inst"></a><a href="#" class="social-button social-button_vk"></a><a href="#" class="social-button social-button_fb"></a></div>
           </div>
         </div>
       </footer><!-- end footer -->

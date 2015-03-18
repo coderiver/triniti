@@ -1,8 +1,6 @@
 @charset "UTF-8";
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; vertical-align: baseline; }
 
-body, html { height: 100%; }
-
 img, fieldset, a img { border: none; }
 
 input[type="text"], input[type="email"], input[type="tel"], textarea { -webkit-appearance: none; }
@@ -25,9 +23,11 @@ table { border-spacing: 0; border-collapse: collapse; width: 100%; }
 @font-face { font-family: "FuturaNewLight"; src: url("../fonts/FuturaNewLight-Reg.eot"); src: url("../fonts/FuturaNewLight-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewLight-Reg.woff") format("woff"), url("../fonts/FuturaNewLight-Reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "FuturaNewMedium"; src: url("../fonts/FuturaNewMedium-Reg.eot"); src: url("../fonts/FuturaNewMedium-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewMedium-Reg.woff") format("woff"), url("../fonts/FuturaNewMedium-Reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 @font-face { font-family: "FuturaNewHeavy"; src: url("../fonts/FuturaNewHeavy-Reg.eot"); src: url("../fonts/FuturaNewHeavy-Reg.eot?#iefix") format("embedded-opentype"), url("../fonts/FuturaNewHeavy-Reg.woff") format("woff"), url("../fonts/FuturaNewHeavy-Reg.ttf") format("truetype"); font-weight: normal; font-style: normal; }
-body { background: #3B4D5D; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; color: #33424F; font-size: 13px; }
+body { position: relative; font-family: "Trebuchet MS", Helvetica, Arial, sans-serif; line-height: 1.5; -webkit-font-smoothing: antialiased; color: #33424F; background: #F2F5F6; font-size: 13px; }
 
-.out { position: relative; max-width: 1600px; min-width: 1044px; margin: auto; background: #F2F5F6; overflow: hidden; }
+.page-bg { position: absolute; z-index: -1; top: 0; left: 50%; right: 0; bottom: 0; background: #3B4D5D; }
+
+.out { position: relative; z-index: 0; max-width: 1600px; min-width: 1044px; margin: auto; background: #F2F5F6; overflow: hidden; }
 .out:before { content: ""; position: absolute; box-sizing: border-box; top: 0; left: 50%; bottom: 0; width: 600px; margin-left: 270px; z-index: 0; background: #3B4D5D; }
 @media only screen and (max-width: 1295px) { .out:before { margin-left: 165px; } }
 
@@ -831,13 +831,13 @@ textarea.input-field { height: 140px; border: none; box-shadow: none; resize: no
 
 .animation { -webkit-transition: -webkit-transform 0.4s ease, opacity 0.4s ease; transition: transform 0.4s ease, opacity 0.4s ease; }
 .animation.right-bottom { -webkit-transform: translate(100px, 100px); -ms-transform: translate(100px, 100px); transform: translate(100px, 100px); -webkit-transition-delay: 1.7s; transition-delay: 1.7s; opacity: 0; }
-.animation.right-top { -webkit-transform: translate(100px, -100px); -ms-transform: translate(100px, -100px); transform: translate(100px, -100px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
-.animation.left-bottom { -webkit-transform: translate(-100px, 100px); -ms-transform: translate(-100px, 100px); transform: translate(-100px, 100px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
+.animation.right-top { -webkit-transform: translate(100px, -100px); -ms-transform: translate(100px, -100px); transform: translate(100px, -100px); -webkit-transition-delay: 1.3s; transition-delay: 1.3s; opacity: 0; }
+.animation.left-bottom { -webkit-transform: translate(-100px, 100px); -ms-transform: translate(-100px, 100px); transform: translate(-100px, 100px); -webkit-transition-delay: 1.2s; transition-delay: 1.2s; opacity: 0; }
 .animation.left-top { -webkit-transform: translate(-100px, -100px); -ms-transform: translate(-100px, -100px); transform: translate(-100px, -100px); -webkit-transition-delay: 2s; transition-delay: 2s; opacity: 0; }
-.animation.left { -webkit-transform: translateX(-100px); -ms-transform: translateX(-100px); transform: translateX(-100px); -webkit-transition-delay: 1.5s; transition-delay: 1.5s; opacity: 0; }
-.animation.right { -webkit-transform: translateX(100px); -ms-transform: translateX(100px); transform: translateX(100px); -webkit-transition-delay: 1.5s; transition-delay: 1.5s; opacity: 0; }
-.animation.top { -webkit-transform: translateY(-100px); -ms-transform: translateY(-100px); transform: translateY(-100px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
-.animation.bottom { -webkit-transform: translateY(100px); -ms-transform: translateY(100px); transform: translateY(100px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
+.animation.left { -webkit-transform: translateX(-100px); -ms-transform: translateX(-100px); transform: translateX(-100px); -webkit-transition-delay: 1s; transition-delay: 1s; opacity: 0; }
+.animation.right { -webkit-transform: translateX(100px); -ms-transform: translateX(100px); transform: translateX(100px); -webkit-transition-delay: 1.7s; transition-delay: 1.7s; opacity: 0; }
+.animation.top { -webkit-transform: translateY(-100px); -ms-transform: translateY(-100px); transform: translateY(-100px); -webkit-transition-delay: 1.5s; transition-delay: 1.5s; opacity: 0; }
+.animation.bottom { -webkit-transform: translateY(100px); -ms-transform: translateY(100px); transform: translateY(100px); -webkit-transition-delay: 1.3s; transition-delay: 1.3s; opacity: 0; }
 .animation.done { -webkit-transform: none; -ms-transform: none; transform: none; opacity: 1; }
 
 

@@ -45,15 +45,28 @@ $border: #D4DBDD
 
 
 body
-  background: $dark
+  position: relative
   font-family: "Trebuchet MS", Helvetica, Arial, sans-serif
   line-height: 1.5
   -webkit-font-smoothing: antialiased
   color: $dark-text
+  background: $main-gray
   font-size: 13px
+
+
+.page-bg
+  position: absolute
+  z-index: -1
+  top: 0
+  left: 50%
+  right: 0
+  bottom: 0
+  background: $dark
+
 
 .out
   position: relative
+  z-index: 0
   max-width: 1600px
   min-width: 1044px
   margin: auto

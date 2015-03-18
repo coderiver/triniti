@@ -22,13 +22,13 @@ block content
         h2.bold-title
           | ТРК Тринити
 
-        a.button.button_sqr.button_red(href="#")
+        a.button.button_sqr.button_red.animation.left-bottom(href="#")
           .button__inner
             i.icon.icon-pdf
             strong
               | Скачать <br> презентацию
 
-        .contacts
+        .contacts.animation.right-bottom
           span.contacts__label
             | По вопросам аренды звоните:
           .contacts__phone
@@ -40,7 +40,7 @@ block content
       <!-- end page-header -->
 
       <!-- begin categories -->
-      .line
+      .line.animation.left
         a.category.category_narrow(href="#")
           .category__title
             span.category__number 01
@@ -80,7 +80,7 @@ block content
               | а в 2,5 км располагается один из лучших
               | ночных клубов Беларуси — «База».
 
-            dl.number.number_red
+            dl.number.number_red.animation.left
               dt.number__big
                 | 159 010 м<sup>2</sup>
               dd.number__small
@@ -92,7 +92,7 @@ block content
 
           .figure__right
 
-            .gallery.has-shadow
+            .gallery.has-shadow.animation.right-bottom
               .gallery__pictures.js-gallery
                 div
                   img(src="img/gallery/gallery1.jpg", alt="")
@@ -109,7 +109,7 @@ block content
                 div
                   img(src="img/gallery/gallery1.jpg", alt="")
 
-              .gallery__box
+              .gallery__box.animation.left-top
                 .gallery__nav
                   button.gallery__prev
                     i.icon.icon-prev
@@ -145,25 +145,25 @@ block content
             | Наш бизнес-центр оснащен самыми новыми технологиями, среди которых:
 
         .numbers-group
-          dl.number.number_red-mod
+          dl.number.number_red-mod.animation.left-top
             dt.number__big
               | 70 945 м<sup>2</sup>
             dd.number__small
               | Общая площадь подземного <br> паркинга
 
-          dl.number.number_red-mod
+          dl.number.number_red-mod.animation.right-top
             dt.number__big
               | 6 280 м<sup>2</sup>
             dd.number__small
               | Общая площадь офисного <br> здания
 
-          dl.number.number_red-mod
+          dl.number.number_red-mod.animation.left-bottom
             dt.number__big
               | 50 150 м<sup>2</sup>
             dd.number__small
               | Общая площадь торговых <br> помещений
 
-          dl.number.number_red-mod
+          dl.number.number_red-mod.animation.right-bottom
             dt.number__big
               | 10 645 м<sup>2</sup>
             dd.number__small
@@ -177,14 +177,14 @@ block content
 
         <!-- begin tabs -->
         .tabs
-          .tabs__main
+          .tabs__main.animation.left
             .tabs__content.is-active(data-tab="1")
               img(src="img/floor.jpg", alt="")
             .tabs__content(data-tab="2")
               img(src="http://placehold.it/720x460&text=tab2")
             .tabs__content(data-tab="3")
               img(src="http://placehold.it/720x460&text=tab3")
-          .tabs__buttons
+          .tabs__buttons.animation.right
             button.tabs__button.is-active(data-tab="1")
               | 1
             button.tabs__button(data-tab="2")
@@ -201,49 +201,49 @@ block content
             | Весь наш тогово-равзлекательный центр разделен на зоны, среди которых:
 
         .icons-group
-          figure.small-figure
+          figure.small-figure.animation.left-top
             .small-figure__icon
               i.icon.icon-food
             fiqcaption.small-figure__text
               | Общественное питание: <strong>3 130 м<sup>2</sup></strong>
 
-          figure.small-figure
+          figure.small-figure.animation.top
             .small-figure__icon
               i.icon.icon-boutique
             fiqcaption.small-figure__text
               | Бутики и торговые площади: <strong>31 255 м<sup>2</sup></strong>
 
-          figure.small-figure
+          figure.small-figure.animation.top
             .small-figure__icon
               i.icon.icon-bowling
             fiqcaption.small-figure__text
               | Боулинг: <strong>1 555 м<sup>2</sup></strong>
 
-          figure.small-figure
+          figure.small-figure.animation.right-top
             .small-figure__icon
               i.icon.icon-film
             fiqcaption.small-figure__text
               | Кинотеатр: <strong>3 625 м<sup>2</sup></strong>
 
-          figure.small-figure
+          figure.small-figure.animation.left-bottom
             .small-figure__icon
               i.icon.icon-office
             fiqcaption.small-figure__text
               | Офисные помещения: <strong>6 280 м<sup>2</sup></strong>
 
-          figure.small-figure
+          figure.small-figure.animation.bottom
             .small-figure__icon
               i.icon.icon-oma
             fiqcaption.small-figure__text
               | Строймаркет “ОМА”: <strong>10 440 м<sup>2</sup></strong>
 
-          figure.small-figure
+          figure.small-figure.animation.bottom
             .small-figure__icon
               i.icon.icon-euroopt
             fiqcaption.small-figure__text
               | Гипермаркет “Евроопт”: <strong>8 445 м<sup>2</sup></strong>
 
-          figure.small-figure
+          figure.small-figure.animation.right-bottom
             .small-figure__icon
               i.icon.icon-ice-arena
             fiqcaption.small-figure__text
@@ -255,7 +255,7 @@ block content
             | Девелоперы и инвесторы проекта
 
         .l-two-col
-          .l-column
+          .l-column.animation.left-top
             figure.small-figure.small-figure_big-icon
               .small-figure__icon
                 i.icon.icon-conte
@@ -264,7 +264,7 @@ block content
                 | даже строительных материалов и инстру-<br>
                 | ментов, товаров для дома, сада и огоро-<br>
                 | да.
-          .l-column
+          .l-column.animation.right
             figure.small-figure.small-figure_big-icon
               .small-figure__icon
                 i.icon.icon-triniti

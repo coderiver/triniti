@@ -194,7 +194,21 @@ head.ready(function() {
 
     $('.animation').each(function() {
         var el    = $(this),
-            elTop = el.offset().top;
+            elTop;
+
+            if ( el.hasClass('left-top') ||
+                 el.hasClass('right-top') ||
+                 el.hasClass('top')) {
+                elTop = el.offset().top + 100;
+            }
+            else if ( el.hasClass('left-bottom') ||
+                      el.hasClass('right-bottom') ||
+                      el.hasClass('bottom')) {
+                elTop = el.offset().top - 100;
+            }
+            else {
+                elTop = el.offset().top;
+            }
 
             if ( scrollPosition + win.height() >= elTop ) {
                 el.addClass('done');

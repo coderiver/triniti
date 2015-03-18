@@ -27,13 +27,13 @@ block content
         h2.bold-title
           | Документация
 
-        a.button.button_sqr.button_red(href="#")
+        a.button.button_sqr.button_red.animation.left-bottom(href="#")
           .button__inner
             i.icon.icon-pdf
             strong
               | Скачать <br> презентацию
 
-        .contacts
+        .contacts.animation.right-bottom
           span.contacts__label
             | По вопросам аренды звоните:
           .contacts__phone
@@ -50,7 +50,7 @@ block content
           | Здесь вы можете скачать всю необходимую документацию торгово-
           | развлекательного центра “Тринити”
 
-        .buttons-group
+        .buttons-group.animation.left-top
           a.download-button(href="#")
             i.icon.icon-pdf-shadow
             strong
@@ -82,14 +82,14 @@ block content
 
         <!-- begin tabs -->
         .tabs
-          .tabs__main
+          .tabs__main.animation.left
             .tabs__content.is-active(data-tab="1")
               img(src="img/floor.jpg", alt="")
             .tabs__content(data-tab="2")
               img(src="http://placehold.it/720x460&text=tab2")
             .tabs__content(data-tab="3")
               img(src="http://placehold.it/720x460&text=tab3")
-          .tabs__buttons
+          .tabs__buttons.animation.right
             button.tabs__button.is-active(data-tab="1")
               | 1
             button.tabs__button(data-tab="2")
