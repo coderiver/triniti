@@ -122,7 +122,15 @@ $square-width: 180px
     color: #FFF
     letter-spacing: 0.1em
     +heavy
-  &:hover
+  .header__button-inner.is-fixed &
+    z-index: 99
+    animation: logo 0.5s ease 1
+    height: 90px
+    strong
+      margin: 10px 0 0
+    span
+      display: none
+  &:hover, &:focus, &.is-active
     .contact-button__inner
       opacity: 1
 
@@ -504,10 +512,13 @@ a.contacts__email:hover
     font-size: inherit
   .contacts__email
     margin-top: 0
+  +resize
+    width: 50%
 
 
 .contacts-group
   margin-top: 50px
+  font-size: 0
   & + &
     margin-top: 65px
 

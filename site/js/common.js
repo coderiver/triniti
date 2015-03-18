@@ -10,6 +10,7 @@ head.ready(function() {
         galleryCaptions = $('.js-gallery-captions'),
         form            = $('#form'),
         logo            = $('.header__logo'),
+        contactButton   = $('.header__button-inner'),
         scrollPosition  = 0;
 
 
@@ -30,12 +31,24 @@ head.ready(function() {
     win.on('scroll', function(event) {
         scrollPosition = win.scrollTop();
 
-        if ( scrollPosition > 180 && !logo.hasClass('is-fixed') && !logo.hasClass('is-small') ) {
-            logo.addClass('is-fixed');
+        if ( scrollPosition > 180 ) {
+            if ( !logo.hasClass('is-fixed') && !logo.hasClass('is-small') ) {
+                logo.addClass('is-fixed');
+            }
+
+            if ( !contactButton.hasClass('is-fixed') ) {
+                contactButton.addClass('is-fixed');
+            }
         }
 
-        if ( scrollPosition < 180 && logo.hasClass('is-fixed') ) {
-            logo.removeClass('is-fixed');
+        if ( scrollPosition < 180 ) {
+            if ( logo.hasClass('is-fixed') ) {
+                logo.removeClass('is-fixed');
+            }
+
+            if ( contactButton.hasClass('is-fixed') ) {
+                contactButton.removeClass('is-fixed');
+            }
         }
     });
 

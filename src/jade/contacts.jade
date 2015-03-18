@@ -12,11 +12,52 @@ block add-script
 
 block content
 
-  include includes/_header-content
+  //- include includes/_header-content
+  <!-- begin header -->
+  header.header.header_content
+    .l
+      .header__inner
+
+        .header__logo.animation.right
+          a.logo(href="/")
+            | Triniti
+
+        .header__button
+          .header__button-inner
+            a.contact-button.is-active.animation.bottom(href="#")
+              .contact-button__inner
+                i.icon.icon-phone
+                strong
+                  | Контакты
+                span
+                  | Контактная информация и обратная связь
+
+        nav.menu.animation.top
+          ul.menu__list
+            li
+              a.menu__link.is-active(href="#")
+                | Главная
+            li
+              a.menu__link(href="#")
+                | Застройщик
+            li
+              a.menu__link(href="#")
+                | О комплексе
+            li
+              a.menu__link(href="#")
+                | Арендаторам
+            li
+              a.menu__link(href="#")
+                | Новости
+
+        .big-title.animation.left
+          block header-big-title
+            | О комплексе
+  <!-- end header -->
 
   <!-- begin content -->
   .l
-    .l-main
+    .l-main.l-main_contacts
       <!-- begin form -->
       form#form.form(method="POST", novalidate)
         input.input-field.animation.top(type="text", name="Name", placeholder="Имя", data-validetta="required")

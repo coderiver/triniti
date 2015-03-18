@@ -1,5 +1,5 @@
 <!-- begin header -->
-header.header
+header.header.header_abs
   .l
     .header__inner
 
@@ -8,29 +8,15 @@ header.header
         a.logo(href="/")
           | Triniti
 
-      a.contact-button(href="#").animation.right
-        .contact-button__inner
-          i.icon.icon-phone
-          strong
-            | Контакты
-          span
-            | Контактная информация и обратная связь
-
-      //- a.contact-button(href="#")
-      //-   .contact-button__inner
-      //-     i.icon.icon-phone
-      //-     strong
-      //-       | Контакты
-      //-     span
-      //-       | Свободная площадь и условия
-
-      //- a.contact-button(href="#")
-      //-   .contact-button__inner
-      //-     i.icon.icon-phone
-      //-     strong
-      //-       | Арендаторам
-      //-     span
-      //-       | Свободная площадь и условия
+      .header__button
+        .header__button-inner
+          a.contact-button(href="#").animation.right
+            .contact-button__inner
+              i.icon.icon-phone
+              strong
+                | Контакты
+              span
+                | Контактная информация и обратная связь
 
       nav.menu.animation.top
         ul.menu__list

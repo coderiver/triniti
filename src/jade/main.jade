@@ -9,10 +9,11 @@ block add-script
 
 block content
 
+  include includes/_header
+
   <!-- begin toparea -->
   .toparea
 
-    include includes/_header
 
     .l
       .toparea__inner
@@ -84,14 +85,14 @@ block content
             strong.news__title
               | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
 
-        ul.news-list.animation.right-top
-          li.news-list__item
-            a.news-list__title(href="#")
+        .news-list.animation.right-top
+          a.news-list__item(href="#")
+            strong.news-list__title
               | Уникальный торговый центр «Тринити» располагается в 7 минутах от центра города, где находятся.
             span.news-list__date
               | 25 Сентября 2015
-          li.news-list__item
-            a.news-list__title(href="#")
+          a.news-list__item(href="#")
+            strong.news-list__title
               | Уникальный торговый центр «Тринити» располагается.
             span.news-list__date
               | 25 Сентября 2015

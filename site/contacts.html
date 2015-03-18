@@ -15,8 +15,11 @@
       <header class="header header_content">
         <div class="l">
           <div class="header__inner">
-            <div class="header__logo animation right"><a href="/" class="logo">Triniti</a></div><a href="#" class="contact-button animation bottom">
-              <div class="contact-button__inner"><i class="icon icon-phone"></i><strong>Контакты</strong><span>Контактная информация и обратная связь</span></div></a>
+            <div class="header__logo animation right"><a href="/" class="logo">Triniti</a></div>
+            <div class="header__button">
+              <div class="header__button-inner"><a href="#" class="contact-button is-active animation bottom">
+                  <div class="contact-button__inner"><i class="icon icon-phone"></i><strong>Контакты</strong><span>Контактная информация и обратная связь</span></div></a></div>
+            </div>
             <nav class="menu animation top">
               <ul class="menu__list">
                 <li><a href="#" class="menu__link is-active">Главная</a></li>
@@ -29,9 +32,10 @@
             <div class="big-title animation left">Контакты</div>
           </div>
         </div>
-      </header><!-- end header --><!-- begin content -->
+      </header><!-- end header -->
+      <!-- begin content -->
       <div class="l">
-        <div class="l-main"><!-- begin form -->
+        <div class="l-main l-main_contacts"><!-- begin form -->
           <form id="form" method="POST" novalidate class="form">
             <input type="text" name="Name" placeholder="Имя" data-validetta="required" class="input-field animation top">
             <input type="tel" name="Phone" placeholder="Телефон" data-validetta="required,number,minLength[10],maxLength[13]" class="input-field animation right">
