@@ -15,7 +15,7 @@ head.ready(function() {
 
 
     var whatLogo = function() {
-        if ( doc.width() <= 1280 ) {
+        if ( doc.width() <= 1260 ) {
             logo
                 .removeClass('is-fixed')
                 .addClass('is-small');

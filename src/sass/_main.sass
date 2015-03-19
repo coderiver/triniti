@@ -86,9 +86,9 @@
       margin-right: 20px
       max-width: 370px
 
-  +r(1060)
-    .header__logo
-      margin-left: -10px
+  // +r(1060)
+  //   .header__logo
+  //     margin-left: -10px
 
 
 .header__inner
@@ -215,6 +215,7 @@
   padding: 100px 90px 0
   background: $dark
   text-decoration: none
+  transform: translateZ(0)
   +trans
   &:first-child
     background: $dark3
@@ -725,7 +726,8 @@
   color: $dark
   +resize
     .footer__copy
-      margin-right: 40px
+      margin-left: 5px
+      margin-right: 35px
     .footer__creator
       width: 347px
 
@@ -1247,10 +1249,32 @@
     margin-left: 35px
 
   ul
-    list-style-type: initial
+    // list-style-type: initial
+    > li
+      position: relative
+      &:before
+        content: ""
+        position: absolute
+        left: -18px
+        top: 50%
+        width: 4px
+        height: 4px
+        margin-top: -2px
+        border-radius: 50%
+        background: $red
+
 
   ol
-    list-style-type: decimal
+    // list-style-type: decimal
+      counter-reset: counter1
+    > li
+      position: relative
+      counter-increment: counter1
+      &:before
+        content: counter(counter1) '.'
+        position: absolute
+        left: -20px
+        color: $red
 
 
 
