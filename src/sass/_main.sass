@@ -298,7 +298,8 @@
         margin-top: 40px
 
 .category_narrow
-  width: 33.33%
+  // width: 33.33%
+  width: 270px
   height: 90px
   padding: 10px
   line-height: 70px
@@ -1114,15 +1115,31 @@
   margin-right: (-$l-main-right-padding)
 
 .tabs__main
+  box-sizing: border-box
+  width: 720px
+  height: 460px
+  position: relative
   box-shadow: 0 6px 60px -10px rgba(#162634, 0.2)
   overflow: hidden
 
 .tabs__content
-  display: none
+  visibility: hidden
+  position: absolute
+  z-index: 0
+  opacity: 0
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  transform: translateX(100%)
+  transition: all 0.5s ease
   img
     display: block
   &.is-active
-    display: block
+    z-index: 1
+    visibility: visible
+    transform: none
+    opacity: 1
 
 
 .tabs__buttons
