@@ -215,7 +215,7 @@ div.clearfix
   color: $red
   overflow: hidden
   +trans-button(color)
-  transform: translate3d(0,0,0)
+  transform: translateZ(0)
 
   &:after
     content: ""
@@ -227,7 +227,7 @@ div.clearfix
     height: 100%
     background: $red
     +trans-button(all)
-    transform: translate3d(-100%,0,0)
+    transform: translate(-100%,0)
     visibility: hidden
 
   .icon-arr
@@ -254,7 +254,7 @@ div.clearfix
       transform: translateX(-40px)
     &:after
       visibility: visible
-      transform: translate3d(0,0,0)
+      transform: translateZ(0)
 
 .button__text
   display: inline-block
@@ -262,6 +262,7 @@ div.clearfix
   color: inherit
   position: relative
   z-index: 1
+  +trans-link(color)
 
 a.button
   line-height: 90px
@@ -279,7 +280,9 @@ a.button
     left: 50%
     white-space: nowrap
     transform-origin: center center
-    transform: translate3d(-50%,-50%,0) rotate(-90deg)
+    transform: translate(-50%,-50%) translateZ(0) rotate(-90deg)
+    .ie9 &
+      transform: translateX(-50%) translateY(-50%) rotate(-90deg)
 
 .button_red
   background: $red

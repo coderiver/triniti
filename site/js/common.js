@@ -11,7 +11,7 @@ head.ready(function() {
         form            = $('#form'),
         logo            = $('.header__logo'),
         contactButton   = $('.header__button-inner'),
-        scrollPosition  = 0;
+        scrollPosition  = win.scrollTop();
 
 
     var whatLogo = function() {
@@ -28,27 +28,43 @@ head.ready(function() {
         whatLogo();
     });
 
+    var makeElementsFixed = function() {
+        if ( !logo.hasClass('is-fixed') && !logo.hasClass('is-small') ) {
+            logo.addClass('is-fixed');
+        }
+
+        if ( !contactButton.hasClass('is-fixed') ) {
+            contactButton.addClass('is-fixed');
+        }
+    };
+
+    var makeElementsStatic = function() {
+        if ( logo.hasClass('is-fixed') ) {
+            logo.removeClass('is-fixed');
+        }
+
+        if ( contactButton.hasClass('is-fixed') ) {
+            contactButton.removeClass('is-fixed');
+        }
+    };
+
+    if ( scrollPosition > 180 ) {
+        makeElementsFixed();
+    }
+
+    if ( scrollPosition < 180 ) {
+        makeElementsStatic();
+    }
+
     win.on('scroll', function(event) {
         scrollPosition = win.scrollTop();
 
         if ( scrollPosition > 180 ) {
-            if ( !logo.hasClass('is-fixed') && !logo.hasClass('is-small') ) {
-                logo.addClass('is-fixed');
-            }
-
-            if ( !contactButton.hasClass('is-fixed') ) {
-                contactButton.addClass('is-fixed');
-            }
+            makeElementsFixed();
         }
 
         if ( scrollPosition < 180 ) {
-            if ( logo.hasClass('is-fixed') ) {
-                logo.removeClass('is-fixed');
-            }
-
-            if ( contactButton.hasClass('is-fixed') ) {
-                contactButton.removeClass('is-fixed');
-            }
+            makeElementsStatic();
         }
     });
 
@@ -181,6 +197,13 @@ head.ready(function() {
             errorClass : 'is-error',
             validClass : 'is-success',
             realTime : true,
+            custom : {
+                phone : {
+                    // pattern: /^((((\(\d{3}\))|(\d{3}-))\d{3}-\d{4})|(\+?\d{1,3}((-| |\.)(\(\d{1,4}\)(-| |\.|^)?)?\d{1,8}){1,5}))(( )?(x|ext)\d{1,5}){0,1}$/,
+                    pattern: /^[-0-9()+ ]+$/,
+                    errorMessage : 'Phone number is not valid!'
+                }
+            },
             onValid : function(event) {
                 // prevent default event when submit
                 event.preventDefault();
@@ -192,7 +215,7 @@ head.ready(function() {
                 closeBtn.on('click', function(event) {
                     event.preventDefault();
                     msg.fadeOut('200');
-                    form.find('input, textarea').val('');
+                    form.find('input, textarea').val('').trigger('blur');
                 });
             },
             onError : function() {

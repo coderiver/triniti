@@ -125,7 +125,16 @@
   background: url('../img/header-bg.jpg') no-repeat left center
   .header__inner
     // box-shadow: 0 50px 120px -30px rgba(#560001, 0.4)
-    box-shadow: 0 25px 120px -30px rgba(#162634, 0.4)
+    position: relative
+    &:before
+      content: ""
+      position: absolute
+      z-index: -1
+      top: -100px
+      left: 0
+      right: 0
+      bottom: 0
+      box-shadow: 0 120px 120px -120px rgba(#162634, 0.4)
   +resize
     background-position: right 180px center
 
@@ -213,19 +222,36 @@
   height: 360px
   font-size: 12px
   padding: 100px 90px 0
-  background: $dark
+  background: none
   text-decoration: none
   transform: translateZ(0)
   +trans
+  &:before
+    content: ""
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: $dark
+    +trans
   &:first-child
-    background: $dark3
+    &:before
+      background: $dark3
   &:nth-child(2)
-    background: $dark2
+    &:before
+      background: $dark2
   &:hover
     z-index: 3
-    background: $red
     padding-top: 80px
-    box-shadow: 0 0 0 10px $red, 0 0 73px 0 rgba(38, 55, 70, 0.75)
+    // box-shadow: 0 0 0 10px $red, 0 0 73px 0 rgba(38, 55, 70, 0.75)
+    &:before
+      top: -10px
+      left: -10px
+      right: -10px
+      bottom: -10px
+      background: $red
     .category__title
       .icon
         transform: translateX(50px)
@@ -334,6 +360,12 @@
         transform: translateX(20px)
 
   &.is-active
+    &:before
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: $dark
     &:after
       content: ""
       position: absolute
@@ -346,9 +378,13 @@
       border-width: 14px 16px 0 16px
       border-top-color: $dark
     &:first-child
+      &:before
+        background: $dark4
       &:after
         border-top-color: $dark4
     &:nth-child(2)
+      &:before
+        background: $dark2
       &:after
         border-top-color: $dark2
     .category__title
@@ -1445,6 +1481,8 @@
   +trans(all)
   +placeholder
     +regular
+    color: rgba($dark-text, 0.5)
+  &.placeholdr
     color: rgba($dark-text, 0.5)
   .form__field.is-error &
     background: #FFA1A1

@@ -41,7 +41,7 @@
               <input type="text" name="Name" placeholder="Имя" data-validetta="required" class="input-field">
             </div>
             <div class="form__field animation right">
-              <input type="tel" name="Phone" placeholder="Телефон" data-validetta="required,number,minLength[10],maxLength[13]" class="input-field">
+              <input type="tel" name="Phone" placeholder="Телефон" data-validetta="required,custom[phone]" class="input-field">
             </div>
             <div class="form__field animation left">
               <input type="email" name="Email" placeholder="E-mail" data-validetta="required,email" class="input-field">
@@ -97,6 +97,6 @@
         </div>
       </footer><!-- end footer -->
     </div><!-- load scripts -->
-    <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>
+    <script src="js/lib/head.js" data-headjs-load="js/init.js"></script><!--[if lt IE 10]><script src="js/placeholders.js"></script><![endif]-->
   </body>
 </html>
