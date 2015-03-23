@@ -296,8 +296,7 @@ a.button { line-height: 90px; text-decoration: none; }
 a.button:hover { text-decoration: none; }
 
 .button_vert { width: 90px; height: 100%; min-height: 100px; }
-.button_vert .button__text { position: absolute; top: 50%; left: 50%; white-space: nowrap; -webkit-transform-origin: center center; -ms-transform-origin: center center; transform-origin: center center; -webkit-transform: translate(-50%, -50%) translateZ(0) rotate(-90deg); transform: translate(-50%, -50%) translateZ(0) rotate(-90deg); }
-.ie9 .button_vert .button__text { -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg); -ms-transform: translateX(-50%) translateY(-50%) rotate(-90deg); transform: translateX(-50%) translateY(-50%) rotate(-90deg); }
+.button_vert .button__text { position: absolute; top: 50%; left: 50%; white-space: nowrap; -webkit-transform-origin: center center; -ms-transform-origin: center center; transform-origin: center center; -webkit-transform: translate(-50%, -50%) rotate(-90deg); -ms-transform: translate(-50%, -50%) rotate(-90deg); transform: translate(-50%, -50%) rotate(-90deg); }
 
 .button_red { background: #D12023; color: #FFF; }
 .button_red:after { background: #A10D10; }
@@ -469,8 +468,9 @@ a.contacts__email:hover { text-decoration: underline; }
 
 .header_content { background: url("../img/header-bg.jpg") no-repeat left center; }
 .header_content .header__inner { position: relative; }
-.header_content .header__inner:before { content: ""; position: absolute; z-index: -1; top: -100px; left: 0; right: 0; bottom: 0; box-shadow: 0 120px 120px -120px rgba(22, 38, 52, 0.4); }
-@media only screen and (max-width: 1276px) { .header_content { background-position: right 180px center; } }
+.header_content .header__inner:before { content: ""; position: absolute; z-index: -1; top: -160px; left: 0; right: 450px; bottom: 0; box-shadow: 0 80px 80px -80px rgba(86, 0, 1, 0.4); }
+@media only screen and (max-width: 1276px) { .header_content { background-position: right 180px center; }
+  .header_content .header__inner:before { right: 180px; } }
 
 .menu { width: 360px; height: 180px; padding: 0 40px; background: #FFF; box-sizing: border-box; text-align: center; font-size: 0; white-space: nowrap; }
 .menu:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
@@ -611,12 +611,15 @@ a.contacts__email:hover { text-decoration: underline; }
 .b-promo2 > .sqr { float: left; }
 @media only screen and (max-width: 1276px) { .b-promo2 { float: none; margin-left: 135px; } }
 
+.button-container { display: inline-block; vertical-align: top; }
+
 .about { position: relative; min-height: 375px; margin: 105px 0 0 90px; padding: 80px 170px 70px 80px; width: 900px; box-sizing: border-box; border: 10px solid #FFF; color: #33424F; font-family: "FuturaNewMedium", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 18px; line-height: 1.33; }
 @media only screen and (max-width: 1276px) { .about { margin: 80px 0 0 92px; width: 675px; padding: 30px 120px 30px 30px; min-height: 270px; }
   .about .about__title { margin-bottom: 20px; }
   .about .about__partners { margin-top: 25px; margin-right: -35px; }
   .about .about__partners li { margin-right: 35px; } }
-.about .button { position: absolute; top: -10px; right: -10px; height: 100%; box-sizing: content-box; width: 90px; padding: 10px 0; }
+.about .button-container { position: absolute; top: -10px; right: -10px; bottom: -10px; box-sizing: content-box; width: 90px; }
+.about .button { height: 100%; }
 
 .about__title { margin-bottom: 30px; font-family: "FuturaNewMedium", Helvetica, Arial, sans-serif; font-weight: normal; font-size: 24px; line-height: 1; text-transform: uppercase; letter-spacing: -0.03em; color: #414E5A; }
 

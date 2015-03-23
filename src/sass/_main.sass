@@ -130,13 +130,15 @@
       content: ""
       position: absolute
       z-index: -1
-      top: -100px
+      top: -160px
       left: 0
-      right: 0
+      right: 450px
       bottom: 0
-      box-shadow: 0 120px 120px -120px rgba(#162634, 0.4)
+      box-shadow: 0 80px 80px -80px rgba(#560001, 0.4)
   +resize
     background-position: right 180px center
+    .header__inner:before
+      right: 180px
 
 // .header__right
   // +clr
@@ -697,6 +699,11 @@
     margin-left: 135px
 
 
+.button-container
+  display: inline-block
+  vertical-align: top
+
+
 
 .about
   position: relative
@@ -724,15 +731,17 @@
       li
         margin-right: 35px
 
-
-  .button
+  .button-container
     position: absolute
     top: -10px
     right: -10px
-    height: 100%
+    bottom: -10px
     box-sizing: content-box
     width: 90px
-    padding: 10px 0
+
+  .button
+    height: 100%
+    // padding: 10px 0
 
 .about__title
   margin-bottom: 30px

@@ -63,7 +63,7 @@ block content
         .form__field.animation.top
           input.input-field(type="text", name="Name", placeholder="Имя", data-validetta="required")
         .form__field.animation.right
-          input.input-field(type="tel", name="Phone" ,placeholder="Телефон", data-validetta="required,custom[phone]")
+          input.input-field(type="tel", name="Phone" ,placeholder="Телефон", data-validetta="required,custom[phone],minLength[10],maxLength[19]")
         .form__field.animation.left
           input.input-field(type="email", name="Email", placeholder="E-mail", data-validetta="required,email")
         .form__field.animation.right

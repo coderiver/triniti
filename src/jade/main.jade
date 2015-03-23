@@ -97,8 +97,9 @@ block content
             span.news-list__date
               | 25 Сентября 2015
 
-        button.button.button_vert.animation.right(type="button")
-          span.button__text Все новости
+        .button-container.animation.right
+          button.button.button_vert(type="button")
+            span.button__text Все новости
       <!-- end news -->
 
       <!-- begin location -->
@@ -210,8 +211,9 @@ block content
             a(href="#")
               img(src="img/partners/evroopt.png", alt="")
 
-        button.button.button_vert.button_red(type="button")
-          span.button__text О застройщике
+        .button-container
+          button.button.button_vert.button_red(type="button")
+            span.button__text О застройщике
       <!-- end about -->
 
   include includes/_footer

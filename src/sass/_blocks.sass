@@ -262,7 +262,7 @@ div.clearfix
   color: inherit
   position: relative
   z-index: 1
-  +trans-link(color)
+  +trans-button(color)
 
 a.button
   line-height: 90px
@@ -280,9 +280,9 @@ a.button
     left: 50%
     white-space: nowrap
     transform-origin: center center
-    transform: translate(-50%,-50%) translateZ(0) rotate(-90deg)
-    .ie9 &
-      transform: translateX(-50%) translateY(-50%) rotate(-90deg)
+    transform: translate(-50%,-50%) rotate(-90deg)
+    // .ie9 &
+    //   transform: translateX(-50%) translateY(-50%) rotate(-90deg)
 
 .button_red
   background: $red
