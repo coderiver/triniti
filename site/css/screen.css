@@ -468,7 +468,7 @@ a.contacts__email:hover { text-decoration: underline; }
 
 .header_content { background: url("../img/header-bg.jpg") no-repeat left center; }
 .header_content .header__inner { position: relative; }
-.header_content .header__inner:before { content: ""; position: absolute; z-index: -1; top: -160px; left: 0; right: 250px; bottom: 0; box-shadow: 0 110px 120px -120px rgba(86, 0, 1, 0.4); }
+.header_content .header__inner:before { content: ""; position: absolute; z-index: -1; top: -100px; left: -50px; right: 200px; bottom: 0; box-shadow: 0 100px 100px -100px rgba(86, 0, 1, 0.4); }
 @media only screen and (max-width: 1276px) { .header_content { background-position: right 180px center; }
   .header_content .header__inner:before { right: 80px; } }
 
