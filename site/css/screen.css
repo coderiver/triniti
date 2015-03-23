@@ -468,9 +468,9 @@ a.contacts__email:hover { text-decoration: underline; }
 
 .header_content { background: url("../img/header-bg.jpg") no-repeat left center; }
 .header_content .header__inner { position: relative; }
-.header_content .header__inner:before { content: ""; position: absolute; z-index: -1; top: -160px; left: 0; right: 450px; bottom: 0; box-shadow: 0 80px 80px -80px rgba(86, 0, 1, 0.4); }
+.header_content .header__inner:before { content: ""; position: absolute; z-index: -1; top: -160px; left: 0; right: 250px; bottom: 0; box-shadow: 0 110px 120px -120px rgba(86, 0, 1, 0.4); }
 @media only screen and (max-width: 1276px) { .header_content { background-position: right 180px center; }
-  .header_content .header__inner:before { right: 180px; } }
+  .header_content .header__inner:before { right: 80px; } }
 
 .menu { width: 360px; height: 180px; padding: 0 40px; background: #FFF; box-sizing: border-box; text-align: center; font-size: 0; white-space: nowrap; }
 .menu:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
